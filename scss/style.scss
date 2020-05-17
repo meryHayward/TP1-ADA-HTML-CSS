@@ -1,0 +1,23 @@
+// import sections
+@import "./sections/header";
+@import "./sections/hero";
+@import "./sections/about";
+@import "./sections/services";
+@import "./sections/whyChoose";
+@import "./sections/portfolio";
+@import "./sections/testimonials";
+@import "./sections/team";
+@import "./sections/clients";
+@import "./sections/contact";
+@import "./sections/footer";
+@import "./sections/portfolio";
+
+
+body {
+    margin: 0;
+}
+
+a { 
+    text-decoration: none; 
+    color: inherit;
+}

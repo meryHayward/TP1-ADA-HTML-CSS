@@ -1,0 +1,29 @@
+@import "../abstract/variables";
+
+/* Estos son los estilos generales de los botones. Se deben terminar de personalizar
+dependiendo del caso en cada archivo scss que lo requiera. 
+Los botones en el html hacerlo con el tag "button" y dentro un tag "a".
+Quien haga el hero, portafolio y el form crear una clase en el tag "a" con el nombre "active".
+*/
+
+button {
+    background-color: transparent;
+    border: none;
+    font-family: $text;
+    a {   
+        border-radius: 25px;
+        padding: 10px 25px;
+        transition: all 0.3s ease-in-out;
+        &.active { // aplica para el hero, portfolio y button del form.
+            background-color: $lightblue;
+            color: $white;
+            &:hover {
+                background-color: transparent;
+            }
+        }
+        &:hover { // aplica para los demás botones.
+            color: $white;
+            background-color: $lightblue;
+        }
+    }
+}
