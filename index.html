@@ -13,27 +13,115 @@
     </head>
     <body>
 
-        <!---------------- header -------------->
+      <!---------------- header -------------->
+      <header class="navbar">
+        <a href="#"><img src="./img/logo-tp.png" alt="Logo"/></a>
+        <a class="open-sidebar" href="#sidebar"><i class="fa fa-bars"></i></a>
 
-        <!---------------- hero -------------->
+        <div id="sidebar">
+          <a class="close-sidebar" href="#"><i class="fa fa-times"></i></a>
+          
+          <!-- sidebar-content -->       
+          <div class="sidebar-content">          
+            <nav>  
+              <ul>  
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li> <a href="#">Portfolio</a></li>
+                <li><a href="#">Team</a></li>
 
-        <!---------------- about us -------------->
+                <!-- 1st dropdown -->
+                <li><a href="#"></a>
+                  <input class="dropdown-input hidden-input" 
+                    id="dropdown1" type="checkbox" />
+                  <label class="dropdown-label"  
+                    for="dropdown1">Drop Down</label>
+                      
+                  <div class="dropdown-content">
+                    <ul style="padding-top: 10px;">
+                      <li><a href="#">Drop Down 1</a></li>
 
-        <!---------------- services -------------->
+                      <!-- 2nd dropdown -->
+                      <li><a href="#"></a>   
+                        <input class="dropdown-input hidden-input" 
+                          id="dropdown2" type="checkbox" />
+                        <label class="dropdown-label"  
+                          for="dropdown2">Drop Down 2</label>
+                  
+                        <div class="dropdown-content">
+                          <ul style="padding-top: 10px;">
+                            <li><a href="#">Deep Drop Down 1</a></li>
+                            <li><a href="#">Deep Drop Down 2</a></li>
+                            <li><a href="#">Deep Drop Down 3</a></li>
+                            <li><a href="#">Deep Drop Down 4</a></li>
+                            <li><a href="#">Deep Drop Down 5</a></li>
+                          </ul>                 
+                        </div>                                      
+                      </li> <!-- end 2nd dropdown -->
+                      <li><a href="#">Drop Down 3</a></li>
+                      <li><a href="#">Drop Down 4</a></li>
+                      <li><a href="#">Drop Down 5</a></li>
+                    </ul>
+                  </div>               
+                </li> <!-- end 1st dropdown -->        
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </nav>    
+          </div> <!-- end sidebar-content -->   
+        </div> <!-- end sidebar --> 
 
-        <!---------------- Why choose us -------------->
+        <div class="menu-desktop">
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Team</a></li>
+              <li class="first-dropdown"><a>Drop Down <i class="fa fa-angle-down"></i></a>
+                <ul class="first-dropdown-content">
+                  <li><a href="#">Drop Down 1</a></li>            
+                  <li class="second-dropdown"><a>Drop Down 2 <i class="fa fa-angle-right"></i></a>
+                    <ul class="second-dropdown-content">
+                      <li><a href="#">Deep Drop Down 1</a></li>
+                      <li><a href="#">Deep Drop Down 2</a></li>
+                      <li><a href="#">Deep Drop Down 3</a></li>
+                      <li><a href="#">Deep Drop Down 4</a></li>
+                      <li><a href="#">Deep Drop Down 5</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Drop Down 3</a></li>
+                  <li><a href="#">Drop Down 4</a></li>
+                  <li><a href="#">Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    
+      
+      <!---------------- hero -------------->
 
-        <!---------------- our portfolio -------------->
+      <!---------------- about us -------------->
 
-        <!---------------- testimonials -------------->
+      <!---------------- services -------------->
 
-        <!---------------- team -------------->
+      <!---------------- Why choose us -------------->
 
-        <!---------------- our clients -------------->
+      <!---------------- our portfolio -------------->
 
-        <!---------------- contact -------------->
+      <!---------------- testimonials -------------->
 
-        <!---------------- footer -------------->
-       
+      <!---------------- team -------------->
+
+      <!---------------- our clients -------------->
+
+      <!---------------- contact -------------->
+
+      <!---------------- footer -------------->
+
     </body>
 </html>
