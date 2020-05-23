@@ -36,75 +36,67 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
     font-size: 12px;
     font-weight: 400;
     text-align: center; }
-
-.service_card_container {
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; }
-  @media (min-width: 768px) {
-    .service_card_container {
-      width: 768px; } }
-
-.service_card {
-  width: 100%;
-  margin-bottom: 30px;
-  padding: 30px;
-  background-color: #fff;
-  overflow: hidden;
-  border-radius: 10px;
-  box-sizing: border-box;
-  box-shadow: 0 0 5px #afafaf;
-  position: relative;
-  transition: translateY 0.2s ease-in-out; }
-  .service_card header {
-    margin-left: 55px;
-    font-size: 18px; }
-    .service_card header h3 {
-      color: #000;
-      font-family: "Montserrat", sans-serif;
-      font-size: 23px;
-      font-weight: bold;
-      text-align: center;
-      margin-top: 0;
-      margin-bottom: 10px;
-      text-align: left;
-      font-size: 18px; }
-    .service_card header a {
-      transition: color 0.2s ease-in-out; }
-      .service_card header a:hover {
-        color: #007bff; }
-  .service_card article {
-    color: #383838;
-    font-family: "Open Sans", sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    margin-left: 55px; }
-  .service_card .service_aside {
-    background-color: grey;
-    width: 80px;
-    height: 100%;
-    position: absolute;
-    left: -15px;
-    top: 0;
+  .services .service_card_container {
+    padding: 20px;
     display: flex;
     justify-content: center;
-    align-items: center; }
-    .service_card .service_aside .card-icons {
-      width: 60px; }
-  .service_card:hover {
-    transform: translateY(-7px); }
-  @media (min-width: 414px) {
-    .service_card {
-      width: 310px; } }
-  @media (min-width: 768px) {
-    .service_card {
-      margin-right: 30px; } }
-
-@media (min-width: 768px) {
-  .onRight {
-    margin-right: 0; } }
+    align-items: center;
+    flex-wrap: wrap; }
+    @media (min-width: 768px) {
+      .services .service_card_container {
+        width: 768px; } }
+    .services .service_card_container .service_card {
+      width: 100%;
+      margin-bottom: 30px;
+      padding: 30px;
+      background-color: #fff;
+      overflow: hidden;
+      border-radius: 10px;
+      box-sizing: border-box;
+      box-shadow: 0 0 5px #afafaf;
+      position: relative;
+      transition: translateY 0.2s ease-in-out; }
+      .services .service_card_container .service_card header {
+        margin-left: 55px; }
+        .services .service_card_container .service_card header h3 {
+          color: #000;
+          font-family: "Montserrat", sans-serif;
+          font-size: 18px;
+          font-weight: bold;
+          text-align: center;
+          margin-top: 0;
+          margin-bottom: 10px;
+          text-align: left; }
+        .services .service_card_container .service_card header a {
+          transition: color 0.2s ease-in-out; }
+          .services .service_card_container .service_card header a:hover {
+            color: #007bff; }
+      .services .service_card_container .service_card article {
+        color: #383838;
+        font-family: "Open Sans", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        margin-left: 55px; }
+      .services .service_card_container .service_card .service_aside {
+        width: 80px;
+        height: 100%;
+        position: absolute;
+        left: -20px;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .services .service_card_container .service_card .service_aside .card-icons {
+          width: 60px; }
+      .services .service_card_container .service_card:hover {
+        transform: translateY(-7px); }
+      @media (min-width: 414px) {
+        .services .service_card_container .service_card {
+          width: 310px; } }
+      @media (min-width: 768px) {
+        .services .service_card_container .service_card {
+          margin-right: 15px;
+          margin-left: 15px; } }
 
 body {
   margin: 0; }
