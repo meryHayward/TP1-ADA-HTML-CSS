@@ -1,3 +1,193 @@
+@charset "UTF-8";
+/* PUEDEN CAMBIAR LOS VALORES SI ES NECESARIO, 
+VERIFICANDO QUE NO AFECTE EL DISEÑO DE LAS DEMÁS */
+/* Utilizar este mixin para los títulos de cada sección.
+En el html, en cada sección colocar el tag "h1" para el título.
+*/
+/* Utilizar este mixin para el texto que esta debajo de los títulos y en 
+la profesión (lo que esta debajo del nombre de la persona en testimonials). 
+En el html, debajo de los títulos de la sección y debajo del nombre de la
+persona en testimonials colocarlo con el tag "h4".
+*/
+/* Utilizar este mixin para los títulos de las cards, en los nombres de las 
+personas en testimonials y en el about us en los títulos que están a un lado
+de los íconos.
+En el html, los títulos de las card, en los nombres de las personas 
+en testimonials y títulos del about us al lado de iconos colocarlo con el tag "h3".
+*/
+.contact-container {
+  width: 100%; }
+  .contact-container h1 {
+    color: #283d50;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding-top: 10px;
+    text-align: center; }
+  .contact-container .contact-us-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .contact-container .contact-us-body .contact-us-map {
+      padding: 15px; }
+    .contact-container .contact-us-body .contact-us-information .contact-us-address {
+      display: flex;
+      flex-direction: column;
+      list-style: none; }
+      .contact-container .contact-us-body .contact-us-information .contact-us-address .address-icon {
+        font-size: 24px;
+        float: left;
+        line-height: 1; }
+    .contact-container .contact-us-body .contact-us-information .contact-us-form {
+      display: flex;
+      flex-direction: column; }
+      .contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-form-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        .contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-form-row .input-name {
+          height: 24px;
+          width: 50%; }
+        .contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-form-row .input-email {
+          height: 24px;
+          width: 50%; }
+      .contact-container .contact-us-body .contact-us-information .contact-us-form .input-subject {
+        height: 24px; }
+
+/* PUEDEN CAMBIAR LOS VALORES SI ES NECESARIO, 
+VERIFICANDO QUE NO AFECTE EL DISEÑO DE LAS DEMÁS */
+/* Utilizar este mixin para los títulos de cada sección.
+En el html, en cada sección colocar el tag "h1" para el título.
+*/
+/* Utilizar este mixin para el texto que esta debajo de los títulos y en 
+la profesión (lo que esta debajo del nombre de la persona en testimonials). 
+En el html, debajo de los títulos de la sección y debajo del nombre de la
+persona en testimonials colocarlo con el tag "h4".
+*/
+/* Utilizar este mixin para los títulos de las cards, en los nombres de las 
+personas en testimonials y en el about us en los títulos que están a un lado
+de los íconos.
+En el html, los títulos de las card, en los nombres de las personas 
+en testimonials y títulos del about us al lado de iconos colocarlo con el tag "h3".
+*/
+.container-footer {
+  width: 100%;
+  background-color: #004a99;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Open Sans", sans-serif; }
+  .container-footer h4 {
+    font-weight: bold;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 22px; }
+  .container-footer .top-footer {
+    margin: 38px 12px 55px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    text-align: left;
+    font-size: 14px;
+    line-height: 22px;
+    color: #fff;
+    font-weight: 400; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .container-footer .top-footer {
+        flex-direction: row;
+        flex-wrap: wrap; } }
+    @media (min-width: 1024px) {
+      .container-footer .top-footer {
+        flex-direction: row;
+        margin: 40px 30px 50px 40px; } }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .container-footer .top-footer .footer-row {
+        width: 45%;
+        margin-left: 18px; } }
+    @media (min-width: 1024px) {
+      .container-footer .top-footer .footer-row {
+        width: 45%;
+        margin-left: 18px; } }
+    .container-footer .top-footer .footer-info {
+      font-family: "Montserrat", sans-serif; }
+      @media (min-width: 1024px) {
+        .container-footer .top-footer .footer-info {
+          width: 40%; } }
+      .container-footer .top-footer .footer-info .footer-title {
+        font-size: 38px;
+        font-weight: 100; }
+    .container-footer .top-footer .useful-links {
+      list-style: none;
+      line-height: 35px; }
+      @media (min-width: 1024px) {
+        .container-footer .top-footer .useful-links {
+          width: 15%; } }
+    .container-footer .top-footer .contact-us {
+      list-style: none;
+      line-height: 26px; }
+      @media (min-width: 1024px) {
+        .container-footer .top-footer .contact-us {
+          width: 20%; } }
+      .container-footer .top-footer .contact-us .media-icon-container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 25px;
+        margin-bottom: 8px; }
+        .container-footer .top-footer .contact-us .media-icon-container .media-icons-share {
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          background-color: #007bff;
+          margin-left: 5px; }
+        .container-footer .top-footer .contact-us .media-icon-container .media-icons-share:hover {
+          cursor: pointer;
+          background-color: #0062cc; }
+        .container-footer .top-footer .contact-us .media-icon-container .media-icon {
+          text-align: center;
+          margin-top: 8px;
+          font-size: 18px;
+          margin-left: 9px; }
+    .container-footer .top-footer .our-newsletter {
+      list-style: none; }
+      @media (min-width: 1024px) {
+        .container-footer .top-footer .our-newsletter {
+          width: 35%; } }
+      .container-footer .top-footer .our-newsletter .footer-input {
+        margin-top: 25px;
+        height: 28px;
+        width: 60%; }
+      .container-footer .top-footer .our-newsletter .footer-button {
+        height: 34px;
+        width: 35%;
+        background-color: #007bff;
+        color: #fff;
+        margin-left: -4px;
+        font-size: 14px;
+        border-style: none; }
+      .container-footer .top-footer .our-newsletter .footer-button:hover {
+        cursor: pointer;
+        background-color: #0062cc; }
+  .container-footer .bottom-footer {
+    background-color: #00428a;
+    width: 100%;
+    color: #eee;
+    font-size: 14px;
+    text-align: center;
+    justify-content: center; }
+    .container-footer .bottom-footer .text-footer {
+      margin-top: 32px;
+      height: 8px;
+      font-size: 14px;
+      line-height: 22px;
+      color: #eee;
+      font-weight: 400; }
+    .container-footer .bottom-footer .designed-by {
+      margin-top: 0px;
+      margin-bottom: 32px;
+      font-size: 13px; }
+
 body {
   margin: 0; }
 

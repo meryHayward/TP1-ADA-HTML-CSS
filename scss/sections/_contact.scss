@@ -1,0 +1,49 @@
+@import "../abstract/mixins";
+@import "../abstract/variables"; 
+
+.contact-container {
+    width: 100%;
+    h1 {
+        @include title-h1;
+    } 
+    .contact-us-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .contact-us-map {
+           padding: 15px; 
+        }
+        .contact-us-information {
+            .contact-us-address {
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+                .address-icon {
+                    font-size: 24px;
+                    float: left;
+                    line-height: 1;
+                }
+            }
+            .contact-us-form {
+                display: flex;
+                flex-direction: column;
+                .contact-us-form-row {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .input-name {
+                        height: 24px;
+                        width: 50%;
+                    }
+                    .input-email {
+                        height: 24px;
+                        width: 50%;
+                    }
+                }
+                .input-subject {
+                    height: 24px;
+                }
+            }
+        }
+    }
+}
