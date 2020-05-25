@@ -36,25 +36,31 @@
             <h1>Contact Us</h1>
             <div class="contact-us-body">
                 <div class="contact-us-map">
-                    <!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24194.866499591502!2d-74.006227!3d40.710128!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1ses-419!2sbg!4v1590007709059!5m2!1ses-419!2sbg" width="690" height="312" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24194.866499591502!2d-74.006227!3d40.710128!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1ses-419!2sbg!4v1590007709059!5m2!1ses-419!2sbg" width="100%" height="312" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
                 <div class="contact-us-information"> 
-                    <ul class="contact-us-address">
-                        <i class="fas fa-map-marker-alt address-icon"></i>
-                        <li>A108 Adam Street, NY 535022</li>
-                        <i class="far fa-envelope address-icon"></i>
-                        <li>info@example.com</li>
-                        <i class="fas fa-phone-alt address-icon"></i>
-                        <li>+1 5589 55488 55</li>
-                    </ul>
+                    <div class="contact-us-address">
+                        <div class="address-icon-info">
+                            <i class="fas fa-map-marker-alt address-icon"></i>
+                            <li>A108 Adam Street, NY 535022</li>
+                        </div>
+                        <div class="address-icon-info">
+                            <i class="far fa-envelope address-icon"></i>
+                            <li>info@example.com</li>
+                        </div>
+                        <div class="address-icon-info">
+                            <i class="fas fa-phone-alt address-icon"></i>
+                            <li>+1 5589 55488 55</li>
+                        </div>
+                    </div>
                     <form class="contact-us-form">
                         <div class="contact-us-form-row">
-                            <input type="text" placeholder="Your Name" class="input-name"/>
-                            <input type="text" placeholder="Your Email" class="input-email"/>
+                            <input type="text" placeholder="Your Name" class="contact-us-input"/>
+                            <input type="text" placeholder="Your Email" class="contact-us-input contact-us-input-right"/>
                         </div>
-                        <input type="text" placeholder="Subject" class="input-subject"/>
-                        <input type="text" placeholder="Message" class="input-message"/>
-                        <button>Send Message</button>
+                        <input type="text" placeholder="Subject" class="contact-us-input"/>
+                        <textarea type="text" placeholder="Message" class="contact-us-textarea"></textarea>
+                        <button class="contac-us-send-button">Send Message</button>
                     </form>
                 </div>
             </div>
