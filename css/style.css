@@ -142,7 +142,8 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
               width: 25%; } }
         .contact-container .contact-us-body .contact-us-information .contact-us-form .contac-us-send-button:hover {
           cursor: pointer;
-          background-color: #0062cc; }
+          background-color: #0062cc;
+          transition: 0.3; }
 
 /* PUEDEN CAMBIAR LOS VALORES SI ES NECESARIO, 
 VERIFICANDO QUE NO AFECTE EL DISEÑO DE LAS DEMÁS */
@@ -232,7 +233,8 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
           margin-left: 5px; }
         .container-footer .top-footer .contact-us .media-icon-container .media-icons-share:hover {
           cursor: pointer;
-          background-color: #0062cc; }
+          background-color: #0062cc;
+          transition: 0.3; }
         .container-footer .top-footer .contact-us .media-icon-container .media-icon {
           text-align: center;
           margin-top: 8px;
@@ -257,7 +259,8 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
         border-style: none; }
       .container-footer .top-footer .our-newsletter .footer-button:hover {
         cursor: pointer;
-        background-color: #0062cc; }
+        background-color: #0062cc;
+        transition: 0.3; }
   .container-footer .bottom-footer {
     background-color: #00428a;
     width: 100%;
