@@ -46,7 +46,7 @@
                     color: #444;
                     justify-content: center;
                     margin-bottom: 35px;
-                    font-size: $font-m;
+                    font-size: 14px;
                     @media (min-width: 768px) and (max-width: 1024px) {
                         width: 32%;
                     }
@@ -73,7 +73,7 @@
                     padding: 4px 0px 4px 6px;
                     margin-top: 15px;
                     border-color: $lightgray;
-                    font-size: $font-m;
+                    font-size: 14px;
                     box-shadow: none;
                     @include breakpoint-desktop-1 {
                         width: 99%;
@@ -93,7 +93,7 @@
                     padding: 4px 0px 4px 6px;
                     margin: 15px 0px 20px 0px;
                     border-color: $lightgray;
-                    font-size: $font-m;
+                    font-size: 14px;
                     box-shadow: none;
                     @include breakpoint-desktop-1 {
                         width: 99%;
