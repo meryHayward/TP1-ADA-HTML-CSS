@@ -31,6 +31,8 @@
         @include breakpoint-desktop-1 {
             flex-direction: row;
             margin: 40px 30px 50px 40px;
+            padding-left: 100px;
+            padding-right: 100px;
         }
         .footer-row {
             @media (min-width: 768px) and (max-width: 1024px) { // tablet
@@ -43,6 +45,8 @@
             }
         }
         .footer-info {
+            font-size: 13px;
+            line-height: 24px;
             font-family: "Montserrat", sans-serif;
             @include breakpoint-desktop-1 {
                 width: 40%;
@@ -50,6 +54,7 @@
             .footer-title {
                 font-size: 38px;
                 font-weight: 100;
+                margin-bottom: 25px;
             }
         }
         .useful-links {

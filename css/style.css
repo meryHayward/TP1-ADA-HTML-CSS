@@ -673,7 +673,9 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
     @media (min-width: 1024px) {
       .container-footer .top-footer {
         flex-direction: row;
-        margin: 40px 30px 50px 40px; } }
+        margin: 40px 30px 50px 40px;
+        padding-left: 100px;
+        padding-right: 100px; } }
     @media (min-width: 768px) and (max-width: 1024px) {
       .container-footer .top-footer .footer-row {
         width: 45%;
@@ -683,13 +685,16 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
         width: 45%;
         margin-left: 18px; } }
     .container-footer .top-footer .footer-info {
+      font-size: 13px;
+      line-height: 24px;
       font-family: "Montserrat", sans-serif; }
       @media (min-width: 1024px) {
         .container-footer .top-footer .footer-info {
           width: 40%; } }
       .container-footer .top-footer .footer-info .footer-title {
         font-size: 38px;
-        font-weight: 100; }
+        font-weight: 100;
+        margin-bottom: 25px; }
     .container-footer .top-footer .useful-links {
       list-style: none;
       line-height: 35px; }
