@@ -51,6 +51,7 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
     font-family: $text;
     font-size: $font-s;
     font-weight: $regular;
+    line-height: 1.5rem;
 }
 
 @mixin dropdown-content {
