@@ -213,6 +213,290 @@ de los íconos.
 En el html, los títulos de las card, en los nombres de las personas 
 en testimonials y títulos del about us al lado de iconos colocarlo con el tag "h3".
 */
+.div {
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
+
+.conteiner {
+  background-color: #1445b3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*     width: 100%; */ }
+  @media (min-width: 768px) {
+    .conteiner {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: left;
+      justify-content: center;
+      padding-top: 4rem;
+      padding-bottom: 4rem; } }
+  .conteiner-img {
+    margin-top: 5rem;
+    width: 80%;
+    height: auto; }
+    @media (min-width: 768px) {
+      .conteiner-img {
+        max-width: 35%;
+        height: auto;
+        margin-left: 3rem;
+        margin-bottom: 3rem; } }
+  .conteiner-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 3rem; }
+    @media (min-width: 768px) {
+      .conteiner-info {
+        margin-right: 3rem;
+        margin-top: 2rem;
+        /* padding-left: 4rem; */ } }
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  @media (min-width: 768px) {
+    .btn {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: initial; } }
+  .btn__text {
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700; }
+  .btn__borde {
+    font-weight: bold;
+    border-radius: 5rem;
+    width: 11rem;
+    height: 3rem;
+    border: 2px solid #fff;
+    background-color: transparent;
+    margin-top: 1rem;
+    /* Este en desktop se va */
+    transition: all 0.3s ease-in-out; }
+    @media (min-width: 768px) {
+      .btn__borde {
+        margin-left: 1rem; } }
+    .btn__borde:hover {
+      background-color: #007bff;
+      border: none;
+      margin-top: 1rem; }
+  .btn__azul {
+    font-weight: bold;
+    border-radius: 5rem;
+    width: 11rem;
+    height: 3rem;
+    background-color: #007bff;
+    margin-top: 1rem;
+    border: none;
+    transition: all 0.3s ease-in-out; }
+    @media (min-width: 768px) {
+      .btn__azul {
+        width: 10rem; } }
+    .btn__azul:hover {
+      background-color: #1445b3;
+      border: 2px solid #fff;
+      margin-top: 1rem; }
+
+.titulo-hero {
+  color: #283d50;
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 0;
+  padding-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  font-size: 42px;
+  margin-bottom: 2rem;
+  /* Este en desktop se va */ }
+  @media (min-width: 768px) {
+    .titulo-hero {
+      font-size: 48px;
+      text-align: left; } }
+  .titulo-hero__link {
+    color: #82b5f6;
+    text-decoration: underline; }
+
+/* PUEDEN CAMBIAR LOS VALORES SI ES NECESARIO, 
+VERIFICANDO QUE NO AFECTE EL DISEÑO DE LAS DEMÁS */
+/* Utilizar este mixin para los títulos de cada sección.
+En el html, en cada sección colocar el tag "h1" para el título.
+*/
+/* Utilizar este mixin para el texto que esta debajo de los títulos y en 
+la profesión (lo que esta debajo del nombre de la persona en testimonials). 
+En el html, debajo de los títulos de la sección y debajo del nombre de la
+persona en testimonials colocarlo con el tag "h4".
+*/
+/* Utilizar este mixin para los títulos de las cards, en los nombres de las 
+personas en testimonials y en el about us en los títulos que están a un lado
+de los íconos.
+En el html, los títulos de las card, en los nombres de las personas 
+en testimonials y títulos del about us al lado de iconos colocarlo con el tag "h3".
+*/
+.About {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  @media (min-width: 414px) {
+    .About {
+      display: flex;
+      align-items: center;
+      justify-content: center; } }
+  .About__title {
+    color: #283d50;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding-top: 10px;
+    text-align: center; }
+  .About__texto {
+    color: #383838;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5rem;
+    font-size: 14px; }
+    @media (min-width: 414px) {
+      .About__texto {
+        margin-bottom: 3rem;
+        text-align: center; } }
+
+.box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  @media (min-width: 768px) {
+    .box {
+      width: 70%;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 3rem; } }
+  @media (min-width: 768px) {
+    .box__izq {
+      width: 55%;
+      display: flex;
+      flex-direction: column;
+      padding-right: 3rem; }
+      .box__izq--reverse {
+        margin-left: 3rem; } }
+  .box__txt {
+    color: #383838;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5rem;
+    font-size: 14px; }
+    @media (min-width: 768px) {
+      .box__txt {
+        width: 100%; } }
+  .box__img {
+    width: 90%;
+    height: auto; }
+    @media (min-width: 768px) {
+      .box__img {
+        width: 45%;
+        margin-left: 1rem; } }
+  .box__icon {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: start; }
+    @media (min-width: 414px) {
+      .box__icon {
+        width: 80;
+        display: flex;
+        flex-direction: row; } }
+  .box__icono {
+    /*   width: 20%; */
+    display: flex;
+    justify-content: left;
+    align-items: flex-start; }
+    @media (min-width: 768px) {
+      .box__icono {
+        /*  padding-top: 1rem; */ } }
+  .box__info__title {
+    color: #383838;
+    text-align: left;
+    font-weight: bolder;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif; }
+  .box__info__txt {
+    color: #383838;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5rem;
+    font-size: 14px; }
+  .box__subtitle {
+    color: #383838;
+    font-family: "Montserrat", sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    text-align: left; }
+  @media (min-width: 768px) {
+    .box--reverse {
+      width: 70%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 3rem; } }
+
+@media (min-width: 768px) {
+  .icon_conteiner {
+    display: flex;
+    flex-direction: row;
+    width: 90%; } }
+
+.icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 7rem;
+  border: 2px solid #007bff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  color: #007bff;
+  transition: all 0.3s ease-in-out; }
+  .icon:hover {
+    background-color: #007bff;
+    color: #fff; }
+
+/* PUEDEN CAMBIAR LOS VALORES SI ES NECESARIO, 
+VERIFICANDO QUE NO AFECTE EL DISEÑO DE LAS DEMÁS */
+/* Utilizar este mixin para los títulos de cada sección.
+En el html, en cada sección colocar el tag "h1" para el título.
+*/
+/* Utilizar este mixin para el texto que esta debajo de los títulos y en 
+la profesión (lo que esta debajo del nombre de la persona en testimonials). 
+En el html, debajo de los títulos de la sección y debajo del nombre de la
+persona en testimonials colocarlo con el tag "h4".
+*/
+/* Utilizar este mixin para los títulos de las cards, en los nombres de las 
+personas en testimonials y en el about us en los títulos que están a un lado
+de los íconos.
+En el html, los títulos de las card, en los nombres de las personas 
+en testimonials y títulos del about us al lado de iconos colocarlo con el tag "h3".
+*/
 .contact-container {
   width: 100%;
   padding: 20px 0px 40px 0px;
