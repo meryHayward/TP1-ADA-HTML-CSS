@@ -1,0 +1,42 @@
+.portfolio-content {
+    .portfolio-overlay {
+        left: 50%;
+        opacity: 0;
+        position: absolute;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        transition: .3s linear;
+        top: 50%;
+        h4 {
+            color: $white;
+            font-family: $title;
+            font-size: 22px;
+            margin: 0;
+            transition: all .3s linear;
+            &:hover {
+                color: $lightblue;
+            }
+        }
+        p {
+            color: $white;
+            font-family: $text;
+            font-size: 14px;
+            margin: 2px;
+            text-transform: uppercase;
+        }
+        .fa-eye, .fa-external-link-alt {
+            background-color: $lightblue;
+            border-radius: 50%;
+            color: $white;
+            font-size: $font-m;
+            height: 36px;
+            line-height: 2.4;
+            margin: 10px 4px 0px;
+            text-align: center;
+            width: 36px;
+        }
+    }
+    &:hover .portfolio-overlay {
+        opacity: 1;
+    }
+}

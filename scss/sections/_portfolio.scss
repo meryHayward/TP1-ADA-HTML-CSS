@@ -1,0 +1,65 @@
+@import "../components/portfolioButtons";
+@import "../components/portfolioOverlay";
+@import "../components/portfolioModal";
+
+#portfolio {
+    background-color: $white;
+    height: auto;
+    padding: 48px 0;
+    h1 {
+        @include title-h1;
+        padding-bottom: 48px;
+    }
+    .portfolio-container {  
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px 15px;
+        @include breakpoint-tablet {
+            padding: 0 25px 30px 25px;
+        }
+        @include breakpoint-tablet-desktop {
+            padding: 0 118px 30px 118px;
+        }
+        @include breakpoint-desktop-1 {
+            padding: 0 35px 30px 35px;
+        }
+        @include breakpoint-desktop-2 {
+            padding: 0 30px 30px 30px;
+        }
+        @include breakpoint-desktop-3 {
+            padding: 0 105px 30px 105px;
+        }
+        .portfolio-content {
+            background-color: #356188;
+            border-radius: 6px;
+            height: 250px;
+            margin: 13px 0;
+            overflow: hidden;
+            position: relative;
+            @include breakpoint-tablet {
+                margin: 15px;
+                width: 329px;
+            }
+            @include breakpoint-desktop-1 {
+                width: 288px;
+            }
+            @include breakpoint-desktop-2 {
+                width: 350px;
+            }
+            @include breakpoint-desktop-3 {
+                width: 349px;
+            }
+            img {
+                display: block;
+                height: 100%;
+                object-fit: cover;
+                opacity: 1;
+                transition: .3s linear;
+                width: 100%;
+            }
+            &:hover img {
+                opacity: 0.3;
+            }
+        }
+    }   
+}
