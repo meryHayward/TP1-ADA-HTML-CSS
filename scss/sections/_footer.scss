@@ -81,11 +81,11 @@
                     border-radius: 50%;
                     background-color: $lightblue;
                     margin-left: 5px;
-                }
-                .media-icons-share:hover {
-                    cursor: pointer;
-                    background-color: #0062cc;
-                    transition: 0.3;
+                    &:hover {
+                        cursor: pointer;
+                        background-color: #0062cc;
+                        transition: 0.3;
+                    }
                 }
                 .media-icon {    
                     text-align: center;
@@ -113,11 +113,11 @@
                 margin-left: -4px;
                 font-size: 14px;
                 border-style: none;
-            }
-            .footer-button:hover {
-                cursor: pointer;
-                background-color: #0062cc;
-                transition: 0.3;
+                &:hover {
+                    cursor: pointer;
+                    background-color: #0062cc;
+                    transition: 0.3;
+                }
             }
         }  
     }

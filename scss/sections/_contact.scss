@@ -14,7 +14,6 @@
         @include breakpoint-desktop-1 {
             flex-direction: row;
             width: 100%;
-        
         }
         .contact-us-map {
             margin: 50px 15px 15px 15px;
@@ -78,12 +77,12 @@
                     @include breakpoint-desktop-1 {
                         width: 99%;
                     }
-                }
-                .contact-us-input:focus {
-                    color: #495057;
-                    background-color: $white;
-                    border-color: #80bdff;
-                    outline: 0;
+                    &:focus {
+                        color: #495057;
+                        background-color: $white;
+                        border-color: #80bdff;
+                        outline: 0;
+                    }
                 }
                 .contact-us-textarea {
                     height: 100px;
@@ -98,12 +97,12 @@
                     @include breakpoint-desktop-1 {
                         width: 99%;
                     }
-                }
-                .contact-us-textarea:focus {
-                    color: #495057;
-                    background-color: $white;
-                    border-color: #80bdff;
-                    outline: 0;
+                    &:focus {
+                        color: #495057;
+                        background-color: $white;
+                        border-color: #80bdff;
+                        outline: 0;  
+                    }
                 }
                 .contact-us-form-row {
                     display: flex;
@@ -133,11 +132,11 @@
                     @include breakpoint-desktop-1 {
                         width: 25%;
                     }
-                }
-                .contac-us-send-button:hover {
-                    cursor: pointer;
-                    background-color: #0062cc;
-                    transition: 0.3;
+                    &:hover {
+                        cursor: pointer;
+                        background-color: #0062cc;
+                        transition: 0.3;
+                    }
                 }
             }         
         }

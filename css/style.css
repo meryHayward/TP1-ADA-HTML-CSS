@@ -574,11 +574,11 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
           @media (min-width: 1024px) {
             .contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-input {
               width: 99%; } }
-        .contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-input:focus {
-          color: #495057;
-          background-color: #fff;
-          border-color: #80bdff;
-          outline: 0; }
+          .contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-input:focus {
+            color: #495057;
+            background-color: #fff;
+            border-color: #80bdff;
+            outline: 0; }
         .contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-textarea {
           height: 100px;
           width: 100%;
@@ -592,11 +592,11 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
           @media (min-width: 1024px) {
             .contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-textarea {
               width: 99%; } }
-        .contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-textarea:focus {
-          color: #495057;
-          background-color: #fff;
-          border-color: #80bdff;
-          outline: 0; }
+          .contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-textarea:focus {
+            color: #495057;
+            background-color: #fff;
+            border-color: #80bdff;
+            outline: 0; }
         .contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-form-row {
           display: flex;
           flex-direction: column; }
@@ -622,10 +622,10 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
           @media (min-width: 1024px) {
             .contact-container .contact-us-body .contact-us-information .contact-us-form .contac-us-send-button {
               width: 25%; } }
-        .contact-container .contact-us-body .contact-us-information .contact-us-form .contac-us-send-button:hover {
-          cursor: pointer;
-          background-color: #0062cc;
-          transition: 0.3; }
+          .contact-container .contact-us-body .contact-us-information .contact-us-form .contac-us-send-button:hover {
+            cursor: pointer;
+            background-color: #0062cc;
+            transition: 0.3; }
 
 /* PUEDEN CAMBIAR LOS VALORES SI ES NECESARIO, 
 VERIFICANDO QUE NO AFECTE EL DISEÑO DE LAS DEMÁS */
@@ -718,10 +718,10 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
           border-radius: 50%;
           background-color: #007bff;
           margin-left: 5px; }
-        .container-footer .top-footer .contact-us .media-icon-container .media-icons-share:hover {
-          cursor: pointer;
-          background-color: #0062cc;
-          transition: 0.3; }
+          .container-footer .top-footer .contact-us .media-icon-container .media-icons-share:hover {
+            cursor: pointer;
+            background-color: #0062cc;
+            transition: 0.3; }
         .container-footer .top-footer .contact-us .media-icon-container .media-icon {
           text-align: center;
           margin-top: 8px;
@@ -744,10 +744,10 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
         margin-left: -4px;
         font-size: 14px;
         border-style: none; }
-      .container-footer .top-footer .our-newsletter .footer-button:hover {
-        cursor: pointer;
-        background-color: #0062cc;
-        transition: 0.3; }
+        .container-footer .top-footer .our-newsletter .footer-button:hover {
+          cursor: pointer;
+          background-color: #0062cc;
+          transition: 0.3; }
   .container-footer .bottom-footer {
     background-color: #00428a;
     width: 100%;
