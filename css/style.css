@@ -449,31 +449,33 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
     background-color: #007bff;
     color: #fff; }
 
-button {
-  background-color: transparent;
-  border: none;
-  font-family: "Open Sans", sans-serif;
-  padding: 0;
-  text-transform: uppercase; }
-  @media (min-width: 768px) {
-    button {
-      padding-bottom: 35px; } }
-  button a {
-    background-color: #ecf5ff;
-    border-radius: 25px;
-    color: #007bff;
-    margin: 2px;
-    padding: 7px 18px;
-    transition: all 0.3s ease-in-out; }
-    @media (min-width: 414px) {
-      button a {
-        margin: 8px; } }
-    button a.active {
-      background-color: #007bff;
-      color: #fff; }
-    button a:hover {
-      background-color: #007bff;
-      color: #fff; }
+.buttons {
+  text-align: center; }
+  .buttons button {
+    background-color: transparent;
+    border: none;
+    font-family: "Open Sans", sans-serif;
+    padding: 0;
+    text-transform: uppercase; }
+    @media (min-width: 768px) {
+      .buttons button {
+        padding-bottom: 35px; } }
+    .buttons button a {
+      background-color: #ecf5ff;
+      border-radius: 25px;
+      color: #007bff;
+      margin: 2px;
+      padding: 7px 18px;
+      transition: all 0.3s ease-in-out; }
+      @media (min-width: 414px) {
+        .buttons button a {
+          margin: 8px; } }
+      .buttons button a.active {
+        background-color: #007bff;
+        color: #fff; }
+      .buttons button a:hover {
+        background-color: #007bff;
+        color: #fff; }
 
 .portfolio-content .portfolio-overlay {
   left: 50%;
@@ -620,13 +622,8 @@ button {
         padding: 0 118px 30px 118px; } }
     @media (min-width: 1024px) {
       #portfolio .portfolio-container {
-        padding: 0 35px 30px 35px; } }
-    @media (min-width: 1200px) {
-      #portfolio .portfolio-container {
-        padding: 0 30px 30px 30px; } }
-    @media (min-width: 1300px) {
-      #portfolio .portfolio-container {
-        padding: 0 105px 30px 105px; } }
+        justify-content: center;
+        padding: 0 20px 30px 20px; } }
     #portfolio .portfolio-container .portfolio-content {
       background-color: #356188;
       border-radius: 6px;
@@ -644,9 +641,6 @@ button {
       @media (min-width: 1200px) {
         #portfolio .portfolio-container .portfolio-content {
           width: 350px; } }
-      @media (min-width: 1300px) {
-        #portfolio .portfolio-container .portfolio-content {
-          width: 349px; } }
       #portfolio .portfolio-container .portfolio-content img {
         display: block;
         height: 100%;
@@ -673,9 +667,6 @@ button {
   @media (min-width: 1200px) {
     #clients {
       padding: 20px 46px; } }
-  @media (min-width: 1300px) {
-    #clients {
-      padding: 20px 120px; } }
   #clients h1 {
     color: #283d50;
     font-family: "Montserrat", sans-serif;
@@ -698,13 +689,16 @@ button {
     @media (min-width: 768px) {
       #clients h4 {
         width: 50%; } }
+    @media (min-width: 1300px) {
+      #clients h4 {
+        width: 45%; } }
   #clients .clients-container {
-    border-left: 1px solid #d6eaff;
-    border-top: 1px solid #d6eaff;
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 65px;
     width: 100%; }
+    @media (min-width: 1024px) {
+      #clients .clients-container {
+        justify-content: center; } }
     #clients .clients-container .clients-img {
       align-items: center;
       background-color: #fff;
@@ -739,31 +733,33 @@ button {
       #clients .clients-container .clients-img:hover img {
         transform: scale(1.2); }
 
-button {
-  background-color: transparent;
-  border: none;
-  font-family: "Open Sans", sans-serif;
-  padding: 0;
-  text-transform: uppercase; }
-  @media (min-width: 768px) {
-    button {
-      padding-bottom: 35px; } }
-  button a {
-    background-color: #ecf5ff;
-    border-radius: 25px;
-    color: #007bff;
-    margin: 2px;
-    padding: 7px 18px;
-    transition: all 0.3s ease-in-out; }
-    @media (min-width: 414px) {
-      button a {
-        margin: 8px; } }
-    button a.active {
-      background-color: #007bff;
-      color: #fff; }
-    button a:hover {
-      background-color: #007bff;
-      color: #fff; }
+.buttons {
+  text-align: center; }
+  .buttons button {
+    background-color: transparent;
+    border: none;
+    font-family: "Open Sans", sans-serif;
+    padding: 0;
+    text-transform: uppercase; }
+    @media (min-width: 768px) {
+      .buttons button {
+        padding-bottom: 35px; } }
+    .buttons button a {
+      background-color: #ecf5ff;
+      border-radius: 25px;
+      color: #007bff;
+      margin: 2px;
+      padding: 7px 18px;
+      transition: all 0.3s ease-in-out; }
+      @media (min-width: 414px) {
+        .buttons button a {
+          margin: 8px; } }
+      .buttons button a.active {
+        background-color: #007bff;
+        color: #fff; }
+      .buttons button a:hover {
+        background-color: #007bff;
+        color: #fff; }
 
 .portfolio-content .portfolio-overlay {
   left: 50%;
@@ -910,13 +906,8 @@ button {
         padding: 0 118px 30px 118px; } }
     @media (min-width: 1024px) {
       #portfolio .portfolio-container {
-        padding: 0 35px 30px 35px; } }
-    @media (min-width: 1200px) {
-      #portfolio .portfolio-container {
-        padding: 0 30px 30px 30px; } }
-    @media (min-width: 1300px) {
-      #portfolio .portfolio-container {
-        padding: 0 105px 30px 105px; } }
+        justify-content: center;
+        padding: 0 20px 30px 20px; } }
     #portfolio .portfolio-container .portfolio-content {
       background-color: #356188;
       border-radius: 6px;
@@ -934,9 +925,6 @@ button {
       @media (min-width: 1200px) {
         #portfolio .portfolio-container .portfolio-content {
           width: 350px; } }
-      @media (min-width: 1300px) {
-        #portfolio .portfolio-container .portfolio-content {
-          width: 349px; } }
       #portfolio .portfolio-container .portfolio-content img {
         display: block;
         height: 100%;
