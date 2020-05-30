@@ -26,7 +26,7 @@ persona en testimonials colocarlo con el tag "h4".
     font-weight: $regular;
     line-height: 22px;
     margin: auto;
-    padding-top: 18px;
+    padding-top: 20px;
     text-align: center;
     width: 100%;
 }
@@ -105,6 +105,12 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
 
 @mixin breakpoint-desktop-2 {
     @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin breakpoint-desktop-3 {
+    @media (min-width: 1300px) {
         @content;
     }
 }

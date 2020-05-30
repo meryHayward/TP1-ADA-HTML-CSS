@@ -1,122 +1,128 @@
-@import"../abstract/variables.scss";
-@import"../abstract/mixins.scss";
+#hero{
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ text-align: center;
+ background-color: $blue;
+ padding: 0 1rem;
+ @include breakpoint-desktop-1{
+     flex-direction: row-reverse;
+     padding: 9rem 3rem 8rem 3rem;
+     box-sizing: border-box;
 
-.div{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-}
-.conteiner{
-    background-color: $blue;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-      @include breakpoint-tablet {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: left;
-        justify-content: center;
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-    }
-/*     width: 100%; */
-    &-img{
-        margin-top: 5rem;
-        width: 80%;
-        height:auto;
-        @include breakpoint-tablet {
-         max-width: 35%;
-         height: auto;
-
-         margin-left: 3rem;
-         margin-bottom: 3rem;
-    }
-    }
-    &-info{  
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-self: center;
-    margin-bottom: 3rem;
-     @include breakpoint-tablet {
-        margin-right: 3rem;
-        margin-top: 2rem;   
-        /* padding-left: 4rem; */
-    }
-    }
-
-    }
-
- .btn{
-     @include breakpoint-tablet {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: initial;
-
-    }
-        display: flex;
-        align-items: center;
-        justify-content: center; 
-        flex-direction: column;
-        &__text{
-        font-family:$title;
-        color: $white;
-        font-size: 16px;
-        font-weight: 700;
+ }
+ @include breakpoint-desktop-3{
+        padding: 7rem 17rem 9rem 17rem;
         }
-        &__borde{
-            @include breakpoint-tablet {
-                margin-left: 1rem;
-    }
-        font-weight: bold;
+
+ 
+ .hero__img{
+     position: relative;
+     width: 100%;
+     padding-top: 6rem;
+     @include breakpoint-tablet{
+         padding-top: 8rem;
+     }
+     @include breakpoint-desktop-1{
+         width:50%;
+        padding-top: 2rem;
+     }
+
+     img{
+        width: 75%;
+        @include breakpoint-tablet{
+            padding:0px;
+        }
+        @include breakpoint-tablet-desktop{
+            width:65% ;
+        }
+        @include breakpoint-desktop-1{
+            width: 100%;
+        }
+        @include breakpoint-desktop-3{
+            padding-top: 3rem;
+        }
+     }
+ }
+ .hero__info{
+     position: relative;
+     width: 100%;
+     padding-bottom: 1rem;
+     @include breakpoint-tablet{
+         padding-bottom: 4rem;
+     }
+     @include breakpoint-desktop-1{
+         width: 50%;
+
+     }
+     h1{
+         @include title-h1;
+         color: $white;
+         font-weight: bold;
+         padding-bottom: 1rem;
+            @include breakpoint-tablet{
+            font-size: 48px;
+            padding-top: 0px;
+         }
+         @include breakpoint-desktop-1{
+             text-align: left;
+         }
+         span{
+             color: #82b5f6;
+             text-decoration: underline;
+         }
+     }
+     button{
+        display: block;
         border-radius: 5rem;
         width: 11rem;
         height: 3rem;
         border: 2px solid $white;
         background-color: transparent;
-        margin-top: 1rem;  /* Este en desktop se va */
+        margin: 20px auto;  
         transition: all 0.3s ease-in-out;
+        box-sizing: border-box;
+         @include breakpoint-mobile-2{
+            display: inline;
+            width: 10rem;
+            margin: 20px 10px;  
+        }
+        @include breakpoint-tablet-desktop{
+            width: 11rem;
+        }
+        @include breakpoint-desktop-1{
+            position: absolute;
+            left: 200px;
+
+        }
+        &.btn__azul{
+            background-color: $lightblue;
+            border: none;
+            @include breakpoint-desktop-1{
+                position: absolute;
+                left: 0;
+            }
+            &:hover{
+                border: 2px solid $white;
+                background-color: transparent;
+            }
+        }
+        a{
+          font-weight: bold;
+          font-family: $text;
+          color: $white;
+          font-size: $font-m;
+           @include breakpoint-mobile-2{
+            font-size: $font-s;
+        }
+        }
         &:hover {
         background-color: $lightblue;
         border: none;
-        margin-top: 1rem;
-        }
-        }
-        &__azul{
-            @include breakpoint-tablet {
-        width: 10rem;
-    } 
-        font-weight: bold;
-        border-radius: 5rem;
-        width: 11rem;
-        height: 3rem;
-        background-color: $lightblue;
-        margin-top: 1rem;
-        border: none;   
-        transition: all 0.3s ease-in-out;
-        &:hover {
-        background-color: $blue;
-        border: 2px solid $white;
-        margin-top: 1rem;
-        }
-        
-        }
-            
-    }
-
-.titulo-hero{
-     @include breakpoint-tablet {
-        font-size: 48px;
-        text-align: left;
-    }
-    @include title-h1;
-    font-weight: bold;
-    color: $white;
-    font-size: 42px;
-    margin-bottom: 2rem; /* Este en desktop se va */
-    &__link{
-        color: #82b5f6;
-        text-decoration: underline;
-    } 
+        margin-top: 1rem;  
+    
+     }
+ 
+}
+ }
 }

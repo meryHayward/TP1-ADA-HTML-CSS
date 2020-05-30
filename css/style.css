@@ -197,150 +197,122 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
               overflow: hidden;
               transition: 0.8s cubic-bezier(0, 1, 0, 1); }
 
-/* PUEDEN CAMBIAR LOS VALORES SI ES NECESARIO, 
-VERIFICANDO QUE NO AFECTE EL DISEÑO DE LAS DEMÁS */
-/* Utilizar este mixin para los títulos de cada sección.
-En el html, en cada sección colocar el tag "h1" para el título.
-*/
-/* Utilizar este mixin para el texto que esta debajo de los títulos y en 
-la profesión (lo que esta debajo del nombre de la persona en testimonials). 
-En el html, debajo de los títulos de la sección y debajo del nombre de la
-persona en testimonials colocarlo con el tag "h4".
-*/
-/* Utilizar este mixin para los títulos de las cards, en los nombres de las 
-personas en testimonials y en el about us en los títulos que están a un lado
-de los íconos.
-En el html, los títulos de las card, en los nombres de las personas 
-en testimonials y títulos del about us al lado de iconos colocarlo con el tag "h3".
-*/
-.div {
-  padding-top: 4rem;
-  padding-bottom: 4rem; }
-
-.conteiner {
-  background-color: #1445b3;
+#hero {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  /*     width: 100%; */ }
-  @media (min-width: 768px) {
-    .conteiner {
-      display: flex;
-      flex-direction: row-reverse;
-      align-items: left;
-      justify-content: center;
-      padding-top: 4rem;
-      padding-bottom: 4rem; } }
-  .conteiner-img {
-    margin-top: 5rem;
-    width: 80%;
-    height: auto; }
-    @media (min-width: 768px) {
-      .conteiner-img {
-        max-width: 35%;
-        height: auto;
-        margin-left: 3rem;
-        margin-bottom: 3rem; } }
-  .conteiner-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    margin-bottom: 3rem; }
-    @media (min-width: 768px) {
-      .conteiner-info {
-        margin-right: 3rem;
-        margin-top: 2rem;
-        /* padding-left: 4rem; */ } }
-
-.btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; }
-  @media (min-width: 768px) {
-    .btn {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: initial; } }
-  .btn__text {
-    font-family: "Montserrat", sans-serif;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 700; }
-  .btn__borde {
-    font-weight: bold;
-    border-radius: 5rem;
-    width: 11rem;
-    height: 3rem;
-    border: 2px solid #fff;
-    background-color: transparent;
-    margin-top: 1rem;
-    /* Este en desktop se va */
-    transition: all 0.3s ease-in-out; }
-    @media (min-width: 768px) {
-      .btn__borde {
-        margin-left: 1rem; } }
-    .btn__borde:hover {
-      background-color: #007bff;
-      border: none;
-      margin-top: 1rem; }
-  .btn__azul {
-    font-weight: bold;
-    border-radius: 5rem;
-    width: 11rem;
-    height: 3rem;
-    background-color: #007bff;
-    margin-top: 1rem;
-    border: none;
-    transition: all 0.3s ease-in-out; }
-    @media (min-width: 768px) {
-      .btn__azul {
-        width: 10rem; } }
-    .btn__azul:hover {
-      background-color: #1445b3;
-      border: 2px solid #fff;
-      margin-top: 1rem; }
-
-.titulo-hero {
-  color: #283d50;
-  font-family: "Montserrat", sans-serif;
-  font-size: 36px;
-  font-weight: 500;
-  margin-bottom: 0;
-  padding-top: 10px;
   text-align: center;
-  font-weight: bold;
-  color: #fff;
-  font-size: 42px;
-  margin-bottom: 2rem;
-  /* Este en desktop se va */ }
-  @media (min-width: 768px) {
-    .titulo-hero {
-      font-size: 48px;
-      text-align: left; } }
-  .titulo-hero__link {
-    color: #82b5f6;
-    text-decoration: underline; }
+  background-color: #1445b3;
+  padding: 0 1rem; }
+  @media (min-width: 1024px) {
+    #hero {
+      flex-direction: row-reverse;
+      padding: 9rem 3rem 8rem 3rem;
+      box-sizing: border-box; } }
+  @media (min-width: 1300px) {
+    #hero {
+      padding: 7rem 17rem 9rem 17rem; } }
+  #hero .hero__img {
+    position: relative;
+    width: 100%;
+    padding-top: 6rem; }
+    @media (min-width: 768px) {
+      #hero .hero__img {
+        padding-top: 8rem; } }
+    @media (min-width: 1024px) {
+      #hero .hero__img {
+        width: 50%;
+        padding-top: 2rem; } }
+    #hero .hero__img img {
+      width: 75%; }
+      @media (min-width: 768px) {
+        #hero .hero__img img {
+          padding: 0px; } }
+      @media (min-width: 955px) {
+        #hero .hero__img img {
+          width: 65%; } }
+      @media (min-width: 1024px) {
+        #hero .hero__img img {
+          width: 100%; } }
+      @media (min-width: 1300px) {
+        #hero .hero__img img {
+          padding-top: 3rem; } }
+  #hero .hero__info {
+    position: relative;
+    width: 100%;
+    padding-bottom: 1rem; }
+    @media (min-width: 768px) {
+      #hero .hero__info {
+        padding-bottom: 4rem; } }
+    @media (min-width: 1024px) {
+      #hero .hero__info {
+        width: 50%; } }
+    #hero .hero__info h1 {
+      color: #283d50;
+      font-family: "Montserrat", sans-serif;
+      font-size: 36px;
+      font-weight: 500;
+      margin-bottom: 0;
+      padding-top: 10px;
+      text-align: center;
+      color: #fff;
+      font-weight: bold;
+      padding-bottom: 1rem; }
+      @media (min-width: 768px) {
+        #hero .hero__info h1 {
+          font-size: 48px;
+          padding-top: 0px; } }
+      @media (min-width: 1024px) {
+        #hero .hero__info h1 {
+          text-align: left; } }
+      #hero .hero__info h1 span {
+        color: #82b5f6;
+        text-decoration: underline; }
+    #hero .hero__info button {
+      display: block;
+      border-radius: 5rem;
+      width: 11rem;
+      height: 3rem;
+      border: 2px solid #fff;
+      background-color: transparent;
+      margin: 20px auto;
+      transition: all 0.3s ease-in-out;
+      box-sizing: border-box; }
+      @media (min-width: 414px) {
+        #hero .hero__info button {
+          display: inline;
+          width: 10rem;
+          margin: 20px 10px; } }
+      @media (min-width: 955px) {
+        #hero .hero__info button {
+          width: 11rem; } }
+      @media (min-width: 1024px) {
+        #hero .hero__info button {
+          position: absolute;
+          left: 200px; } }
+      #hero .hero__info button.btn__azul {
+        background-color: #007bff;
+        border: none; }
+        @media (min-width: 1024px) {
+          #hero .hero__info button.btn__azul {
+            position: absolute;
+            left: 0; } }
+        #hero .hero__info button.btn__azul:hover {
+          border: 2px solid #fff;
+          background-color: transparent; }
+      #hero .hero__info button a {
+        font-weight: bold;
+        font-family: "Open Sans", sans-serif;
+        color: #fff;
+        font-size: 15px; }
+        @media (min-width: 414px) {
+          #hero .hero__info button a {
+            font-size: 12px; } }
+      #hero .hero__info button:hover {
+        background-color: #007bff;
+        border: none;
+        margin-top: 1rem; }
 
-/* PUEDEN CAMBIAR LOS VALORES SI ES NECESARIO, 
-VERIFICANDO QUE NO AFECTE EL DISEÑO DE LAS DEMÁS */
-/* Utilizar este mixin para los títulos de cada sección.
-En el html, en cada sección colocar el tag "h1" para el título.
-*/
-/* Utilizar este mixin para el texto que esta debajo de los títulos y en 
-la profesión (lo que esta debajo del nombre de la persona en testimonials). 
-En el html, debajo de los títulos de la sección y debajo del nombre de la
-persona en testimonials colocarlo con el tag "h4".
-*/
-/* Utilizar este mixin para los títulos de las cards, en los nombres de las 
-personas en testimonials y en el about us en los títulos que están a un lado
-de los íconos.
-En el html, los títulos de las card, en los nombres de las personas 
-en testimonials y títulos del about us al lado de iconos colocarlo con el tag "h3".
-*/
 .About {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -480,6 +452,290 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
   .icon:hover {
     background-color: #007bff;
     color: #fff; }
+
+.buttons {
+  text-align: center; }
+  .buttons button {
+    background-color: transparent;
+    border: none;
+    font-family: "Open Sans", sans-serif;
+    padding: 0;
+    text-transform: uppercase; }
+    @media (min-width: 768px) {
+      .buttons button {
+        padding-bottom: 35px; } }
+    .buttons button a {
+      background-color: #ecf5ff;
+      border-radius: 25px;
+      color: #007bff;
+      margin: 2px;
+      padding: 7px 18px;
+      transition: all 0.3s ease-in-out; }
+      @media (min-width: 414px) {
+        .buttons button a {
+          margin: 8px; } }
+      .buttons button a.active {
+        background-color: #007bff;
+        color: #fff; }
+      .buttons button a:hover {
+        background-color: #007bff;
+        color: #fff; }
+
+.portfolio-content .portfolio-overlay {
+  left: 50%;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  transition: .3s linear;
+  top: 50%; }
+  .portfolio-content .portfolio-overlay h4 {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    margin: 0;
+    transition: all .3s linear; }
+    .portfolio-content .portfolio-overlay h4:hover {
+      color: #007bff; }
+  .portfolio-content .portfolio-overlay p {
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    margin: 2px;
+    text-transform: uppercase; }
+  .portfolio-content .portfolio-overlay .fa-eye, .portfolio-content .portfolio-overlay .fa-external-link-alt {
+    background-color: #007bff;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 15px;
+    height: 36px;
+    line-height: 2.4;
+    margin: 10px 4px 0px;
+    text-align: center;
+    width: 36px; }
+
+.portfolio-content:hover .portfolio-overlay {
+  opacity: 1; }
+
+.portfolio-modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: all 1s;
+  z-index: 100; }
+  .portfolio-modal:target {
+    opacity: 1;
+    pointer-events: auto; }
+  .portfolio-modal figure {
+    margin: 15% auto;
+    width: 94%; }
+    @media (min-width: 414px) {
+      .portfolio-modal figure {
+        margin: 12% auto;
+        width: 95%; } }
+    @media (min-width: 768px) {
+      .portfolio-modal figure {
+        margin: 7% auto;
+        width: 75%; } }
+    @media (min-width: 955px) {
+      .portfolio-modal figure {
+        margin: 5% auto;
+        width: 80%; } }
+    @media (min-width: 1024px) {
+      .portfolio-modal figure {
+        width: 86%; } }
+    @media (min-width: 1200px) {
+      .portfolio-modal figure {
+        margin: 4% auto;
+        width: 73%; } }
+    @media (min-width: 1300px) {
+      .portfolio-modal figure {
+        width: 37%; } }
+    .portfolio-modal figure img {
+      background-color: #fff;
+      border: 4px solid #fff;
+      border-radius: 4px;
+      box-sizing: border-box;
+      width: 100%; }
+    @media (min-width: 768px) {
+      .portfolio-modal figure.img-rectangular {
+        width: 98%; } }
+    @media (min-width: 1300px) {
+      .portfolio-modal figure.img-rectangular {
+        width: 55%; } }
+    .portfolio-modal figure.img-large {
+      width: 85%; }
+      @media (min-width: 414px) {
+        .portfolio-modal figure.img-large {
+          width: 65%; } }
+      @media (min-width: 768px) {
+        .portfolio-modal figure.img-large {
+          width: 51%; } }
+      @media (min-width: 1024px) {
+        .portfolio-modal figure.img-large {
+          width: 58%; } }
+      @media (min-width: 1200px) {
+        .portfolio-modal figure.img-large {
+          width: 49%; } }
+      @media (min-width: 1300px) {
+        .portfolio-modal figure.img-large {
+          width: 24%; } }
+    .portfolio-modal figure figcaption {
+      color: #ecf5ff;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 5px; }
+      .portfolio-modal figure figcaption p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        margin: 0; }
+        .portfolio-modal figure figcaption p small {
+          color: rgba(236, 245, 255, 0.439);
+          font-weight: 400; }
+      .portfolio-modal figure figcaption a {
+        font-size: 30px; }
+
+#portfolio {
+  background-color: #fff;
+  height: auto;
+  padding: 48px 0; }
+  #portfolio h1 {
+    color: #283d50;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 48px; }
+  #portfolio .portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 15px; }
+    @media (min-width: 768px) {
+      #portfolio .portfolio-container {
+        padding: 0 25px 30px 25px; } }
+    @media (min-width: 955px) {
+      #portfolio .portfolio-container {
+        padding: 0 118px 30px 118px; } }
+    @media (min-width: 1024px) {
+      #portfolio .portfolio-container {
+        justify-content: center;
+        padding: 0 20px 30px 20px; } }
+    #portfolio .portfolio-container .portfolio-content {
+      background-color: #356188;
+      border-radius: 6px;
+      height: 250px;
+      margin: 13px 0;
+      overflow: hidden;
+      position: relative; }
+      @media (min-width: 768px) {
+        #portfolio .portfolio-container .portfolio-content {
+          margin: 15px;
+          width: 329px; } }
+      @media (min-width: 1024px) {
+        #portfolio .portfolio-container .portfolio-content {
+          width: 288px; } }
+      @media (min-width: 1200px) {
+        #portfolio .portfolio-container .portfolio-content {
+          width: 350px; } }
+      #portfolio .portfolio-container .portfolio-content img {
+        display: block;
+        height: 100%;
+        object-fit: cover;
+        opacity: 1;
+        transition: .3s linear;
+        width: 100%; }
+      #portfolio .portfolio-container .portfolio-content:hover img {
+        opacity: 0.3; }
+
+#clients {
+  background-color: #ecf5ff;
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  padding: 18px 16px; }
+  @media (min-width: 768px) {
+    #clients {
+      padding: 20px 40px; } }
+  @media (min-width: 955px) {
+    #clients {
+      padding: 20px 134px; } }
+  @media (min-width: 1024px) {
+    #clients {
+      padding: 20px 50px; } }
+  @media (min-width: 1200px) {
+    #clients {
+      padding: 20px 46px; } }
+  #clients h1 {
+    color: #283d50;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding-top: 10px;
+    text-align: center; }
+  #clients h4 {
+    color: #556877;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: auto;
+    padding-top: 20px;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 60px; }
+    @media (min-width: 768px) {
+      #clients h4 {
+        width: 50%; } }
+    @media (min-width: 1300px) {
+      #clients h4 {
+        width: 45%; } }
+  #clients .clients-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; }
+    @media (min-width: 1024px) {
+      #clients .clients-container {
+        justify-content: center; } }
+    #clients .clients-container .clients-img {
+      align-items: center;
+      background-color: #fff;
+      border-bottom: 1px solid #d6eaff;
+      border-right: 1px solid #d6eaff;
+      display: flex;
+      height: 160px;
+      justify-content: center;
+      overflow: hidden;
+      width: 100%; }
+      @media (min-width: 768px) {
+        #clients .clients-container .clients-img {
+          width: 228px; } }
+      @media (min-width: 1024px) {
+        #clients .clients-container .clients-img {
+          width: 230px; } }
+      @media (min-width: 1200px) {
+        #clients .clients-container .clients-img {
+          width: 276px; } }
+      #clients .clients-container .clients-img img {
+        transition: all .4s ease-in-out;
+        width: 55%; }
+        @media (min-width: 414px) {
+          #clients .clients-container .clients-img img {
+            width: 65%; } }
+        @media (min-width: 768px) {
+          #clients .clients-container .clients-img img {
+            width: 45%; } }
+        @media (min-width: 1200px) {
+          #clients .clients-container .clients-img img {
+            width: 55%; } }
+      #clients .clients-container .clients-img:hover img {
+        transform: scale(1.2); }
 
 /* PUEDEN CAMBIAR LOS VALORES SI ES NECESARIO, 
 VERIFICANDO QUE NO AFECTE EL DISEÑO DE LAS DEMÁS */
@@ -766,6 +1022,208 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
       margin-top: 0px;
       margin-bottom: 32px;
       font-size: 13px; }
+
+.buttons {
+  text-align: center; }
+  .buttons button {
+    background-color: transparent;
+    border: none;
+    font-family: "Open Sans", sans-serif;
+    padding: 0;
+    text-transform: uppercase; }
+    @media (min-width: 768px) {
+      .buttons button {
+        padding-bottom: 35px; } }
+    .buttons button a {
+      background-color: #ecf5ff;
+      border-radius: 25px;
+      color: #007bff;
+      margin: 2px;
+      padding: 7px 18px;
+      transition: all 0.3s ease-in-out; }
+      @media (min-width: 414px) {
+        .buttons button a {
+          margin: 8px; } }
+      .buttons button a.active {
+        background-color: #007bff;
+        color: #fff; }
+      .buttons button a:hover {
+        background-color: #007bff;
+        color: #fff; }
+
+.portfolio-content .portfolio-overlay {
+  left: 50%;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  transition: .3s linear;
+  top: 50%; }
+  .portfolio-content .portfolio-overlay h4 {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    margin: 0;
+    transition: all .3s linear; }
+    .portfolio-content .portfolio-overlay h4:hover {
+      color: #007bff; }
+  .portfolio-content .portfolio-overlay p {
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    margin: 2px;
+    text-transform: uppercase; }
+  .portfolio-content .portfolio-overlay .fa-eye, .portfolio-content .portfolio-overlay .fa-external-link-alt {
+    background-color: #007bff;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 15px;
+    height: 36px;
+    line-height: 2.4;
+    margin: 10px 4px 0px;
+    text-align: center;
+    width: 36px; }
+
+.portfolio-content:hover .portfolio-overlay {
+  opacity: 1; }
+
+.portfolio-modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: all 1s;
+  z-index: 100; }
+  .portfolio-modal:target {
+    opacity: 1;
+    pointer-events: auto; }
+  .portfolio-modal figure {
+    margin: 15% auto;
+    width: 94%; }
+    @media (min-width: 414px) {
+      .portfolio-modal figure {
+        margin: 12% auto;
+        width: 95%; } }
+    @media (min-width: 768px) {
+      .portfolio-modal figure {
+        margin: 7% auto;
+        width: 75%; } }
+    @media (min-width: 955px) {
+      .portfolio-modal figure {
+        margin: 5% auto;
+        width: 80%; } }
+    @media (min-width: 1024px) {
+      .portfolio-modal figure {
+        width: 86%; } }
+    @media (min-width: 1200px) {
+      .portfolio-modal figure {
+        margin: 4% auto;
+        width: 73%; } }
+    @media (min-width: 1300px) {
+      .portfolio-modal figure {
+        width: 37%; } }
+    .portfolio-modal figure img {
+      background-color: #fff;
+      border: 4px solid #fff;
+      border-radius: 4px;
+      box-sizing: border-box;
+      width: 100%; }
+    @media (min-width: 768px) {
+      .portfolio-modal figure.img-rectangular {
+        width: 98%; } }
+    @media (min-width: 1300px) {
+      .portfolio-modal figure.img-rectangular {
+        width: 55%; } }
+    .portfolio-modal figure.img-large {
+      width: 85%; }
+      @media (min-width: 414px) {
+        .portfolio-modal figure.img-large {
+          width: 65%; } }
+      @media (min-width: 768px) {
+        .portfolio-modal figure.img-large {
+          width: 51%; } }
+      @media (min-width: 1024px) {
+        .portfolio-modal figure.img-large {
+          width: 58%; } }
+      @media (min-width: 1200px) {
+        .portfolio-modal figure.img-large {
+          width: 49%; } }
+      @media (min-width: 1300px) {
+        .portfolio-modal figure.img-large {
+          width: 24%; } }
+    .portfolio-modal figure figcaption {
+      color: #ecf5ff;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 5px; }
+      .portfolio-modal figure figcaption p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        margin: 0; }
+        .portfolio-modal figure figcaption p small {
+          color: rgba(236, 245, 255, 0.439);
+          font-weight: 400; }
+      .portfolio-modal figure figcaption a {
+        font-size: 30px; }
+
+#portfolio {
+  background-color: #fff;
+  height: auto;
+  padding: 48px 0; }
+  #portfolio h1 {
+    color: #283d50;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 48px; }
+  #portfolio .portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 15px; }
+    @media (min-width: 768px) {
+      #portfolio .portfolio-container {
+        padding: 0 25px 30px 25px; } }
+    @media (min-width: 955px) {
+      #portfolio .portfolio-container {
+        padding: 0 118px 30px 118px; } }
+    @media (min-width: 1024px) {
+      #portfolio .portfolio-container {
+        justify-content: center;
+        padding: 0 20px 30px 20px; } }
+    #portfolio .portfolio-container .portfolio-content {
+      background-color: #356188;
+      border-radius: 6px;
+      height: 250px;
+      margin: 13px 0;
+      overflow: hidden;
+      position: relative; }
+      @media (min-width: 768px) {
+        #portfolio .portfolio-container .portfolio-content {
+          margin: 15px;
+          width: 329px; } }
+      @media (min-width: 1024px) {
+        #portfolio .portfolio-container .portfolio-content {
+          width: 288px; } }
+      @media (min-width: 1200px) {
+        #portfolio .portfolio-container .portfolio-content {
+          width: 350px; } }
+      #portfolio .portfolio-container .portfolio-content img {
+        display: block;
+        height: 100%;
+        object-fit: cover;
+        opacity: 1;
+        transition: .3s linear;
+        width: 100%; }
+      #portfolio .portfolio-container .portfolio-content:hover img {
+        opacity: 0.3; }
 
 body {
   margin: 0; }
