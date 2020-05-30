@@ -21,13 +21,8 @@
             padding: 0 118px 30px 118px;
         }
         @include breakpoint-desktop-1 {
-            padding: 0 35px 30px 35px;
-        }
-        @include breakpoint-desktop-2 {
-            padding: 0 30px 30px 30px;
-        }
-        @include breakpoint-desktop-3 {
-            padding: 0 105px 30px 105px;
+            justify-content: center;
+            padding: 0 20px 30px 20px;
         }
         .portfolio-content {
             background-color: #356188;
@@ -45,9 +40,6 @@
             }
             @include breakpoint-desktop-2 {
                 width: 350px;
-            }
-            @include breakpoint-desktop-3 {
-                width: 349px;
             }
             img {
                 display: block;
