@@ -197,117 +197,121 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
               overflow: hidden;
               transition: 0.8s cubic-bezier(0, 1, 0, 1); }
 
-.div {
-  padding-top: 4rem;
-  padding-bottom: 4rem; }
-
-.conteiner {
-  background-color: #1445b3;
+#hero {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  /*     width: 100%; */ }
-  @media (min-width: 768px) {
-    .conteiner {
-      display: flex;
-      flex-direction: row-reverse;
-      align-items: left;
-      justify-content: center;
-      padding-top: 4rem;
-      padding-bottom: 4rem; } }
-  .conteiner-img {
-    margin-top: 5rem;
-    width: 80%;
-    height: auto; }
-    @media (min-width: 768px) {
-      .conteiner-img {
-        max-width: 35%;
-        height: auto;
-        margin-left: 3rem;
-        margin-bottom: 3rem; } }
-  .conteiner-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    margin-bottom: 3rem; }
-    @media (min-width: 768px) {
-      .conteiner-info {
-        margin-right: 3rem;
-        margin-top: 2rem;
-        /* padding-left: 4rem; */ } }
-
-.btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; }
-  @media (min-width: 768px) {
-    .btn {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: initial; } }
-  .btn__text {
-    font-family: "Montserrat", sans-serif;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 700; }
-  .btn__borde {
-    font-weight: bold;
-    border-radius: 5rem;
-    width: 11rem;
-    height: 3rem;
-    border: 2px solid #fff;
-    background-color: transparent;
-    margin-top: 1rem;
-    /* Este en desktop se va */
-    transition: all 0.3s ease-in-out; }
-    @media (min-width: 768px) {
-      .btn__borde {
-        margin-left: 1rem; } }
-    .btn__borde:hover {
-      background-color: #007bff;
-      border: none;
-      margin-top: 1rem; }
-  .btn__azul {
-    font-weight: bold;
-    border-radius: 5rem;
-    width: 11rem;
-    height: 3rem;
-    background-color: #007bff;
-    margin-top: 1rem;
-    border: none;
-    transition: all 0.3s ease-in-out; }
-    @media (min-width: 768px) {
-      .btn__azul {
-        width: 10rem; } }
-    .btn__azul:hover {
-      background-color: #1445b3;
-      border: 2px solid #fff;
-      margin-top: 1rem; }
-
-.titulo-hero {
-  color: #283d50;
-  font-family: "Montserrat", sans-serif;
-  font-size: 36px;
-  font-weight: 500;
-  margin-bottom: 0;
-  padding-top: 10px;
   text-align: center;
-  font-weight: bold;
-  color: #fff;
-  font-size: 42px;
-  margin-bottom: 2rem;
-  /* Este en desktop se va */ }
-  @media (min-width: 768px) {
-    .titulo-hero {
-      font-size: 48px;
-      text-align: left; } }
-  .titulo-hero__link {
-    color: #82b5f6;
-    text-decoration: underline; }
+  background-color: #1445b3;
+  padding: 0 1rem; }
+  @media (min-width: 1024px) {
+    #hero {
+      flex-direction: row-reverse;
+      padding: 9rem 3rem 8rem 3rem;
+      box-sizing: border-box; } }
+  @media (min-width: 1300px) {
+    #hero {
+      padding: 7rem 17rem 9rem 17rem; } }
+  #hero .hero__img {
+    position: relative;
+    width: 100%;
+    padding-top: 6rem; }
+    @media (min-width: 768px) {
+      #hero .hero__img {
+        padding-top: 8rem; } }
+    @media (min-width: 1024px) {
+      #hero .hero__img {
+        width: 50%;
+        padding-top: 2rem; } }
+    #hero .hero__img img {
+      width: 75%; }
+      @media (min-width: 768px) {
+        #hero .hero__img img {
+          padding: 0px; } }
+      @media (min-width: 955px) {
+        #hero .hero__img img {
+          width: 65%; } }
+      @media (min-width: 1024px) {
+        #hero .hero__img img {
+          width: 100%; } }
+      @media (min-width: 1300px) {
+        #hero .hero__img img {
+          padding-top: 3rem; } }
+  #hero .hero__info {
+    position: relative;
+    width: 100%;
+    padding-bottom: 1rem; }
+    @media (min-width: 768px) {
+      #hero .hero__info {
+        padding-bottom: 4rem; } }
+    @media (min-width: 1024px) {
+      #hero .hero__info {
+        width: 50%; } }
+    #hero .hero__info h1 {
+      color: #283d50;
+      font-family: "Montserrat", sans-serif;
+      font-size: 36px;
+      font-weight: 500;
+      margin-bottom: 0;
+      padding-top: 10px;
+      text-align: center;
+      color: #fff;
+      font-weight: bold;
+      padding-bottom: 1rem; }
+      @media (min-width: 768px) {
+        #hero .hero__info h1 {
+          font-size: 48px;
+          padding-top: 0px; } }
+      @media (min-width: 1024px) {
+        #hero .hero__info h1 {
+          text-align: left; } }
+      #hero .hero__info h1 span {
+        color: #82b5f6;
+        text-decoration: underline; }
+    #hero .hero__info button {
+      display: block;
+      border-radius: 5rem;
+      width: 11rem;
+      height: 3rem;
+      border: 2px solid #fff;
+      background-color: transparent;
+      margin: 20px auto;
+      transition: all 0.3s ease-in-out;
+      box-sizing: border-box; }
+      @media (min-width: 414px) {
+        #hero .hero__info button {
+          display: inline;
+          width: 10rem;
+          margin: 20px 10px; } }
+      @media (min-width: 955px) {
+        #hero .hero__info button {
+          width: 11rem; } }
+      @media (min-width: 1024px) {
+        #hero .hero__info button {
+          position: absolute;
+          left: 200px; } }
+      #hero .hero__info button.btn__azul {
+        background-color: #007bff;
+        border: none; }
+        @media (min-width: 1024px) {
+          #hero .hero__info button.btn__azul {
+            position: absolute;
+            left: 0; } }
+        #hero .hero__info button.btn__azul:hover {
+          border: 2px solid #fff;
+          background-color: transparent; }
+      #hero .hero__info button a {
+        font-weight: bold;
+        font-family: "Open Sans", sans-serif;
+        color: #fff;
+        font-size: 15px; }
+        @media (min-width: 414px) {
+          #hero .hero__info button a {
+            font-size: 12px; } }
+      #hero .hero__info button:hover {
+        background-color: #007bff;
+        border: none;
+        margin-top: 1rem; }
 
 .About {
   padding-left: 1rem;
