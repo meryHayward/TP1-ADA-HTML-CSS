@@ -289,7 +289,7 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
       padding-bottom: 80px; } }
   @media (min-width: 1300px) {
     #hero {
-      padding: 180px 120px 79px 120px; } }
+      padding: 180px 180px 79px 230px; } }
   #hero .hero__img {
     position: relative;
     width: 100%;
@@ -311,6 +311,7 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
           padding-top: 20px; } }
       @media (min-width: 1300px) {
         #hero .hero__img img {
+          width: 90%;
           padding-top: 20px; } }
   #hero .hero__info {
     position: relative;
@@ -338,40 +339,53 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
       @media (min-width: 1024px) {
         #hero .hero__info h1 {
           text-align: left; } }
+      @media (min-width: 1300px) {
+        #hero .hero__info h1 {
+          margin: z0px 0px 0px 0px; } }
       #hero .hero__info h1 span {
         color: #82b5f6;
         text-decoration: underline; }
 
-.About {
+#About {
   padding-left: 1rem;
   padding-right: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; }
-  @media (min-width: 414px) {
-    .About {
+  @media (min-width: 768px) {
+    #About {
       display: flex;
       align-items: center;
       justify-content: center; } }
-  .About__title {
+  @media (min-width: 1300px) {
+    #About {
+      padding: 0rem 13rem;
+      display: flex;
+      align-items: center;
+      justify-content: center; } }
+  #About .About__title {
     color: #283d50;
     font-family: "Montserrat", sans-serif;
     font-size: 36px;
     font-weight: 500;
     margin-bottom: 0;
     padding-top: 10px;
-    text-align: center; }
-  .About__texto {
+    text-align: center;
+    margin-top: 7rem; }
+    @media (min-width: 320px) {
+      #About .About__title {
+        margin-top: 3rem; } }
+  #About .About__texto {
     color: #383838;
     font-family: "Open Sans", sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 1.5rem;
     font-size: 15px; }
-    @media (min-width: 414px) {
-      .About__texto {
-        margin-bottom: 3rem;
+    @media (min-width: 320px) {
+      #About .About__texto {
+        margin-bottom: 5rem;
         text-align: center; } }
 
 .box {
@@ -382,7 +396,18 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
   justify-content: center; }
   @media (min-width: 768px) {
     .box {
-      width: 70%;
+      width: 95%;
+      display: flex;
+      /* flex-direction:row-reverse; */
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 3rem; } }
+  @media (min-width: 955px) {
+    .box {
+      width: 80%; } }
+  @media (min-width: 1024px) {
+    .box {
+      width: 95%;
       display: flex;
       flex-direction: row-reverse;
       align-items: center;
@@ -390,10 +415,14 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
       padding-bottom: 3rem; } }
   @media (min-width: 768px) {
     .box__izq {
-      width: 55%;
+      /* width: 55%; */
       display: flex;
       flex-direction: column;
-      padding-right: 3rem; }
+      padding-right: 3rem; } }
+  @media (min-width: 768px) and (min-width: 1024px) {
+    .box__izq {
+      padding-right: 1rem; } }
+  @media (min-width: 768px) {
       .box__izq--reverse {
         margin-left: 3rem; } }
   .box__txt {
@@ -406,13 +435,23 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
     @media (min-width: 768px) {
       .box__txt {
         width: 100%; } }
+    @media (min-width: 320px) {
+      .box__txt {
+        margin-bottom: 2rem; } }
   .box__img {
     width: 90%;
     height: auto; }
+    @media (min-width: 320px) {
+      .box__img {
+        margin-bottom: 1rem; } }
     @media (min-width: 768px) {
       .box__img {
-        width: 45%;
+        /* width: 45%; */
         margin-left: 1rem; } }
+    @media (min-width: 1024px) {
+      .box__img {
+        width: 45%;
+        margin-left: 0rem; } }
   .box__icon {
     width: 100%;
     display: flex;
@@ -429,9 +468,6 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
     display: flex;
     justify-content: left;
     align-items: flex-start; }
-    @media (min-width: 768px) {
-      .box__icono {
-        /*  padding-top: 1rem; */ } }
   .box__info__title {
     color: #383838;
     text-align: left;
@@ -444,7 +480,7 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
     font-size: 12px;
     font-weight: 400;
     line-height: 1.5rem;
-    font-size: 15px; }
+    font-size: 14px; }
   .box__subtitle {
     color: #383838;
     font-family: "Montserrat", sans-serif;
@@ -454,12 +490,20 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
     text-align: left; }
   @media (min-width: 768px) {
     .box--reverse {
-      width: 70%;
+      width: 95%;
       display: flex;
-      flex-direction: row;
+      flex-wrap: wrap;
       align-items: center;
       justify-content: center;
       padding-bottom: 3rem; } }
+  @media (min-width: 1024px) {
+    .box--reverse {
+      display: flex;
+      flex-wrap: nowrap; } }
+  @media (min-width: 1300px) {
+    .box--reverse {
+      display: flex;
+      flex-wrap: nowrap; } }
 
 @media (min-width: 768px) {
   .icon_conteiner {

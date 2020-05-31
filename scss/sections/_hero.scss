@@ -18,7 +18,7 @@
         padding-bottom: 80px;
     }
     @include breakpoint-desktop-3 {  
-        padding: 180px 120px 79px 120px;
+        padding: 180px 180px 79px 230px;
     }
     .hero__img {
         position: relative;
@@ -40,6 +40,7 @@
                 padding-top: 20px;
             }
             @include breakpoint-desktop-3 {
+                width: 90%;
             padding-top: 20px;
             }
         }
@@ -64,6 +65,9 @@
             @include breakpoint-desktop-1 {
                 text-align: left;
             }
+            @include breakpoint-desktop-3 {  
+        margin: z0px 0px 0px 0px;
+    }
             span {
                 color: #82b5f6;
                 text-decoration: underline;
