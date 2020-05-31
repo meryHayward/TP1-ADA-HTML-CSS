@@ -1,0 +1,144 @@
+@import "../abstract/mixins";
+@import "../abstract/variables"; 
+
+#contact-container {
+    width: 100%;
+    padding: 20px 0px 40px 0px;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    h1 {
+        @include title-h1;
+    } 
+    .contact-us-body {
+        display: flex;
+        flex-direction: column;
+        @include breakpoint-desktop-1 {
+            flex-direction: row;
+            width: 100%;
+        }
+        .contact-us-map {
+            margin: 50px 15px 15px 15px;
+            @include breakpoint-desktop-1 {
+                width: 50%;
+            }
+        }
+        .contact-us-information {
+            margin: 15px;
+            @include breakpoint-desktop-1 {
+                width: 50%;
+            }
+            .contact-us-address {
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+                @media (min-width: 768px) and (max-width: 1024px) {
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+                @include breakpoint-desktop-1 {
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin: 30px 0px 20px 0px;
+                }
+                .address-icon-info {
+                    flex-direction: row;
+                    font-family: $text;
+                    color: #444;
+                    justify-content: center;
+                    margin-bottom: 35px;
+                    font-size: 14px;
+                    @media (min-width: 768px) and (max-width: 1024px) {
+                        width: 32%;
+                    }
+                    @include breakpoint-desktop-1 {
+                        width: 30%;
+                    }
+                    .address-icon {
+                        font-size: 22px;
+                        float: left;
+                        color: $lightblue;
+                        line-height: 1;
+                        margin-right: 15px;
+                    }
+                }
+            }
+            .contact-us-form {
+                display: flex;
+                flex-direction: column;
+                .contact-us-input {
+                    height: 30px;
+                    width: 100%;
+                    border-style: solid;
+                    border-width: 0.5px;
+                    padding: 4px 0px 4px 6px;
+                    margin-top: 15px;
+                    border-color: $lightgray;
+                    font-size: 14px;
+                    box-shadow: none;
+                    @include breakpoint-desktop-1 {
+                        width: 99%;
+                    }
+                    &:focus {
+                        color: #495057;
+                        background-color: $white;
+                        border-color: #80bdff;
+                        outline: 0;
+                    }
+                }
+                .contact-us-textarea {
+                    height: 100px;
+                    width: 100%;
+                    border-style: solid;
+                    border-width: 0.5px;
+                    padding: 4px 0px 4px 6px;
+                    margin: 15px 0px 20px 0px;
+                    border-color: $lightgray;
+                    font-size: 14px;
+                    box-shadow: none;
+                    @include breakpoint-desktop-1 {
+                        width: 99%;
+                    }
+                    &:focus {
+                        color: #495057;
+                        background-color: $white;
+                        border-color: #80bdff;
+                        outline: 0;  
+                    }
+                }
+                .contact-us-form-row {
+                    display: flex;
+                    flex-direction: column;
+                    @include breakpoint-desktop-1 {
+                        flex-direction: row;
+                    }
+                    .contact-us-input-right {
+                        @include breakpoint-desktop-1 {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+                .contac-us-send-button {
+                    width: 50%;
+                    color: $white;
+                    font-size: 17px;
+                    font-weight: lighter;
+                    height: 40px;
+                    background-color: $lightblue;
+                    border-radius: 20px;
+                    border-style: none;
+                    margin: auto;
+                    @media (min-width: 768px) and (max-width: 1024px) {
+                        width: 25%;
+                    }
+                    @include breakpoint-desktop-1 {
+                        width: 25%;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        background-color: #0062cc;
+                        transition: 0.3;
+                    }
+                }
+            }         
+        }
+    }
+}

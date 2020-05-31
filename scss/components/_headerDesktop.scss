@@ -1,0 +1,72 @@
+.menu-desktop {
+    margin-right: 4%;
+    width: 100%;
+    @include breakpoint-desktop-2 {
+        margin-right: 8%;
+        width: 50%;
+    }
+    @include breakpoint-desktop-1-special {
+        display: none;
+    }
+    ul {
+        padding: 0;
+        li {
+            display: inline-block;
+            padding: 0 13px;
+            a {
+                color: $darkblue;
+                font-family: $title;
+                font-size: 14px;
+                font-weight: $medium;
+                transition: all .2s linear;
+                &:hover {
+                    color: $lightblue;
+                }
+                .fa-angle-down {
+                    margin-left: 5px;
+                }
+                .fa-angle-right {
+                    margin-left: 1px;
+                    @include breakpoint-desktop-2 {
+                        margin-left: 57px;
+                    }
+                }
+            }
+            &.first-dropdown {
+                padding: 20px 14px;
+                position: relative;
+                .first-dropdown-content {
+                    @include dropdown-content;
+                    @include breakpoint-desktop-2 {
+                        min-width: 190px;
+                    }
+                    li {
+                        display: block;
+                        padding: 12px 16px;
+                        a {  
+                            font-size: 13px;
+                        }
+                    }
+                    
+                }
+                &:hover .first-dropdown-content {
+                    display: block;
+                }
+            }
+            &.second-dropdown {
+                .second-dropdown-content {
+                    @include dropdown-content;
+                    left: 100%;
+                    min-width: 160px;   
+                    top: 22%;
+                    @include breakpoint-desktop-2 {
+                        min-width: 188px;
+                    }
+                }
+                &:hover .second-dropdown-content {
+                    display: block;
+                }
+            }
+        }
+    }   
+} 

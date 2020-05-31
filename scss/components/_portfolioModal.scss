@@ -1,0 +1,109 @@
+.portfolio-content {
+    .portfolio-modal {
+        background-color: rgba(0,0,0,.8);
+        bottom: 0;
+        display: none;
+        left: 0;
+        opacity: 0;
+        pointer-events: none;
+        position: fixed;
+        right: 0;
+        top: 0; 
+        transition: all 1s;
+        z-index: 100;
+        &:target {
+            display: flex;
+            opacity:1;
+            pointer-events:auto;
+            transition: all 1s;
+        }
+        figure {
+            margin: 15% auto;
+            width: 94%; 
+            animation-name: animate;
+            animation-duration: 1s;
+            @keyframes animate {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+            @include breakpoint-mobile-2 {
+                margin: 12% auto;
+                width: 95%; 
+            }
+            @include breakpoint-tablet {
+                margin: 7% auto;
+                width: 75%;
+            }
+            @include breakpoint-tablet-desktop {
+                margin: 5% auto;
+                width: 80%;
+            }
+            @include breakpoint-desktop-1 {
+                width: 86%;
+            }
+            @include breakpoint-desktop-2 {
+                margin: 4% auto;
+                width: 73%;
+            }
+            @include breakpoint-desktop-3 {
+                width: 37%;
+            }
+            img {
+                background-color: $white;
+                border:  4px solid $white;
+                border-radius: 4px;
+                box-sizing: $box-sizing;
+                width: 100%;
+            }
+            &.img-rectangular {
+                @include breakpoint-tablet {
+                    width: 98%;
+                }
+                @include breakpoint-desktop-3 {
+                    width: 55%;
+                } 
+            }  
+            &.img-large {
+                width: 85%;
+                @include breakpoint-mobile-2 {
+                    width: 65%; 
+                }
+                @include breakpoint-tablet {
+                    width: 51%;
+                }
+                @include breakpoint-desktop-1 {
+                    width: 58%;
+                }
+                @include breakpoint-desktop-2 {
+                    width: 49%;
+                }
+                @include breakpoint-desktop-3 {
+                    width: 24%;
+                }
+            }
+            figcaption {
+                color: $light;
+                display: flex;
+                justify-content: space-between;
+                margin: 0 5px;
+                p {
+                    font-family: $text;
+                    font-size: 13px;
+                    font-weight: $bold;
+                    margin: 0;
+                    small {
+                        color: rgba(236, 245, 255, 0.439);
+                        font-weight: $regular;
+                    }
+                }
+                a {
+                    font-size: 30px;
+                }
+            }       
+        }
+    }
+}

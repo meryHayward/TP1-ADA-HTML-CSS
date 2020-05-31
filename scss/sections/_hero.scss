@@ -1,0 +1,73 @@
+@import "../components/heroButtons";
+@import "../components/topButton";
+
+#hero {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $blue;
+    padding: 100px 1rem 28px 1rem;
+    height: auto;
+    @include breakpoint-tablet {
+        padding: 140px 1rem 65px 1rem;
+    }
+    @include breakpoint-desktop-1 {
+        flex-direction: row-reverse;
+    padding: 180px 3rem 42px 3rem;
+    }
+    @include breakpoint-desktop-2 {
+        padding-bottom: 80px;
+    }
+    @include breakpoint-desktop-3 {  
+        padding: 180px 120px 79px 120px;
+    }
+    .hero__img {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        @include breakpoint-desktop-1 {
+            width: 50%;
+        }
+        img {
+            width: 80%;
+            @include breakpoint-tablet {
+                width: 75%;
+            }
+            @include breakpoint-tablet-desktop {
+                width: 60%;
+            }
+            @include breakpoint-desktop-1 {
+                width: 100%;
+                padding-top: 20px;
+            }
+            @include breakpoint-desktop-3 {
+            padding-top: 20px;
+            }
+        }
+    }
+    .hero__info {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        @include breakpoint-desktop-1 {
+            width: 50%;
+            padding-bottom: 10rem;
+        }
+        h1 {
+            @include title-h1;
+            color: $white;
+            font-weight: bold;
+            margin: 10px 0 20px 0;
+            font-size: 34px;
+            @include breakpoint-tablet {
+                font-size: 48px;
+            }
+            @include breakpoint-desktop-1 {
+                text-align: left;
+            }
+            span {
+                color: #82b5f6;
+                text-decoration: underline;
+            }
+        }
+    }
+}
