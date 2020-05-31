@@ -8,9 +8,8 @@
     h1{
         @include title-h1;
     }
-    h2 { 
-        @include paragraph;
-        text-align: center;
+    h4 { 
+        @include title-h4;
     }
 
     // --Card Container
