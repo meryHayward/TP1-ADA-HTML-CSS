@@ -40,7 +40,7 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
 @mixin title-h3 ($font-color) {
     color: $font-color; // $white, $black o $bluegray
     font-family: $title;
-    font-size: $font-xl;
+    font-size: $font-l;
     font-weight: bold;
     text-align: center;  
 }

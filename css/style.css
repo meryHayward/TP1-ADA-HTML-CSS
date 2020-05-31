@@ -349,20 +349,23 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+
   @media (min-width: 414px) {
     .About {
       display: flex;
       align-items: center;
       justify-content: center; } }
-  .About__title {
-    color: #283d50;
+
+  .About__title {color: #283d50;
     font-family: "Montserrat", sans-serif;
     font-size: 36px;
     font-weight: 500;
     margin-bottom: 0;
     padding-top: 10px;
-    text-align: center; }
-  .About__texto {
+    text-align: center;
+}
+    
+    .About__texto {
     color: #383838;
     font-family: "Open Sans", sans-serif;
     font-size: 12px;
@@ -372,7 +375,8 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
     @media (min-width: 414px) {
       .About__texto {
         margin-bottom: 3rem;
-        text-align: center; } }
+        text-align: center; } 
+    }
 
 .box {
   width: 100%;
@@ -380,6 +384,7 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+    
   @media (min-width: 768px) {
     .box {
       width: 70%;
@@ -783,7 +788,96 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
             width: 55%; } }
       #clients .clients-container .clients-img:hover img {
         transform: scale(1.2); }
-
+    
+    
+/*-------------------------- Quedan aquí los estilos de services--------------------*/
+ 
+  .services {
+      background-color: #ecf5ff;
+      padding: 30px 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    
+  .services h1 {
+    color: #283d50;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding-top: 10px;
+    text-align: center; }
+    
+  .services h2 {
+      text-align: center; }
+  
+  .services .service_card_container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+    @media (min-width: 768px) {
+      .services .service_card_container {
+        width: 768px; } }
+      
+    .services .service_card_container .service_card {
+      width: 100%;
+      margin-bottom: 30px;
+      padding: 30px;
+      background-color: #fff;
+      overflow: hidden;
+      border-radius: 10px;
+      box-sizing: border-box;
+      box-shadow: 0 0 5px #afafaf;
+      position: relative;
+      transition: translateY 0.2s ease-in-out; }
+      .services .service_card_container .service_card header {
+        margin-left: 55px; }
+        .services .service_card_container .service_card header h3 {
+          color: #000;
+          font-family: "Montserrat", sans-serif;
+          font-size: 18px;
+          font-weight: bold;
+          text-align: center;
+          margin-top: 0;
+          margin-bottom: 10px;
+          text-align: left; }
+        .services .service_card_container .service_card header a {
+          transition: color 0.2s ease-in-out; }
+          .services .service_card_container .service_card header a:hover {
+            color: #007bff; }
+      .services .service_card_container .service_card article {
+        color: #383838;
+        font-family: "Open Sans", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        margin-left: 55px; }
+      .services .service_card_container .service_card .service_aside {
+        width: 80px;
+        height: 100%;
+        position: absolute;
+        left: -20px;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .services .service_card_container .service_card .service_aside .card-icons {
+          width: 60px; }
+      .services .service_card_container .service_card:hover {
+        transform: translateY(-7px); }
+      @media (min-width: 414px) {
+        .services .service_card_container .service_card {
+          width: 310px; } }
+      @media (min-width: 768px) {
+        .services .service_card_container .service_card {
+          margin-right: 15px;
+          margin-left: 15px; } }    
+    
+    
+    
+    
 /* PUEDEN CAMBIAR LOS VALORES SI ES NECESARIO, 
 VERIFICANDO QUE NO AFECTE EL DISEÑO DE LAS DEMÁS */
 /* Utilizar este mixin para los títulos de cada sección.

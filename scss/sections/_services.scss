@@ -1,0 +1,88 @@
+.services{
+    background-color: $light;    
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        @include title-h1;
+    }
+    h2 { 
+        @include paragraph;
+        text-align: center;
+    }
+
+    // --Card Container
+
+    .service_card_container{
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        @include breakpoint-tablet {
+            width: 768px;
+        }
+    
+    //--Card 
+        .service_card{
+            width: 100%;
+            margin-bottom: 30px; 
+            padding: 30px;
+            background-color: $white;
+            overflow: hidden;
+            border-radius: 10px;
+            box-sizing: border-box;
+            box-shadow: 0 0 5px $lightgray;
+            position: relative;
+            transition: translateY 0.2s ease-in-out;
+            header{
+                margin-left: 55px;
+                h3{
+                    @include title-h3($black); 
+                    margin-top: 0;
+                    margin-bottom: 10px;
+                    text-align: left;
+                    //font-size: 18px;
+                }
+                a{
+                    transition: color 0.2s ease-in-out; 
+                    &:hover{
+                        color: $lightblue; 
+                    }
+                }
+
+            }
+            & article{
+                @include paragraph;
+                margin-left: 55px;
+            }
+            & .service_aside{ 
+                width: 80px;
+                height: 100%; 
+                position: absolute;
+                left: -20px;
+                top: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                & .card-icons{
+                    width: 60px; 
+                } 
+            }
+            &:hover{ 
+                transform: translateY(-7px);
+            }  
+            @include breakpoint-mobile-2 {
+                width: 310px;  
+            }
+            @include breakpoint-tablet{
+                margin-right: 15px;
+                margin-left: 15px
+            }
+        }
+    }    
+}
+
+ 
