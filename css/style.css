@@ -156,7 +156,7 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
       right: 26px;
       top: 19px; }
     .navbar #sidebar .sidebar-content {
-      background-color: rgba(25, 0, 255, 0.294);
+      background-color: rgba(25, 0, 255, 0.39);
       height: 100%;
       overflow: scroll;
       position: relative;
@@ -197,56 +197,94 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
               overflow: hidden;
               transition: 0.8s cubic-bezier(0, 1, 0, 1); }
 
+@media (min-width: 1024px) {
+  .hero-buttons {
+    position: absolute;
+    left: 0; } }
+
+.hero-buttons button {
+  background-color: transparent;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 22px 0; }
+  @media (min-width: 768px) {
+    .hero-buttons button {
+      margin: 30px 0; } }
+  .hero-buttons button a {
+    border: 2px solid #fff;
+    border-radius: 25px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 35px;
+    transition: all 0.3s ease-in-out; }
+    @media (min-width: 414px) {
+      .hero-buttons button a {
+        margin: 10px; } }
+    @media (min-width: 1024px) {
+      .hero-buttons button a {
+        margin: 0 20px 0 0; } }
+    .hero-buttons button a.btn__azul {
+      background-color: #007bff;
+      border: 2px solid #007bff; }
+      .hero-buttons button a.btn__azul:hover {
+        border: 2px solid #fff;
+        background-color: transparent; }
+    .hero-buttons button a:hover {
+      background-color: #007bff;
+      border: 2px solid #007bff;
+      margin-top: 1rem; }
+
 #hero {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  text-align: center;
   background-color: #1445b3;
-  padding: 0 1rem; }
+  padding: 100px 1rem 28px 1rem;
+  height: auto; }
+  @media (min-width: 768px) {
+    #hero {
+      padding: 140px 1rem 65px 1rem; } }
   @media (min-width: 1024px) {
     #hero {
       flex-direction: row-reverse;
-      padding: 9rem 3rem 8rem 3rem;
-      box-sizing: border-box; } }
+      padding: 180px 3rem 42px 3rem; } }
+  @media (min-width: 1200px) {
+    #hero {
+      padding-bottom: 80px; } }
   @media (min-width: 1300px) {
     #hero {
-      padding: 7rem 17rem 9rem 17rem; } }
+      padding: 180px 120px 79px 120px; } }
   #hero .hero__img {
     position: relative;
     width: 100%;
-    padding-top: 6rem; }
-    @media (min-width: 768px) {
-      #hero .hero__img {
-        padding-top: 8rem; } }
+    text-align: center; }
     @media (min-width: 1024px) {
       #hero .hero__img {
-        width: 50%;
-        padding-top: 2rem; } }
+        width: 50%; } }
     #hero .hero__img img {
-      width: 75%; }
+      width: 80%; }
       @media (min-width: 768px) {
         #hero .hero__img img {
-          padding: 0px; } }
+          width: 75%; } }
       @media (min-width: 955px) {
         #hero .hero__img img {
-          width: 65%; } }
+          width: 60%; } }
       @media (min-width: 1024px) {
         #hero .hero__img img {
-          width: 100%; } }
+          width: 100%;
+          padding-top: 20px; } }
       @media (min-width: 1300px) {
         #hero .hero__img img {
-          padding-top: 3rem; } }
+          padding-top: 20px; } }
   #hero .hero__info {
     position: relative;
     width: 100%;
-    padding-bottom: 1rem; }
-    @media (min-width: 768px) {
-      #hero .hero__info {
-        padding-bottom: 4rem; } }
+    text-align: center; }
     @media (min-width: 1024px) {
       #hero .hero__info {
-        width: 50%; } }
+        width: 50%;
+        padding-bottom: 10rem; } }
     #hero .hero__info h1 {
       color: #283d50;
       font-family: "Montserrat", sans-serif;
@@ -257,61 +295,17 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
       text-align: center;
       color: #fff;
       font-weight: bold;
-      padding-bottom: 1rem; }
+      margin: 10px 0 20px 0;
+      font-size: 34px; }
       @media (min-width: 768px) {
         #hero .hero__info h1 {
-          font-size: 48px;
-          padding-top: 0px; } }
+          font-size: 48px; } }
       @media (min-width: 1024px) {
         #hero .hero__info h1 {
           text-align: left; } }
       #hero .hero__info h1 span {
         color: #82b5f6;
         text-decoration: underline; }
-    #hero .hero__info button {
-      display: block;
-      border-radius: 5rem;
-      width: 11rem;
-      height: 3rem;
-      border: 2px solid #fff;
-      background-color: transparent;
-      margin: 20px auto;
-      transition: all 0.3s ease-in-out;
-      box-sizing: border-box; }
-      @media (min-width: 414px) {
-        #hero .hero__info button {
-          display: inline;
-          width: 10rem;
-          margin: 20px 10px; } }
-      @media (min-width: 955px) {
-        #hero .hero__info button {
-          width: 11rem; } }
-      @media (min-width: 1024px) {
-        #hero .hero__info button {
-          position: absolute;
-          left: 200px; } }
-      #hero .hero__info button.btn__azul {
-        background-color: #007bff;
-        border: none; }
-        @media (min-width: 1024px) {
-          #hero .hero__info button.btn__azul {
-            position: absolute;
-            left: 0; } }
-        #hero .hero__info button.btn__azul:hover {
-          border: 2px solid #fff;
-          background-color: transparent; }
-      #hero .hero__info button a {
-        font-weight: bold;
-        font-family: "Open Sans", sans-serif;
-        color: #fff;
-        font-size: 15px; }
-        @media (min-width: 414px) {
-          #hero .hero__info button a {
-            font-size: 12px; } }
-      #hero .hero__info button:hover {
-        background-color: #007bff;
-        border: none;
-        margin-top: 1rem; }
 
 .About {
   padding-left: 1rem;
@@ -517,9 +511,10 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
 .portfolio-content:hover .portfolio-overlay {
   opacity: 1; }
 
-.portfolio-modal {
+.portfolio-content .portfolio-modal {
   background-color: rgba(0, 0, 0, 0.8);
   bottom: 0;
+  display: none;
   left: 0;
   opacity: 0;
   pointer-events: none;
@@ -528,83 +523,99 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
   top: 0;
   transition: all 1s;
   z-index: 100; }
-  .portfolio-modal:target {
+  .portfolio-content .portfolio-modal:target {
+    display: flex;
     opacity: 1;
-    pointer-events: auto; }
-  .portfolio-modal figure {
+    pointer-events: auto;
+    transition: all 1s; }
+  .portfolio-content .portfolio-modal figure {
     margin: 15% auto;
-    width: 94%; }
+    width: 94%;
+    animation-name: animate;
+    animation-duration: 1s; }
+
+@keyframes animate {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
     @media (min-width: 414px) {
-      .portfolio-modal figure {
+      .portfolio-content .portfolio-modal figure {
         margin: 12% auto;
         width: 95%; } }
     @media (min-width: 768px) {
-      .portfolio-modal figure {
+      .portfolio-content .portfolio-modal figure {
         margin: 7% auto;
         width: 75%; } }
     @media (min-width: 955px) {
-      .portfolio-modal figure {
+      .portfolio-content .portfolio-modal figure {
         margin: 5% auto;
         width: 80%; } }
     @media (min-width: 1024px) {
-      .portfolio-modal figure {
+      .portfolio-content .portfolio-modal figure {
         width: 86%; } }
     @media (min-width: 1200px) {
-      .portfolio-modal figure {
+      .portfolio-content .portfolio-modal figure {
         margin: 4% auto;
         width: 73%; } }
     @media (min-width: 1300px) {
-      .portfolio-modal figure {
+      .portfolio-content .portfolio-modal figure {
         width: 37%; } }
-    .portfolio-modal figure img {
+    .portfolio-content .portfolio-modal figure img {
       background-color: #fff;
       border: 4px solid #fff;
       border-radius: 4px;
       box-sizing: border-box;
       width: 100%; }
     @media (min-width: 768px) {
-      .portfolio-modal figure.img-rectangular {
+      .portfolio-content .portfolio-modal figure.img-rectangular {
         width: 98%; } }
     @media (min-width: 1300px) {
-      .portfolio-modal figure.img-rectangular {
+      .portfolio-content .portfolio-modal figure.img-rectangular {
         width: 55%; } }
-    .portfolio-modal figure.img-large {
+    .portfolio-content .portfolio-modal figure.img-large {
       width: 85%; }
       @media (min-width: 414px) {
-        .portfolio-modal figure.img-large {
+        .portfolio-content .portfolio-modal figure.img-large {
           width: 65%; } }
       @media (min-width: 768px) {
-        .portfolio-modal figure.img-large {
+        .portfolio-content .portfolio-modal figure.img-large {
           width: 51%; } }
       @media (min-width: 1024px) {
-        .portfolio-modal figure.img-large {
+        .portfolio-content .portfolio-modal figure.img-large {
           width: 58%; } }
       @media (min-width: 1200px) {
-        .portfolio-modal figure.img-large {
+        .portfolio-content .portfolio-modal figure.img-large {
           width: 49%; } }
       @media (min-width: 1300px) {
-        .portfolio-modal figure.img-large {
+        .portfolio-content .portfolio-modal figure.img-large {
           width: 24%; } }
-    .portfolio-modal figure figcaption {
+    .portfolio-content .portfolio-modal figure figcaption {
       color: #ecf5ff;
       display: flex;
       justify-content: space-between;
       margin: 0 5px; }
-      .portfolio-modal figure figcaption p {
+      .portfolio-content .portfolio-modal figure figcaption p {
         font-family: "Open Sans", sans-serif;
         font-size: 13px;
         font-weight: 700;
         margin: 0; }
-        .portfolio-modal figure figcaption p small {
+        .portfolio-content .portfolio-modal figure figcaption p small {
           color: rgba(236, 245, 255, 0.439);
           font-weight: 400; }
-      .portfolio-modal figure figcaption a {
+      .portfolio-content .portfolio-modal figure figcaption a {
         font-size: 30px; }
 
 #portfolio {
   background-color: #fff;
   height: auto;
-  padding: 48px 0; }
+  padding: 20px 0 48px 0; }
+  @media (min-width: 955px) {
+    #portfolio {
+      padding: 25px 0 48px 0; } }
+  @media (min-width: 1024px) {
+    #portfolio {
+      padding: 40px 0 48px 0; } }
   #portfolio h1 {
     color: #283d50;
     font-family: "Montserrat", sans-serif;
@@ -629,7 +640,7 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
         justify-content: center;
         padding: 0 20px 30px 20px; } }
     #portfolio .portfolio-container .portfolio-content {
-      background-color: #356188;
+      background-color: #08345d;
       border-radius: 6px;
       height: 250px;
       margin: 13px 0;
@@ -645,19 +656,20 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
       @media (min-width: 1200px) {
         #portfolio .portfolio-container .portfolio-content {
           width: 350px; } }
-      #portfolio .portfolio-container .portfolio-content img {
+      #portfolio .portfolio-container .portfolio-content .portfolio-img {
         display: block;
         height: 100%;
         object-fit: cover;
         opacity: 1;
         transition: .3s linear;
         width: 100%; }
-      #portfolio .portfolio-container .portfolio-content:hover img {
+      #portfolio .portfolio-container .portfolio-content:hover .portfolio-img {
         opacity: 0.3; }
 
 #clients {
   background-color: #ecf5ff;
   box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  height: 600px;
   padding: 18px 16px; }
   @media (min-width: 768px) {
     #clients {
@@ -1087,9 +1099,10 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
 .portfolio-content:hover .portfolio-overlay {
   opacity: 1; }
 
-.portfolio-modal {
+.portfolio-content .portfolio-modal {
   background-color: rgba(0, 0, 0, 0.8);
   bottom: 0;
+  display: none;
   left: 0;
   opacity: 0;
   pointer-events: none;
@@ -1098,83 +1111,99 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
   top: 0;
   transition: all 1s;
   z-index: 100; }
-  .portfolio-modal:target {
+  .portfolio-content .portfolio-modal:target {
+    display: flex;
     opacity: 1;
-    pointer-events: auto; }
-  .portfolio-modal figure {
+    pointer-events: auto;
+    transition: all 1s; }
+  .portfolio-content .portfolio-modal figure {
     margin: 15% auto;
-    width: 94%; }
+    width: 94%;
+    animation-name: animate;
+    animation-duration: 1s; }
+
+@keyframes animate {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
     @media (min-width: 414px) {
-      .portfolio-modal figure {
+      .portfolio-content .portfolio-modal figure {
         margin: 12% auto;
         width: 95%; } }
     @media (min-width: 768px) {
-      .portfolio-modal figure {
+      .portfolio-content .portfolio-modal figure {
         margin: 7% auto;
         width: 75%; } }
     @media (min-width: 955px) {
-      .portfolio-modal figure {
+      .portfolio-content .portfolio-modal figure {
         margin: 5% auto;
         width: 80%; } }
     @media (min-width: 1024px) {
-      .portfolio-modal figure {
+      .portfolio-content .portfolio-modal figure {
         width: 86%; } }
     @media (min-width: 1200px) {
-      .portfolio-modal figure {
+      .portfolio-content .portfolio-modal figure {
         margin: 4% auto;
         width: 73%; } }
     @media (min-width: 1300px) {
-      .portfolio-modal figure {
+      .portfolio-content .portfolio-modal figure {
         width: 37%; } }
-    .portfolio-modal figure img {
+    .portfolio-content .portfolio-modal figure img {
       background-color: #fff;
       border: 4px solid #fff;
       border-radius: 4px;
       box-sizing: border-box;
       width: 100%; }
     @media (min-width: 768px) {
-      .portfolio-modal figure.img-rectangular {
+      .portfolio-content .portfolio-modal figure.img-rectangular {
         width: 98%; } }
     @media (min-width: 1300px) {
-      .portfolio-modal figure.img-rectangular {
+      .portfolio-content .portfolio-modal figure.img-rectangular {
         width: 55%; } }
-    .portfolio-modal figure.img-large {
+    .portfolio-content .portfolio-modal figure.img-large {
       width: 85%; }
       @media (min-width: 414px) {
-        .portfolio-modal figure.img-large {
+        .portfolio-content .portfolio-modal figure.img-large {
           width: 65%; } }
       @media (min-width: 768px) {
-        .portfolio-modal figure.img-large {
+        .portfolio-content .portfolio-modal figure.img-large {
           width: 51%; } }
       @media (min-width: 1024px) {
-        .portfolio-modal figure.img-large {
+        .portfolio-content .portfolio-modal figure.img-large {
           width: 58%; } }
       @media (min-width: 1200px) {
-        .portfolio-modal figure.img-large {
+        .portfolio-content .portfolio-modal figure.img-large {
           width: 49%; } }
       @media (min-width: 1300px) {
-        .portfolio-modal figure.img-large {
+        .portfolio-content .portfolio-modal figure.img-large {
           width: 24%; } }
-    .portfolio-modal figure figcaption {
+    .portfolio-content .portfolio-modal figure figcaption {
       color: #ecf5ff;
       display: flex;
       justify-content: space-between;
       margin: 0 5px; }
-      .portfolio-modal figure figcaption p {
+      .portfolio-content .portfolio-modal figure figcaption p {
         font-family: "Open Sans", sans-serif;
         font-size: 13px;
         font-weight: 700;
         margin: 0; }
-        .portfolio-modal figure figcaption p small {
+        .portfolio-content .portfolio-modal figure figcaption p small {
           color: rgba(236, 245, 255, 0.439);
           font-weight: 400; }
-      .portfolio-modal figure figcaption a {
+      .portfolio-content .portfolio-modal figure figcaption a {
         font-size: 30px; }
 
 #portfolio {
   background-color: #fff;
   height: auto;
-  padding: 48px 0; }
+  padding: 20px 0 48px 0; }
+  @media (min-width: 955px) {
+    #portfolio {
+      padding: 25px 0 48px 0; } }
+  @media (min-width: 1024px) {
+    #portfolio {
+      padding: 40px 0 48px 0; } }
   #portfolio h1 {
     color: #283d50;
     font-family: "Montserrat", sans-serif;
@@ -1199,7 +1228,7 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
         justify-content: center;
         padding: 0 20px 30px 20px; } }
     #portfolio .portfolio-container .portfolio-content {
-      background-color: #356188;
+      background-color: #08345d;
       border-radius: 6px;
       height: 250px;
       margin: 13px 0;
@@ -1215,14 +1244,14 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
       @media (min-width: 1200px) {
         #portfolio .portfolio-container .portfolio-content {
           width: 350px; } }
-      #portfolio .portfolio-container .portfolio-content img {
+      #portfolio .portfolio-container .portfolio-content .portfolio-img {
         display: block;
         height: 100%;
         object-fit: cover;
         opacity: 1;
         transition: .3s linear;
         width: 100%; }
-      #portfolio .portfolio-container .portfolio-content:hover img {
+      #portfolio .portfolio-container .portfolio-content:hover .portfolio-img {
         opacity: 0.3; }
 
 body {

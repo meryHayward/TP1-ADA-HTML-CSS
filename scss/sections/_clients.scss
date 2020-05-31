@@ -1,6 +1,7 @@
 #clients {
     background-color: $light;
     box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    height: 600px;
     padding: 18px 16px;
     @include breakpoint-tablet {
         padding: 20px 40px;
