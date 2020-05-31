@@ -236,6 +236,41 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
       border: 2px solid #007bff;
       margin-top: 1rem; }
 
+#hero .top {
+  background-color: #007bff;
+  border: none;
+  border-radius: 100%;
+  bottom: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  height: 40px;
+  position: fixed;
+  right: 10px;
+  text-align: center;
+  width: 40px;
+  z-index: 99; }
+  @media (min-width: 414px) {
+    #hero .top {
+      font-size: 13px;
+      height: 25px;
+      width: 25px; } }
+  @media (min-width: 768px) {
+    #hero .top {
+      bottom: 20px;
+      font-size: 17px;
+      height: 45px;
+      right: 20px;
+      width: 45px; } }
+  #hero .top .fa-chevron-up {
+    padding-top: 10px; }
+    @media (min-width: 414px) {
+      #hero .top .fa-chevron-up {
+        padding-top: 5px; } }
+    @media (min-width: 768px) {
+      #hero .top .fa-chevron-up {
+        padding-top: 13px; } }
+
 #hero {
   display: flex;
   flex-wrap: wrap;
@@ -669,20 +704,20 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
 #clients {
   background-color: #ecf5ff;
   box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-  height: 600px;
-  padding: 18px 16px; }
+  height: auto;
+  padding: 20px 16px 25% 16px; }
   @media (min-width: 768px) {
     #clients {
-      padding: 20px 40px; } }
+      padding: 20px 40px 12% 40px; } }
   @media (min-width: 955px) {
     #clients {
-      padding: 20px 134px; } }
+      padding: 25px 134px 12% 134px; } }
   @media (min-width: 1024px) {
     #clients {
-      padding: 20px 50px; } }
+      padding: 40px 50px 9% 50px; } }
   @media (min-width: 1200px) {
     #clients {
-      padding: 20px 46px; } }
+      padding: 40px 46px 8% 46px; } }
   #clients h1 {
     color: #283d50;
     font-family: "Montserrat", sans-serif;
@@ -765,11 +800,11 @@ de los íconos.
 En el html, los títulos de las card, en los nombres de las personas 
 en testimonials y títulos del about us al lado de iconos colocarlo con el tag "h3".
 */
-.contact-container {
+#contact-container {
   width: 100%;
   padding: 20px 0px 40px 0px;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1); }
-  .contact-container h1 {
+  #contact-container h1 {
     color: #283d50;
     font-family: "Montserrat", sans-serif;
     font-size: 36px;
@@ -777,37 +812,37 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
     margin-bottom: 0;
     padding-top: 10px;
     text-align: center; }
-  .contact-container .contact-us-body {
+  #contact-container .contact-us-body {
     display: flex;
     flex-direction: column; }
     @media (min-width: 1024px) {
-      .contact-container .contact-us-body {
+      #contact-container .contact-us-body {
         flex-direction: row;
         width: 100%; } }
-    .contact-container .contact-us-body .contact-us-map {
+    #contact-container .contact-us-body .contact-us-map {
       margin: 50px 15px 15px 15px; }
       @media (min-width: 1024px) {
-        .contact-container .contact-us-body .contact-us-map {
+        #contact-container .contact-us-body .contact-us-map {
           width: 50%; } }
-    .contact-container .contact-us-body .contact-us-information {
+    #contact-container .contact-us-body .contact-us-information {
       margin: 15px; }
       @media (min-width: 1024px) {
-        .contact-container .contact-us-body .contact-us-information {
+        #contact-container .contact-us-body .contact-us-information {
           width: 50%; } }
-      .contact-container .contact-us-body .contact-us-information .contact-us-address {
+      #contact-container .contact-us-body .contact-us-information .contact-us-address {
         display: flex;
         flex-direction: column;
         list-style: none; }
         @media (min-width: 768px) and (max-width: 1024px) {
-          .contact-container .contact-us-body .contact-us-information .contact-us-address {
+          #contact-container .contact-us-body .contact-us-information .contact-us-address {
             flex-direction: row;
             justify-content: space-between; } }
         @media (min-width: 1024px) {
-          .contact-container .contact-us-body .contact-us-information .contact-us-address {
+          #contact-container .contact-us-body .contact-us-information .contact-us-address {
             flex-direction: row;
             justify-content: space-between;
             margin: 30px 0px 20px 0px; } }
-        .contact-container .contact-us-body .contact-us-information .contact-us-address .address-icon-info {
+        #contact-container .contact-us-body .contact-us-information .contact-us-address .address-icon-info {
           flex-direction: row;
           font-family: "Open Sans", sans-serif;
           color: #444;
@@ -815,21 +850,21 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
           margin-bottom: 35px;
           font-size: 14px; }
           @media (min-width: 768px) and (max-width: 1024px) {
-            .contact-container .contact-us-body .contact-us-information .contact-us-address .address-icon-info {
+            #contact-container .contact-us-body .contact-us-information .contact-us-address .address-icon-info {
               width: 32%; } }
           @media (min-width: 1024px) {
-            .contact-container .contact-us-body .contact-us-information .contact-us-address .address-icon-info {
+            #contact-container .contact-us-body .contact-us-information .contact-us-address .address-icon-info {
               width: 30%; } }
-          .contact-container .contact-us-body .contact-us-information .contact-us-address .address-icon-info .address-icon {
+          #contact-container .contact-us-body .contact-us-information .contact-us-address .address-icon-info .address-icon {
             font-size: 22px;
             float: left;
             color: #007bff;
             line-height: 1;
             margin-right: 15px; }
-      .contact-container .contact-us-body .contact-us-information .contact-us-form {
+      #contact-container .contact-us-body .contact-us-information .contact-us-form {
         display: flex;
         flex-direction: column; }
-        .contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-input {
+        #contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-input {
           height: 30px;
           width: 100%;
           border-style: solid;
@@ -840,14 +875,14 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
           font-size: 14px;
           box-shadow: none; }
           @media (min-width: 1024px) {
-            .contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-input {
+            #contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-input {
               width: 99%; } }
-          .contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-input:focus {
+          #contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-input:focus {
             color: #495057;
             background-color: #fff;
             border-color: #80bdff;
             outline: 0; }
-        .contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-textarea {
+        #contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-textarea {
           height: 100px;
           width: 100%;
           border-style: solid;
@@ -858,23 +893,23 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
           font-size: 14px;
           box-shadow: none; }
           @media (min-width: 1024px) {
-            .contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-textarea {
+            #contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-textarea {
               width: 99%; } }
-          .contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-textarea:focus {
+          #contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-textarea:focus {
             color: #495057;
             background-color: #fff;
             border-color: #80bdff;
             outline: 0; }
-        .contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-form-row {
+        #contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-form-row {
           display: flex;
           flex-direction: column; }
           @media (min-width: 1024px) {
-            .contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-form-row {
+            #contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-form-row {
               flex-direction: row; } }
           @media (min-width: 1024px) {
-            .contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-form-row .contact-us-input-right {
+            #contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-form-row .contact-us-input-right {
               margin-left: 10px; } }
-        .contact-container .contact-us-body .contact-us-information .contact-us-form .contac-us-send-button {
+        #contact-container .contact-us-body .contact-us-information .contact-us-form .contac-us-send-button {
           width: 50%;
           color: #fff;
           font-size: 17px;
@@ -885,12 +920,12 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
           border-style: none;
           margin: auto; }
           @media (min-width: 768px) and (max-width: 1024px) {
-            .contact-container .contact-us-body .contact-us-information .contact-us-form .contac-us-send-button {
+            #contact-container .contact-us-body .contact-us-information .contact-us-form .contac-us-send-button {
               width: 25%; } }
           @media (min-width: 1024px) {
-            .contact-container .contact-us-body .contact-us-information .contact-us-form .contac-us-send-button {
+            #contact-container .contact-us-body .contact-us-information .contact-us-form .contac-us-send-button {
               width: 25%; } }
-          .contact-container .contact-us-body .contact-us-information .contact-us-form .contac-us-send-button:hover {
+          #contact-container .contact-us-body .contact-us-information .contact-us-form .contac-us-send-button:hover {
             cursor: pointer;
             background-color: #0062cc;
             transition: 0.3; }
