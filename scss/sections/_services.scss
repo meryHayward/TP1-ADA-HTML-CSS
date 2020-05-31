@@ -8,8 +8,12 @@
     h1{
         @include title-h1;
     }
-    h4 { 
-        @include title-h4;
+    h4{ 
+        @include title-h4 ($gray);
+        padding-bottom: 60px;
+        @include breakpoint-tablet{
+            width: 50%;
+        }
     }
 
     // --Card Container
@@ -20,8 +24,8 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        @include breakpoint-tablet {
-            width: 768px;
+        @include breakpoint-tablet { 
+            width: 1000px;
         }
     
     //--Card 
@@ -33,9 +37,9 @@
             overflow: hidden;
             border-radius: 10px;
             box-sizing: border-box;
-            box-shadow: 0 0 5px $lightgray;
+            box-shadow: 0 10px 29px rgba(44, 60 , 0, .1);
             position: relative;
-            transition: translateY 0.2s ease-in-out;
+            transition: transform 0.3s ease-in;
             header{
                 margin-left: 55px;
                 h3{
@@ -43,10 +47,9 @@
                     margin-top: 0;
                     margin-bottom: 10px;
                     text-align: left;
-                    //font-size: 18px;
                 }
                 a{
-                    transition: color 0.2s ease-in-out; 
+                    transition: color 0.2s ease-in; 
                     &:hover{
                         color: $lightblue; 
                     }
@@ -55,6 +58,7 @@
             }
             & article{
                 @include paragraph;
+                font-size: 14px;
                 margin-left: 55px;
             }
             & .service_aside{ 
@@ -73,12 +77,10 @@
             &:hover{ 
                 transform: translateY(-7px);
             }  
-            @include breakpoint-mobile-2 {
-                width: 310px;  
-            }
             @include breakpoint-tablet{
-                margin-right: 15px;
-                margin-left: 15px
+                width: 425px;  
+                margin-right: 25px;
+                margin-left: 25px
             }
         }
     }    
