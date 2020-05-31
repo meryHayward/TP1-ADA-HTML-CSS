@@ -1,8 +1,3 @@
-//---Imports
-@import "../abstract/variables";
-@import "../abstract/mixins";
-
-//--
 .services{
     background-color: $light;    
     padding: 30px 10px;
@@ -30,7 +25,7 @@
             width: 768px;
         }
     
-    //--Card
+    //--Card 
         .service_card{
             width: 100%;
             margin-bottom: 30px; 
