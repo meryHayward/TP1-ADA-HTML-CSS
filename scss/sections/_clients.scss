@@ -1,0 +1,75 @@
+#clients {
+    background-color: $light;
+    box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    height: auto;
+    padding: 20px 16px 25% 16px;
+    @include breakpoint-tablet {
+        padding: 20px 40px 12% 40px;
+    }
+    @include breakpoint-tablet-desktop {
+        padding: 25px 134px 12% 134px;
+    }
+    @include breakpoint-desktop-1 {
+        padding: 40px 50px 9% 50px;
+    }
+    @include breakpoint-desktop-2 {
+        padding: 40px 46px 8% 46px;
+    }
+    h1 {
+        @include title-h1;
+    }
+    h4 {
+        @include title-h4 ($gray);
+        padding-bottom: 60px;
+        @include breakpoint-tablet {
+            width: 50%;
+        }
+        @include breakpoint-desktop-3 {
+            width: 45%;
+        }
+    }
+    .clients-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        @include breakpoint-desktop-1 {
+            justify-content: center;
+        }
+        .clients-img {
+            align-items: center;
+            background-color: $white;
+            border-bottom: 1px solid #d6eaff;
+            border-right: 1px solid #d6eaff;
+            display: flex;
+            height: 160px;
+            justify-content: center;
+            overflow: hidden;
+            width: 100%;
+            @include breakpoint-tablet {
+                width: 228px;
+            }
+            @include breakpoint-desktop-1 {
+                width: 230px;
+            }
+            @include breakpoint-desktop-2 {
+                width: 276px;
+            }
+            img {
+                transition: all .4s ease-in-out;
+                width: 55%;
+                @include breakpoint-mobile-2 {
+                    width: 65%;
+                }
+                @include breakpoint-tablet {
+                    width: 45%;
+                }
+                @include breakpoint-desktop-2 {
+                    width: 55%;
+                }
+            }
+            &:hover img {
+                transform: scale(1.2);
+            }
+        }
+    }
+}

@@ -1,4 +1,8 @@
-// import sections
+// Abstract
+@import "./abstract/mixins";
+@import "./abstract/variables";
+
+// Sections
 @import "./sections/header";
 @import "./sections/hero";
 @import "./sections/about";
@@ -20,4 +24,4 @@ body {
 a { 
     text-decoration: none; 
     color: inherit;
-}
+}   

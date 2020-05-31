@@ -1,0 +1,133 @@
+@import "../components/headerDesktop";
+
+.navbar {
+    align-items: center;
+    background-color: $white;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+    box-sizing: $box-sizing;
+    display: flex;
+    padding: 17px 0 13px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    @include breakpoint-mobile-2 {
+        height: 60px;
+    }
+    @include breakpoint-desktop-1 {
+        height: 80px;
+        justify-content: flex-end;
+        padding: 0;
+    }
+    img {
+        margin-left: 15px;
+        width: 21%;
+        @include breakpoint-mobile-2 {
+            width: 16%;
+        }
+        @include breakpoint-tablet {
+            margin-left: 8%;
+            width: 13%;
+        }
+        @include breakpoint-tablet-desktop {
+            margin-left: 27%;
+        }
+        @include breakpoint-desktop-1 {
+            margin-left: 14%;
+            width: 22%;
+        }
+        @include breakpoint-desktop-2 {
+            margin-left: 9%;
+            width: 13%;
+        }
+    }
+    .open-sidebar {
+        color: $darkblue;
+        font-size: 22px;
+        padding-right: 24px;
+        position: absolute;
+        right: 0;
+        @include breakpoint-desktop-1 {
+            display: none;
+        }
+    }
+    #sidebar {
+        background-color: rgba(0, 0, 0, 0.8);
+        height: 100vh;
+        left: -100%;
+        position: fixed;
+        top: 0;
+        transition: left 0.3s linear;
+        width: 100%;
+        @include breakpoint-desktop-1 {
+            display: none;
+        }
+        &:target {
+            left: 0;
+            opacity: 1;
+        }
+        .close-sidebar {
+            color: $white;
+            font-size: $font-xl;
+            position: absolute;
+            right: 26px;
+            top: 19px;
+        }
+        .sidebar-content{
+            background-color:rgba(25, 0, 255, 0.39);
+            height: 100%;
+            overflow: scroll;
+            position: relative;
+            transition: left 0.3s linear;
+            width: 81%;
+            @include breakpoint-mobile-2 {
+                width: 62%;
+            }
+            @include breakpoint-tablet {
+                width: 34%;
+            }
+            @include breakpoint-tablet-desktop {
+                width: 27%;
+            }
+            nav { 
+                padding: 2px 5px;
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    li {
+                        color: $white;
+                        font-family: $text;
+                        font-size: 16px;
+                        padding: 11px 15px;
+                        .dropdown-input {
+                            &.hidden-input {
+                                width: 0;
+                            }
+                            &:checked {
+                                & ~ .dropdown-content {
+                                    max-height: 800px;
+                                    transition-timing-function: ease-in-out;
+                                }         
+                            }
+                            &:checked {
+                                &  ~ .dropdown-label:after {
+                                    content: "▲";     
+                                }                                
+                            }
+                        }
+                        .dropdown-label {
+                            margin-left: -11px;
+                            &:after {
+                                content: "▼";
+                            }
+                        }
+                        .dropdown-content {
+                            max-height: 0;
+                            overflow: hidden;
+                            transition: .8s cubic-bezier(0,1,0,1);
+                        }
+                    }
+                }      
+            }
+        }
+    }
+}

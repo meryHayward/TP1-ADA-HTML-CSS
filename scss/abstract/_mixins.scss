@@ -1,8 +1,6 @@
 /* PUEDEN CAMBIAR LOS VALORES SI ES NECESARIO, 
 VERIFICANDO QUE NO AFECTE EL DISEÑO DE LAS DEMÁS */
 
-@import "./variables";
-
 /* Utilizar este mixin para los títulos de cada sección.
 En el html, en cada sección colocar el tag "h1" para el título.
 */
@@ -28,7 +26,7 @@ persona en testimonials colocarlo con el tag "h4".
     font-weight: $regular;
     line-height: 22px;
     margin: auto;
-    padding-top: 18px;
+    padding-top: 20px;
     text-align: center;
     width: 100%;
 }
@@ -42,7 +40,7 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
 @mixin title-h3 ($font-color) {
     color: $font-color; // $white, $black o $bluegray
     font-family: $title;
-    font-size: $font-xl;
+    font-size: $font-l;
     font-weight: bold;
     text-align: center;  
 }
@@ -53,6 +51,19 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
     font-family: $text;
     font-size: $font-s;
     font-weight: $regular;
+    line-height: 1.5rem;
+}
+
+@mixin dropdown-content {
+    background-color: $white;
+    box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.2);
+    display: none;
+    left:0;
+    min-width: 130px;
+    padding: 8px 0;
+    position: absolute;
+    top: 50px;
+    z-index: 10;
 }
 
 //Screen Sizes 
@@ -86,8 +97,20 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
     }
 }
 
+@mixin breakpoint-desktop-1-special {
+    @media (max-width: 1023px) {
+        @content;
+    }
+}
+
 @mixin breakpoint-desktop-2 {
     @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin breakpoint-desktop-3 {
+    @media (min-width: 1300px) {
         @content;
     }
 }
