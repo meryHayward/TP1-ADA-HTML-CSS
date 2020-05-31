@@ -51,7 +51,7 @@
         }
     }
     #sidebar {
-        background-color: rgba(0,0,0,.8);
+        background-color: rgba(0, 0, 0, 0.8);
         height: 100vh;
         left: -100%;
         position: fixed;
@@ -73,7 +73,7 @@
             top: 19px;
         }
         .sidebar-content{
-            background-color:rgba(25, 0, 255, 0.294);
+            background-color:rgba(25, 0, 255, 0.39);
             height: 100%;
             overflow: scroll;
             position: relative;

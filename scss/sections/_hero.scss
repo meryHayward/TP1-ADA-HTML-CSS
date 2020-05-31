@@ -1,128 +1,90 @@
+@import "../components/heroButtons";
+
 #hero{
  display: flex;
  flex-wrap: wrap;
- align-items: center;
- text-align: center;
  background-color: $blue;
- padding: 0 1rem;
+ padding: 100px 1rem 28px 1rem;
+ height: auto;
+ 
+ @include breakpoint-tablet{
+    padding: 140px 1rem 65px 1rem;
+}
  @include breakpoint-desktop-1{
      flex-direction: row-reverse;
-     padding: 9rem 3rem 8rem 3rem;
-     box-sizing: border-box;
-
+     padding: 180px 3rem 42px 3rem;
  }
- @include breakpoint-desktop-3{
-        padding: 7rem 17rem 9rem 17rem;
-        }
+
+ @include breakpoint-desktop-2{
+    padding-bottom: 80px;
+}
+
+@include breakpoint-desktop-3{
+    padding: 180px 120px 79px 120px;
+}
+
 
  
  .hero__img{
      position: relative;
      width: 100%;
-     padding-top: 6rem;
-     @include breakpoint-tablet{
-         padding-top: 8rem;
-     }
+     text-align: center;
      @include breakpoint-desktop-1{
-         width:50%;
-        padding-top: 2rem;
-     }
-
+       width: 50%;
+   
+    }
+   
      img{
-        width: 75%;
+        width: 80%;
         @include breakpoint-tablet{
-            padding:0px;
+            width: 75%;
         }
         @include breakpoint-tablet-desktop{
-            width:65% ;
+            width: 60%;
+            
         }
         @include breakpoint-desktop-1{
             width: 100%;
+            padding-top: 20px;
         }
         @include breakpoint-desktop-3{
-            padding-top: 3rem;
+            padding-top: 20px;
         }
+        
+    
      }
  }
  .hero__info{
-     position: relative;
-     width: 100%;
-     padding-bottom: 1rem;
-     @include breakpoint-tablet{
-         padding-bottom: 4rem;
-     }
+    position: relative;
+    width: 100%;
+    text-align: center;
+    
+   
      @include breakpoint-desktop-1{
          width: 50%;
+         padding-bottom: 10rem;
 
      }
+     
      h1{
          @include title-h1;
          color: $white;
          font-weight: bold;
-         padding-bottom: 1rem;
+         margin: 10px 0 20px 0;
+         font-size: 34px;
             @include breakpoint-tablet{
             font-size: 48px;
-            padding-top: 0px;
          }
          @include breakpoint-desktop-1{
              text-align: left;
          }
+         
+   
+         
          span{
              color: #82b5f6;
              text-decoration: underline;
          }
      }
-     button{
-        display: block;
-        border-radius: 5rem;
-        width: 11rem;
-        height: 3rem;
-        border: 2px solid $white;
-        background-color: transparent;
-        margin: 20px auto;  
-        transition: all 0.3s ease-in-out;
-        box-sizing: border-box;
-         @include breakpoint-mobile-2{
-            display: inline;
-            width: 10rem;
-            margin: 20px 10px;  
-        }
-        @include breakpoint-tablet-desktop{
-            width: 11rem;
-        }
-        @include breakpoint-desktop-1{
-            position: absolute;
-            left: 200px;
-
-        }
-        &.btn__azul{
-            background-color: $lightblue;
-            border: none;
-            @include breakpoint-desktop-1{
-                position: absolute;
-                left: 0;
-            }
-            &:hover{
-                border: 2px solid $white;
-                background-color: transparent;
-            }
-        }
-        a{
-          font-weight: bold;
-          font-family: $text;
-          color: $white;
-          font-size: $font-m;
-           @include breakpoint-mobile-2{
-            font-size: $font-s;
-        }
-        }
-        &:hover {
-        background-color: $lightblue;
-        border: none;
-        margin-top: 1rem;  
-    
-     }
- 
-}
- }
+    }
 }

@@ -5,7 +5,13 @@
 #portfolio {
     background-color: $white;
     height: auto;
-    padding: 48px 0;
+    padding: 20px 0 48px 0;
+    @include breakpoint-tablet-desktop {
+        padding: 25px 0 48px 0;
+    }
+    @include breakpoint-desktop-1 {
+        padding: 40px 0 48px 0;
+    }
     h1 {
         @include title-h1;
         padding-bottom: 48px;
@@ -25,7 +31,7 @@
             padding: 0 20px 30px 20px;
         }
         .portfolio-content {
-            background-color: #356188;
+            background-color: #08345d;
             border-radius: 6px;
             height: 250px;
             margin: 13px 0;
@@ -41,7 +47,7 @@
             @include breakpoint-desktop-2 {
                 width: 350px;
             }
-            img {
+            .portfolio-img {
                 display: block;
                 height: 100%;
                 object-fit: cover;
@@ -49,9 +55,9 @@
                 transition: .3s linear;
                 width: 100%;
             }
-            &:hover img {
+            &:hover .portfolio-img {
                 opacity: 0.3;
             }
-        }
+        }     
     }   
 }
