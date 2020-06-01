@@ -1,5 +1,3 @@
-@import "../abstract/mixins";
-
 .container-footer {
     width: 100%;
     background-color: #004a99;
@@ -30,7 +28,11 @@
         }
         @include breakpoint-desktop-1 {
             flex-direction: row;
-            margin: 40px 30px 50px 40px;
+            margin: 40px 40px 50px 40px;
+        }
+        @include breakpoint-desktop-3 {
+            flex-direction: row;
+            margin: 40px 40px 50px 40px;
             padding-left: 100px;
             padding-right: 100px;
         }
@@ -49,7 +51,7 @@
             line-height: 24px;
             font-family: "Montserrat", sans-serif;
             @include breakpoint-desktop-1 {
-                width: 40%;
+                width: 30%;
             }
             .footer-title {
                 font-size: 38px;
@@ -58,15 +60,17 @@
             }
         }
         .useful-links {
-            list-style: none;
-            line-height: 35px;
+            a {
+                line-height: 35px;
+            }
             @include breakpoint-desktop-1 {
                 width: 15%;
             }
         }
         .contact-us {
-            list-style: none;
-            line-height: 26px;
+            p {
+                line-height: 26px;
+            }
             @include breakpoint-desktop-1 {
                 width: 20%;
             }
@@ -92,25 +96,29 @@
                     margin-top: 8px;
                     font-size: 18px;
                     margin-left: 9px;
+                    width: 50%;
                 }
             }
         }
         .our-newsletter {
-            list-style: none;
             @include breakpoint-desktop-1 {
-                width: 35%;
+                width: 24%;
+            }
+            .footer-form {
+                position: relative;
+                display: inline-flex;
             }
             .footer-input {
-                margin-top: 25px;
+                width: 250px;
                 height: 28px;
-                width: 60%;
             }
             .footer-button {
+                position: absolute;
+                right: 0px;
                 height: 34px;
                 width: 35%;;
                 background-color: $lightblue;
                 color: $white;
-                margin-left: -4px;
                 font-size: 14px;
                 border-style: none;
                 &:hover {
@@ -127,18 +135,15 @@
         color:#eee;;
         font-size: 14px;
         text-align: center;
-        justify-content: center;
         .text-footer {
             margin-top: 32px;
-            height: 8px;
             font-size: 14px;
             line-height: 22px;
             color:#eee;
             font-weight: 400;
         }
         .designed-by {
-            margin-top: 0px;
-            margin-bottom: 32px;
+            margin: -15px 0px 32px 0px;
             font-size: 13px;
         }
     }
