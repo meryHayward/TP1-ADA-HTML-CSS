@@ -1,0 +1,123 @@
+.whyChoose{
+    box-sizing: border-box;
+    padding: 60px 20px;
+    background-color: $blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        @include title-h1;
+        color: $white;
+    }
+    h4{
+        @include title-h4($white);
+        font-family: $title;
+        padding-bottom: 50px;
+    }
+    .why_card_container{
+        display: flex;
+        flex-wrap: wrap;
+        .why_card{
+            padding: 45px 20px;
+            background-color: rgba(0, 64, 138, .5);
+            box-sizing: border-box;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            transition: background-color 0.2s ease-in-out;
+            @include breakpoint-tablet{
+                padding: 45px 30px;
+            }
+           @include breakpoint-desktop-1{
+               margin-left: 10px;
+               margin-right: 10px;
+            }
+            @include breakpoint-desktop-2{
+                margin-left: 25px;
+               margin-right: 25px;
+            }
+            &:hover{
+                background-color: $darkblue;
+            }
+            .why_card_header{
+                @include title-h3($white);
+                .why_card_icon{
+                    width: 60px;
+                } 
+            } 
+            .why_card_main{
+                padding-bottom: 30px;
+                font-family: $title;
+                font-weight: $regular;
+                font-size: $font-m;
+                color: $light;
+                text-align: center;
+            }
+            .why_card_footer{ 
+                h4{
+                    margin: 0;
+                    padding-bottom: 5px;
+                    font-family: $title;
+                    font-weight: $bold;
+                    font-size: $font-m;
+                    color: $white;
+                    border-bottom: solid 2px $bluegray; 
+                    transition: border-bottom 0.2s linear;
+                    &:hover{
+                       border-bottom: solid 2px $white; 
+                    }
+                }
+            
+        }
+       
+
+    } 
+
+        @include breakpoint-mobile-2{
+            width: 85%;
+        }
+        @include breakpoint-desktop-1{
+            width: 100%;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        @include breakpoint-desktop-2{
+        }
+    }
+}
+/*----Empieza la sección counter---*/
+.work_counter{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    .counter1{
+        width: 120px;
+        padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .number{
+            font-family: $text;
+            font-weight: $bold;
+            color: $white;
+            font-size: 48px;
+        }
+        .counter_about{
+            font-family: $title;
+            font-size: 20px;
+            color: $white;
+            margin-bottom: 20px;
+        }
+    }
+    @include breakpoint-tablet{
+        width: 85%;
+    }
+}
