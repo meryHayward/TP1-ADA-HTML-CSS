@@ -1,5 +1,5 @@
 .hero-buttons {
-    @include breakpoint-desktop-1{
+    @include breakpoint-desktop-1 {
         position: absolute;
         left: 0;
         }
