@@ -1215,7 +1215,7 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
           font-family: "Open Sans", sans-serif;
           font-style: italic;
           font-size: 12px; }
-      #team .cuadroimagen .imagen:hover div {
+      #team .cuadroimagen .imagen:hover .overlay {
         opacity: 85%;
         transform: translateX(0); }
       #team .cuadroimagen .imagen:hover:before {
