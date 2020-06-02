@@ -534,14 +534,10 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
           width: 95%; } }
 
 .services {
-  width: 100%;
   background-color: #ecf5ff;
   box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-  padding: 30px 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  padding: 30px 5px;
+  height: au; }
   .services h1 {
     color: #283d50;
     font-family: "Montserrat", sans-serif;
@@ -563,7 +559,16 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
     padding-bottom: 60px; }
     @media (min-width: 768px) {
       .services h4 {
+        width: 45%; } }
+    @media (min-width: 955px) {
+      .services h4 {
+        width: 35%; } }
+    @media (min-width: 1024px) {
+      .services h4 {
         width: 50%; } }
+    @media (min-width: 1300px) {
+      .services h4 {
+        width: 35%; } }
   .services .service_card_container {
     padding: 20px;
     display: flex;
@@ -571,12 +576,13 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
     align-items: center;
     flex-wrap: wrap;
     box-sizing: border-box; }
-    @media (min-width: 768px) {
+    @media (min-width: 955px) {
       .services .service_card_container {
-        width: 955px; } }
-    @media (min-width: 1200px) {
+        padding: 0 50px;
+        margin: 0 auto; } }
+    @media (min-width: 1300px) {
       .services .service_card_container {
-        width: 1000px; } }
+        padding: 0 180px; } }
     .services .service_card_container .service_card {
       width: 100%;
       margin-bottom: 30px;
@@ -587,7 +593,12 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
       box-sizing: border-box;
       box-shadow: 0 10px 29px rgba(44, 60, 0, 0.1);
       position: relative;
-      transition: transform 0.3s ease-in; }
+      transition: transform 0.3s ease-in;
+      /*  @include breakpoint-desktop-1{
+                width: 350px; 
+                margin-right: 25px;
+                margin-left: 25px
+            } */ }
       .services .service_card_container .service_card header {
         margin-left: 55px; }
         .services .service_card_container .service_card header h3 {
@@ -627,18 +638,13 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
       @media (min-width: 768px) {
         .services .service_card_container .service_card {
           width: 310px;
-          margin-right: 25px;
-          margin-left: 10px; } }
-      @media (min-width: 1024px) {
-        .services .service_card_container .service_card {
-          width: 350px;
-          margin-right: 25px;
-          margin-left: 25px; } }
+          margin-right: 20px;
+          margin-left: 20px; } }
       @media (min-width: 1200px) {
         .services .service_card_container .service_card {
-          width: 425px;
-          margin-right: 25px;
-          margin-left: 25px; } }
+          width: 430px;
+          /*  margin-right: 25px;
+                margin-left: 25px */ } }
 
 .whyChoose {
   box-sizing: border-box;
@@ -756,7 +762,7 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
   .whyChoose .work_counter {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     padding-top: 30px; }
     .whyChoose .work_counter .counter1 {
