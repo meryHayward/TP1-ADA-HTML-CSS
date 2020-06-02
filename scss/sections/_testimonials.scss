@@ -16,6 +16,7 @@
     @include breakpoint-desktop-2 {
         padding: 40px 0px 60px 0px;
     }
+    
     h1 {
         @include title-h1; 
     }
@@ -34,6 +35,9 @@
         }
         @include breakpoint-desktop-2 {
             padding: 40px 310px 20px 310px;
+        }
+        @include breakpoint-desktop-4 {
+            padding: 40px 450px 20px 450px;
         }
         .imgtestimonials {
             max-width: 112px;

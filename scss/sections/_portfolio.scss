@@ -12,6 +12,9 @@
     @include breakpoint-desktop-1 {
         padding: 40px 0 48px 0;
     }
+    @include breakpoint-desktop-4 {
+        padding: 25px 235px 48px 235px;
+    }
     h1 {
         @include title-h1;
         padding-bottom: 48px;

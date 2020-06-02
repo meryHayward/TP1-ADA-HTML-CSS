@@ -25,6 +25,9 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
   @media (max-width: 1023px) {
     .menu-desktop {
       display: none; } }
+  @media (min-width: 1400px) {
+    .menu-desktop {
+      width: 48%; } }
   .menu-desktop ul {
     padding: 0; }
     .menu-desktop ul li {
@@ -290,6 +293,9 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
   @media (min-width: 1300px) {
     #hero {
       padding: 180px 120px 79px 120px; } }
+  @media (min-width: 1400px) {
+    #hero {
+      padding: 180px 280px 79px 280px; } }
   #hero .hero__img {
     position: relative;
     width: 100%;
@@ -388,6 +394,9 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
   @media (min-width: 1300px) {
     #about {
       padding: 40px 110px 20px 110px; } }
+  @media (min-width: 1400px) {
+    #about {
+      padding: 40px 280px 20px 280px; } }
   #about .about__title {
     color: #283d50;
     font-family: "Montserrat", sans-serif;
@@ -655,6 +664,9 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
   justify-content: center;
   align-items: center;
   /*----Empieza la sección counter---*/ }
+  @media (min-width: 1400px) {
+    .whyChoose {
+      padding: 35px 280px 60px 280px; } }
   .whyChoose h1 {
     color: #283d50;
     font-family: "Montserrat", sans-serif;
@@ -962,6 +974,9 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
   @media (min-width: 1024px) {
     #portfolio {
       padding: 40px 0 48px 0; } }
+  @media (min-width: 1400px) {
+    #portfolio {
+      padding: 25px 235px 48px 235px; } }
   #portfolio h1 {
     color: #283d50;
     font-family: "Montserrat", sans-serif;
@@ -1054,6 +1069,9 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
     @media (min-width: 1200px) {
       #testimonials .cajatestimonials {
         padding: 40px 310px 20px 310px; } }
+    @media (min-width: 1400px) {
+      #testimonials .cajatestimonials {
+        padding: 40px 450px 20px 450px; } }
     #testimonials .cajatestimonials .imgtestimonials {
       max-width: 112px;
       border-radius: 50%;
@@ -1185,6 +1203,9 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
     @media (min-width: 1300px) {
       #team .cuadroimagen {
         width: 85%; } }
+    @media (min-width: 1400px) {
+      #team .cuadroimagen {
+        width: 75%; } }
     #team .cuadroimagen .imagen {
       position: relative;
       display: flex;
@@ -1292,6 +1313,9 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
   @media (min-width: 1200px) {
     #clients {
       padding: 40px 46px 7% 46px; } }
+  @media (min-width: 1400px) {
+    #clients {
+      padding: 40px 200px 7% 200px; } }
   #clients h1 {
     color: #283d50;
     font-family: "Montserrat", sans-serif;
@@ -1537,6 +1561,10 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
         margin: 40px 40px 50px 40px;
         padding-left: 100px;
         padding-right: 100px; } }
+    @media (min-width: 1400px) {
+      .container-footer .top-footer {
+        padding-left: 220px;
+        padding-right: 220px; } }
     @media (min-width: 768px) and (max-width: 1024px) {
       .container-footer .top-footer .footer-row {
         width: 45%;
@@ -1801,6 +1829,9 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
   @media (min-width: 1024px) {
     #portfolio {
       padding: 40px 0 48px 0; } }
+  @media (min-width: 1400px) {
+    #portfolio {
+      padding: 25px 235px 48px 235px; } }
   #portfolio h1 {
     color: #283d50;
     font-family: "Montserrat", sans-serif;

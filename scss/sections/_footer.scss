@@ -51,6 +51,10 @@
             padding-left: 100px;
             padding-right: 100px;
         }
+         @include breakpoint-desktop-4{
+            padding-left: 220px;
+            padding-right: 220px;
+         }
         .footer-row {
             @media (min-width: 768px) and (max-width: 1024px) {
                 width: 45%;

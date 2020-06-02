@@ -18,6 +18,9 @@
     @include breakpoint-desktop-3 {
         padding: 40px 110px 20px 110px;
     }
+    @include breakpoint-desktop-4 {
+        padding: 40px 280px 20px 280px;
+    }
     .about__title {
         @include title-h1;
     }

@@ -8,6 +8,9 @@
     @include breakpoint-desktop-1-special {
         display: none;
     }
+    @include breakpoint-desktop-4{
+        width: 48%;
+    }
     ul {
         padding: 0;
         li {
