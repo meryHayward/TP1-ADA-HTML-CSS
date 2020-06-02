@@ -64,7 +64,9 @@
         @include breakpoint-desktop-3 {
             width: 85%;
         }
-
+        @include breakpoint-desktop-4{
+            width: 75%;
+        }
         .imagen {
             position: relative;
             display: flex;
@@ -124,7 +126,7 @@
                 backface-visibility: hidden;
                 vertical-align: top;
                 border-radius: 50%;
-                padding: 5px;
+                padding: 5px;                   
             }
             .overlay {
                 position: absolute;

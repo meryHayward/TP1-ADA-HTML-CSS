@@ -20,6 +20,9 @@
     @include breakpoint-desktop-3 {  
         padding: 180px 120px 79px 120px;
     }
+    @include breakpoint-desktop-4 {
+        padding: 180px 280px 79px 280px;
+    }
     .hero__img {
         position: relative;
         width: 100%;

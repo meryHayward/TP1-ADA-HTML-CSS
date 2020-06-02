@@ -6,6 +6,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include breakpoint-desktop-4 {
+        padding: 35px 280px 60px 280px;
+    }
     h1{
         @include title-h1;
         color: $white;
