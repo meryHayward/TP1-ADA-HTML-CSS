@@ -1,206 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
   <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TP1-ADA</title>
-    <!-- Favicons -->
-    <link href="./img/favicon.ico" rel="icon">
-    <link href="./img/apple-icon.png" rel="apple-touch-icon">
-    <!-- style -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- font family -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="fontawesome-free/css/all.min.css">
-  </head>
-  <body>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP1-ADA</title>
+  <!-- Favicons -->
+  <link href="./img/favicon.ico" rel="icon">
+  <link href="./img/apple-icon.png" rel="apple-touch-icon">
+  <!-- style -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- font family -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="fontawesome-free/css/all.min.css">
+</head>
 
-    <!---------------- header -------------->
-    <header class="navbar">
-      <a href="#"><img src="./img/logo-tp.png" alt="Logo" /></a>
-      <a class="open-sidebar" href="#sidebar"><i class="fa fa-bars"></i></a>
+<body>
 
-      <div id="sidebar">
-        <a class="close-sidebar" href="#"><i class="fa fa-times"></i></a>
+  <!---------------- header -------------->
+  <header class="navbar">
+    <a href="#"><img src="./img/logo-tp.png" alt="Logo" /></a>
+    <a class="open-sidebar" href="#sidebar"><i class="fa fa-bars"></i></a>
 
-        <!-- sidebar-content -->
-        <div class="sidebar-content">
-          <nav>
-            <ul>
-              <li><a href="#hero">Home</a></li>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#services">Services</a></li>
-              <li> <a href="#portfolio">Portfolio</a></li>
-              <li><a href="#team">Team</a></li>
+    <div id="sidebar">
+      <a class="close-sidebar" href="#"><i class="fa fa-times"></i></a>
 
-              <!-- 1st dropdown -->
-              <li><a href="#"></a>
-                <input class="dropdown-input hidden-input" id="dropdown1" type="checkbox" />
-                <label class="dropdown-label" for="dropdown1">Drop Down</label>
-
-                <div class="dropdown-content">
-                  <ul style="padding-top: 10px;">
-                    <li><a href="#">Drop Down 1</a></li>
-
-                    <!-- 2nd dropdown -->
-                    <li><a href="#"></a>
-                      <input class="dropdown-input hidden-input" id="dropdown2" type="checkbox" />
-                      <label class="dropdown-label" for="dropdown2">Drop Down 2</label>
-
-                      <div class="dropdown-content">
-                        <ul style="padding-top: 10px;">
-                          <li><a href="#">Deep Drop Down 1</a></li>
-                          <li><a href="#">Deep Drop Down 2</a></li>
-                          <li><a href="#">Deep Drop Down 3</a></li>
-                          <li><a href="#">Deep Drop Down 4</a></li>
-                          <li><a href="#">Deep Drop Down 5</a></li>
-                        </ul>
-                      </div>
-                    </li> <!-- end 2nd dropdown -->
-                    <li><a href="#">Drop Down 3</a></li>
-                    <li><a href="#">Drop Down 4</a></li>
-                    <li><a href="#">Drop Down 5</a></li>
-                  </ul>
-                </div>
-              </li> <!-- end 1st dropdown -->
-              <li><a href="#">Contact Us</a></li>
-            </ul>
-          </nav>
-        </div> <!-- end sidebar-content -->
-      </div> <!-- end sidebar -->
-
-      <div class="menu-desktop">
+      <!-- sidebar-content -->
+      <div class="sidebar-content">
         <nav>
           <ul>
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <li> <a href="#portfolio">Portfolio</a></li>
             <li><a href="#team">Team</a></li>
-            <li class="first-dropdown"><a>Drop Down <i class="fa fa-angle-down"></i></a>
-              <ul class="first-dropdown-content">
-                <li><a href="#">Drop Down 1</a></li>
-                <li class="second-dropdown"><a>Drop Down 2 <i class="fa fa-angle-right"></i></a>
-                  <ul class="second-dropdown-content">
-                    <li><a href="#">Deep Drop Down 1</a></li>
-                    <li><a href="#">Deep Drop Down 2</a></li>
-                    <li><a href="#">Deep Drop Down 3</a></li>
-                    <li><a href="#">Deep Drop Down 4</a></li>
-                    <li><a href="#">Deep Drop Down 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Drop Down 3</a></li>
-                <li><a href="#">Drop Down 4</a></li>
-                <li><a href="#">Drop Down 5</a></li>
-              </ul>
-            </li>
-            <li><a href="#contact-container">Contact Us</a></li>
+
+            <!-- 1st dropdown -->
+            <li><a href="#"></a>
+              <input class="dropdown-input hidden-input" id="dropdown1" type="checkbox" />
+              <label class="dropdown-label" for="dropdown1">Drop Down</label>
+
+              <div class="dropdown-content">
+                <ul style="padding-top: 10px;">
+                  <li><a href="#">Drop Down 1</a></li>
+
+                  <!-- 2nd dropdown -->
+                  <li><a href="#"></a>
+                    <input class="dropdown-input hidden-input" id="dropdown2" type="checkbox" />
+                    <label class="dropdown-label" for="dropdown2">Drop Down 2</label>
+
+                    <div class="dropdown-content">
+                      <ul style="padding-top: 10px;">
+                        <li><a href="#">Deep Drop Down 1</a></li>
+                        <li><a href="#">Deep Drop Down 2</a></li>
+                        <li><a href="#">Deep Drop Down 3</a></li>
+                        <li><a href="#">Deep Drop Down 4</a></li>
+                        <li><a href="#">Deep Drop Down 5</a></li>
+                      </ul>
+                    </div>
+                  </li> <!-- end 2nd dropdown -->
+                  <li><a href="#">Drop Down 3</a></li>
+                  <li><a href="#">Drop Down 4</a></li>
+                  <li><a href="#">Drop Down 5</a></li>
+                </ul>
+              </div>
+            </li> <!-- end 1st dropdown -->
+            <li><a href="#">Contact Us</a></li>
           </ul>
         </nav>
-      </div>
-    </header>
+      </div> <!-- end sidebar-content -->
+    </div> <!-- end sidebar -->
 
-    <!---------------- hero -------------->
-    <section id="hero">
-      <div class="hero__img">
-        <img src="img/intro-img.svg" alt="hero_image">
+    <div class="menu-desktop">
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#team">Team</a></li>
+          <li class="first-dropdown"><a>Drop Down <i class="fa fa-angle-down"></i></a>
+            <ul class="first-dropdown-content">
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="second-dropdown"><a>Drop Down 2 <i class="fa fa-angle-right"></i></a>
+                <ul class="second-dropdown-content">
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact-container">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!---------------- hero -------------->
+  <section id="hero">
+    <div class="hero__img">
+      <img src="img/intro-img.svg" alt="hero_image">
+    </div>
+    <div class="hero__info">
+      <h1>We provide<br>
+        <span>solutions</span><br>
+        for your business!</h1>
+      <div class="hero-buttons">
+        <button><a class="btn__azul" href="#about">Get Started</a></button>
+        <button><a href="#services">Our Services</a></button>
       </div>
-      <div class="hero__info">
-        <h1>We provide<br>
-          <span>solutions</span><br>
-          for your business!</h1>
-        <div class="hero-buttons">
-          <button><a class="btn__azul" href="#about">Get Started</a></button>
-          <button><a href="#services">Our Services</a></button>
+    </div>
+
+    <a class="top" href="#hero"><i class="fas fa-chevron-up"></i></a>
+  </section>
+
+
+  <!---------------- about us -------------->
+  <section id="about">
+    <h1 class="about__title">About Us</h1>
+    <h4 class="about__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+    <div class="box">
+      <img src="img/about-img.svg" alt="" class="box__img">
+      <div class="box__izq">
+        <p class="box__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          ex ea commodo consequat.</p>
+        <div class="icon_container">
+          <div class="box__icon">
+            <aside class="box__icono">
+              <div class="icon"><i class="fas fa-shopping-bag"></i></div>
+            </aside>
+            <seccion class="box__info">
+              <div class="box__info__title">
+                <h3><a href="">Eiusmod Tempor</a></h3>
+              </div>
+              <p class="box__info__txt">Et harum quidem rerum facilis est et expedita
+                distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            </seccion>
+          </div>
         </div>
-      </div>
-
-      <a class="top" href="#hero"><i class="fas fa-chevron-up"></i></a>
-    </section>
-
-
-    <!---------------- about us -------------->
-    <section id="about">
-      <h1 class="about__title">About Us</h1>
-      <h4 class="about__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
-      <div class="box">
-        <img src="img/about-img.svg" alt="" class="box__img">
-        <div class="box__izq">
-          <p class="box__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat.</p>
-          <div class="icon_container">
-            <div class="box__icon">
-              <aside class="box__icono">
-                <div class="icon"><i class="fas fa-shopping-bag"></i></div>
-              </aside>
-              <seccion class="box__info">
-                <div class="box__info__title"><h3><a href="">Eiusmod Tempor</a></h3></div>
-                <p class="box__info__txt">Et harum quidem rerum facilis est et expedita
-                  distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-              </seccion>
+        <div class="box__icon">
+          <aside class="box__icono">
+            <div class="icon"><i class="far fa-image"></i></div>
+          </aside>
+          <seccion class="box__info">
+            <div class="box__info__title">
+              <h3><a href="">Eiusmod Tempor</a></h3>
             </div>
-          </div>
-          <div class="box__icon">
-            <aside class="box__icono">
-              <div class="icon"><i class="far fa-image"></i></div>
-            </aside>
-            <seccion class="box__info">
-              <div class="box__info__title"><h3><a href="">Eiusmod Tempor</a></h3></div>
-              <p class="box__info__txt">Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            </seccion>
-          </div>
-          <div class="box__icon">
-            <aside class="box__icono">
-              <div class="icon"><i class="fas fa-chart-bar"></i></div>
-            </aside>
-            <seccion class="box__info">
-              <div class="box__info__title"><h3><a href="">Eiusmod Tempor</a></h3></div>
-              <p class="box__info__txt">Minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-            </seccion>
-          </div>
+            <p class="box__info__txt">Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </seccion>
+        </div>
+        <div class="box__icon">
+          <aside class="box__icono">
+            <div class="icon"><i class="fas fa-chart-bar"></i></div>
+          </aside>
+          <seccion class="box__info">
+            <div class="box__info__title">
+              <h3><a href="">Eiusmod Tempor</a></h3>
+            </div>
+            <p class="box__info__txt">Minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+          </seccion>
         </div>
       </div>
-      <div class="box--reverse">
-        <img src="img/about-extra-1.svg" alt="" class="box__img">
-        <div class="box__izq--reverse">
-          <h2 class="box__subtitle">Voluptatem dignissimos provident quasi corporis
-            voluptates sit assumenda.</h2>
-          <p class="box__txt">Ipsum in aspernatur ut possimus sint. Quia omnis est
-            occaecati possimus ea. Quas molestiae perspiciatis occaecati qui rerum.
-            Deleniti quod porro sed quisquam saepe. Numquam mollitia recusandae non
-            ad at et a.</p>
-            <p class="box__txt">Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti.
-              Odit qui asperiores ea corporis deserunt veritatis quidem expedita perferendis.
-              Qui rerum eligendi ex doloribus quia sit. Porro rerum eum eum.</p>
-        </div>
+    </div>
+    <div class="box--reverse">
+      <img src="img/about-extra-1.svg" alt="" class="box__img">
+      <div class="box__izq--reverse">
+        <h2 class="box__subtitle">Voluptatem dignissimos provident quasi corporis
+          voluptates sit assumenda.</h2>
+        <p class="box__txt">Ipsum in aspernatur ut possimus sint. Quia omnis est
+          occaecati possimus ea. Quas molestiae perspiciatis occaecati qui rerum.
+          Deleniti quod porro sed quisquam saepe. Numquam mollitia recusandae non
+          ad at et a.</p>
+        <p class="box__txt">Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti.
+          Odit qui asperiores ea corporis deserunt veritatis quidem expedita perferendis.
+          Qui rerum eligendi ex doloribus quia sit. Porro rerum eum eum.</p>
       </div>
-      <div class="box">
-        <img src="img/about-extra-2.svg" alt="" class="box__img">
-        <div class="box__izq">
-          <h2 class="box__subtitle">Neque saepe temporibus repellat ea ipsum et.
-            Id vel et quia tempora facere reprehenderit.</h2>
-            <p class="box__txt">Delectus alias ut incidunt delectus nam placeat 
-              in consequatur. Sed cupiditate quia ea quis. Voluptas nemo qui aut distinctio. 
-              Cumque fugit earum est quam officiis numquam. Ducimus corporis autem at 
-              blanditiis beatae incidunt sunt.</p>
-            <p class="box__txt">Voluptas saepe natus quidem blanditiis. Non sunt impedit 
-              voluptas mollitia beatae. Qui esse molestias. Laudantium libero nisi vitae 
-              debitis. Dolorem cupiditate est perferendis iusto.</p>
-            <p class="box__txt">Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore 
-              sint quia modi. Numquam est aut fuga mollitia exercitationem nam accusantium 
-              provident quia.</p>
+    </div>
+    <div class="box">
+      <img src="img/about-extra-2.svg" alt="" class="box__img">
+      <div class="box__izq">
+        <h2 class="box__subtitle">Neque saepe temporibus repellat ea ipsum et.
+          Id vel et quia tempora facere reprehenderit.</h2>
+        <p class="box__txt">Delectus alias ut incidunt delectus nam placeat
+          in consequatur. Sed cupiditate quia ea quis. Voluptas nemo qui aut distinctio.
+          Cumque fugit earum est quam officiis numquam. Ducimus corporis autem at
+          blanditiis beatae incidunt sunt.</p>
+        <p class="box__txt">Voluptas saepe natus quidem blanditiis. Non sunt impedit
+          voluptas mollitia beatae. Qui esse molestias. Laudantium libero nisi vitae
+          debitis. Dolorem cupiditate est perferendis iusto.</p>
+        <p class="box__txt">Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore
+          sint quia modi. Numquam est aut fuga mollitia exercitationem nam accusantium
+          provident quia.</p>
       </div>
-    </section>
-    
+  </section>
 
-    <!---------------- services --------------->
-    <section class="services" id="services">
+
+  <!---------------- services --------------->
+  <!-- <section class="services" id="services">
       <h1>Services</h1>
       <h4>Laudem latine persequeris id sed, ex fabulas delectus quo.
         No vel partiendo abhorreant vituperatoribus.</h4>
@@ -297,539 +307,544 @@
         </section>
   
       </div>
-    </section>
+    </section> -->
 
 
-    <!---------------- Why choose us -------------->
-    <section class="whyChoose" id="whyChoose">
-      <h1>Why choose us?</h1>
-      <h4>Laudem latine persequeris id sed, ex fabulas delectus quo. 
-          No vel partiendo abhorreant vituperatoribus.</h4>
-          <div class="why_card_container">
-              <section class="why_card">
-                <header class="why_card_header">
-                    <i class="far fa-gem why_card_icon"></i>
-                    <!-- <img src="img/apple-icon.png" alt="icon" class="why_card_icon"> -->
-                    <h3>Corporis dolorem</h3>
-                </header>
-                <main class="why_card_main">
-                    <p>Deleniti optio et nisi dolorem debitis. Aliquam nobis est temp
-                      oribus sunt ab inventore officiis aut voluptatibus.</p>
-              </main>
-              <footer class="why_card_footer">
-                  <h4><a href="#">Read more</a></h4>
-              </footer>
-              </section>
-              <section class="why_card">
-                <header class="why_card_header">
-                    <i class="fas fa-book-dead why_card_icon"></i>
-                    <!-- <img src="img/apple-icon.png" alt="icon" class="why_card_icon"> -->
-                    <h3>Corporis dolorem</h3>
-                </header>
-                <main class="why_card_main">
-                    <p>Deleniti optio et nisi dolorem debitis. Aliquam nobis est temp
-                      oribus sunt ab inventore officiis aut voluptatibus.</p>
-              </main>
-              <footer class="why_card_footer">
-                  <h4><a href="#">Read more</a></h4>
-              </footer>
-              </section>
-              <section class="why_card">
-                <header class="why_card_header">
-                    <i class="fas fa-vector-square why_card_icon"></i>
-                    <!-- <img src="img/apple-icon.png" alt="icon" class="why_card_icon"> -->
-                    <h3>Corporis dolorem</h3>
-                </header>
-                <main class="why_card_main">
-                    <p>Deleniti optio et nisi dolorem debitis. Aliquam nobis est temp
-                      oribus sunt ab inventore officiis aut voluptatibus.</p>
-              </main>
-              <footer class="why_card_footer">
-                  <h4><a href="#">Read more</a></h4>
-              </footer>
-              </section>
-          </div>
-          <!--Counter---->
-          <div class="work_counter">
-            <section class="counter1">
-              <span class="number">274</span>
-              <span class="counter_about">Clients</span>
-            </section>
-            <section class="counter1">
-              <span class="number">421</span>
-              <span class="counter_about">Projects</span>
-            </section>
-            <section class="counter1">
-              <span class="number">1,364</span>
-              <span class="counter_about">Hours of Support</span>
-            </section>
-            <section class="counter1">
-              <span class="number">18</span>
-              <span class="counter_about">Hard Workers</span>
-            </section>
-          </div>
-    </section>
+  <!---------------- Why choose us -------------->
+  <section class="whyChoose" id="whyChoose">
+    <h1>Why choose us?</h1>
+    <h4>Laudem latine persequeris id sed, ex fabulas delectus quo.
+      No vel partiendo abhorreant vituperatoribus.</h4>
+    <div class="why_card_container">
+      <section class="why_card">
+        <header class="why_card_header">
+          <i class="far fa-gem why_card_icon"></i>
+          <!-- <img src="img/apple-icon.png" alt="icon" class="why_card_icon"> -->
+          <h3>Corporis dolorem</h3>
+        </header>
+        <main class="why_card_main">
+          <p>Deleniti optio et nisi dolorem debitis. Aliquam nobis est temp
+            oribus sunt ab inventore officiis aut voluptatibus.</p>
+        </main>
+        <footer class="why_card_footer">
+          <h4><a href="#">Read more</a></h4>
+        </footer>
+      </section>
+      <section class="why_card">
+        <header class="why_card_header">
+          <i class="fas fa-book-dead why_card_icon"></i>
+          <!-- <img src="img/apple-icon.png" alt="icon" class="why_card_icon"> -->
+          <h3>Corporis dolorem</h3>
+        </header>
+        <main class="why_card_main">
+          <p>Deleniti optio et nisi dolorem debitis. Aliquam nobis est temp
+            oribus sunt ab inventore officiis aut voluptatibus.</p>
+        </main>
+        <footer class="why_card_footer">
+          <h4><a href="#">Read more</a></h4>
+        </footer>
+      </section>
+      <section class="why_card">
+        <header class="why_card_header">
+          <i class="fas fa-vector-square why_card_icon"></i>
+          <!-- <img src="img/apple-icon.png" alt="icon" class="why_card_icon"> -->
+          <h3>Corporis dolorem</h3>
+        </header>
+        <main class="why_card_main">
+          <p>Deleniti optio et nisi dolorem debitis. Aliquam nobis est temp
+            oribus sunt ab inventore officiis aut voluptatibus.</p>
+        </main>
+        <footer class="why_card_footer">
+          <h4><a href="#">Read more</a></h4>
+        </footer>
+      </section>
+    </div>
+    <!--Counter---->
+    <div class="work_counter">
+      <section class="counter1">
+        <span class="number">274</span>
+        <span class="counter_about">Clients</span>
+      </section>
+      <section class="counter1">
+        <span class="number">421</span>
+        <span class="counter_about">Projects</span>
+      </section>
+      <section class="counter1">
+        <span class="number">1,364</span>
+        <span class="counter_about">Hours of Support</span>
+      </section>
+      <section class="counter1">
+        <span class="number">18</span>
+        <span class="counter_about">Hard Workers</span>
+      </section>
+    </div>
+  </section>
 
 
-    <!---------------- our portfolio -------------->
-    <section id="portfolio">
-      <h1>Our Portfolio</h1>
-      <div class="buttons">
-        <button><a class="active" href="#">All</a></button>
-        <button><a href="#">App</a></button>
-        <button><a href="#">Card</a></button>
-        <button><a href="#">Web</a></button>
-      </div>
+  <!---------------- our portfolio -------------->
+  <section id="portfolio">
+    <h1>Our Portfolio</h1>
+    <div class="buttons">
+      <button><a class="active" href="#">All</a></button>
+      <button><a href="#">App</a></button>
+      <button><a href="#">Card</a></button>
+      <button><a href="#">Web</a></button>
+    </div>
 
-      <div class="portfolio-container">
+    <div class="portfolio-container">
 
-        <!-- img 1 -->
-        <div id="img1" class="portfolio-content">
-          <img class="portfolio-img" src="./img/portfolio/app1.jpg" alt="App-1">
-          
-          <div class="portfolio-overlay">
-            <h4><a href="#hero">App 1</a></h4>
-            <p>App</p>
-            <a href="#app1"><i class="fas fa-eye"></i></a>
-            <a href="#hero"><i class="fas fa-external-link-alt"></i></a>
-          </div>
-          
-          <div id="app1" class="portfolio-modal">
-            <figure>
-              <img src="./img/portfolio/app1.jpg" alt="App-1" />
-              <figcaption>
-                <p>App 1
-                  <br><small>Image 1 of 9</small>
-                </p>
-                <a href="#img1"><i class="fa fa-times"></i></a>
-              </figcaption>
-            </figure>
-          </div>
-        </div> <!-- end img 1 -->
+      <!-- img 1 -->
+      <div id="img1" class="portfolio-content">
+        <img class="portfolio-img" src="./img/portfolio/app1.jpg" alt="App-1">
 
-        <!-- img 2 -->
-        <div id="img2" class="portfolio-content">
-          <img class="portfolio-img" src="./img/portfolio/web3.jpg" alt="Web-3">
-          
-          <div class="portfolio-overlay">
-            <h4><a href="#hero">Web 3</a></h4>
-            <p>Web</p>
-            <a href="#web3"><i class="fas fa-eye"></i></a>
-            <a href="#hero"><i class="fas fa-external-link-alt"></i></a>
-          </div>
-
-          <div id="web3" class="portfolio-modal">
-            <figure class="img-rectangular">
-              <img src="./img/portfolio/web3.jpg" alt="Web-3" />
-              <figcaption>
-                <p>Web 3
-                  <br><small>Image 2 of 9</small>
-                </p>
-                <a href="#img2"><i class="fa fa-times"></i></a>
-              </figcaption>
-            </figure>
-          </div>
-        </div> <!-- end img 2 -->
-
-        <!-- img 3 -->
-        <div id="img3" class="portfolio-content">
-          <img class="portfolio-img" src="./img/portfolio/app2.jpg" alt="App-2">
-          
-          <div class="portfolio-overlay">
-            <h4><a href="#hero">App 2</a></h4>
-            <p>App</p>
-            <a href="#app2"><i class="fas fa-eye"></i></a>
-            <a href="#hero"><i class="fas fa-external-link-alt"></i></a>
-          </div>
-
-          <div id="app2" class="portfolio-modal">
-            <figure class="img-large">
-              <img src="./img/portfolio/app2.jpg" alt="App-2" />
-              <figcaption>
-                <p>App 2
-                  <br><small>Image 3 of 9</small>
-                </p>
-                <a href="#img3"><i class="fa fa-times"></i></a>
-              </figcaption>
-            </figure>
-          </div>
-        </div> <!-- end img 3 -->
- 
-        <!-- img 4 -->
-        <div id="img4" class="portfolio-content">
-          <img class="portfolio-img" src="./img/portfolio/card2.jpg" alt="Card-2">
-          
-          <div class="portfolio-overlay">
-            <h4><a href="#hero">Card 2</a></h4>
-            <p>Card</p>
-            <a href="#card2"><i class="fas fa-eye"></i></a>
-            <a href="#hero"><i class="fas fa-external-link-alt"></i></a>
-          </div>
-
-          <div id="card2" class="portfolio-modal">
-            <figure class="img-large">
-              <img src="./img/portfolio/card2.jpg" alt="Card-2" />
-              <figcaption>
-                <p>Card 2
-                  <br><small>Image 4 of 9</small>
-                </p>
-                <a href="#img4"><i class="fa fa-times"></i></a>
-              </figcaption>
-            </figure>
-          </div>
-        </div> <!-- end img 4 -->
-        
-        <!-- img 5 -->
-        <div id="img5" class="portfolio-content">
-          <img class="portfolio-img" src="./img/portfolio/web2.jpg" alt="Web-2">
-          
-          <div class="portfolio-overlay">
-            <h4><a href="#hero">Web 2</a></h4>
-            <p>Web</p>
-            <a href="#web2"><i class="fas fa-eye"></i></a>
-            <a href="#hero"><i class="fas fa-external-link-alt"></i></a>
-          </div>
-
-          <div id="web2" class="portfolio-modal">
-            <figure class="img-large">
-              <img src="./img/portfolio/web2.jpg" alt="Web-2" />
-              <figcaption>
-                <p>Web 2
-                  <br><small>Image 5 of 9</small>
-                </p>
-                <a href="#img5"><i class="fa fa-times"></i></a>
-              </figcaption>
-            </figure>
-          </div>
-        </div> <!-- end img 5 -->
-
-        <!-- img 6 -->
-        <div id="img6" class="portfolio-content">
-          <img class="portfolio-img" src="./img/portfolio/app3.jpg" alt="App-3">
-          
-          <div class="portfolio-overlay">
-            <h4><a href="#hero">App 3</a></h4>
-            <p>App</p>
-            <a href="#app3"><i class="fas fa-eye"></i></a>
-            <a href="#hero"><i class="fas fa-external-link-alt"></i></a>
-          </div>
-      
-          <div id="app3" class="portfolio-modal">
-            <figure class="img-rectangular">
-              <img src="./img/portfolio/app3.jpg" alt="App-3" />
-              <figcaption>
-                <p>App 3
-                  <br><small>Image 6 of 9</small>
-                </p>
-                <a href="#img6"><i class="fa fa-times"></i></a>
-              </figcaption>
-            </figure>
-          </div>
-        </div> <!-- end img 6 -->
-
-        <!-- img 7 -->
-        <div id="img7" class="portfolio-content">
-          <img class="portfolio-img" src="./img/portfolio/card1.jpg" alt="Card-1">
-          
-          <div class="portfolio-overlay">
-            <h4><a href="#hero">Card 1</a></h4>
-            <p>Card</p>
-            <a href="#card1"><i class="fas fa-eye"></i></a>
-            <a href="#hero"><i class="fas fa-external-link-alt"></i></a>
-          </div>
-
-          <div id="card1" class="portfolio-modal">
-            <figure class="img-rectangular">
-              <img src="./img/portfolio/card1.jpg" alt="Card-1" />
-              <figcaption>
-                <p>Card 1
-                  <br><small>Image 7 of 9</small>
-                </p>
-                <a href="#img7"><i class="fa fa-times"></i></a>
-              </figcaption>
-            </figure>
-          </div>
-        </div> <!-- end img 7 -->
-
-        <!-- img 8 -->
-        <div id="img8" class="portfolio-content">
-          <img class="portfolio-img" src="./img/portfolio/card3.jpg" alt="Card-3">
-          
-          <div class="portfolio-overlay">
-            <h4><a href="#hero">Card 3</a></h4>
-            <p>Card</p>
-            <a href="#card3"><i class="fas fa-eye"></i></a>
-            <a href="#hero"><i class="fas fa-external-link-alt"></i></a>
-          </div>
-
-          <div id="card3" class="portfolio-modal">
-            <figure class="img-rectangular">
-              <img src="./img/portfolio/card3.jpg" alt="Card-3" />
-              <figcaption>
-                <p>Card 3
-                  <br><small>Image 8 of 9</small>
-                </p>
-                <a href="#img8"><i class="fa fa-times"></i></a>
-              </figcaption>
-            </figure>
-          </div>
-        </div> <!-- end img 8 -->
-
-        <!-- img 9 -->
-        <div id="img9" class="portfolio-content">
-          <img class="portfolio-img" src="./img/portfolio/web1.jpg" alt="Web-1">
-          
-          <div class="portfolio-overlay">
-            <h4><a href="#hero">Web 1</a></h4>
-            <p>Web</p>
-            <a href="#web1"><i class="fas fa-eye"></i></a>
-            <a href="#hero"><i class="fas fa-external-link-alt"></i></a>
-          </div>
-  
-          <div id="web1" class="portfolio-modal">
-            <figure class="img-rectangular">
-              <img class="modal-img" src="./img/portfolio/web1.jpg" alt="Web-1" />
-              <figcaption>
-                <p>Web 1
-                  <br><small>Image 9 of 9</small>
-                </p>
-                <a href="#img9"><i class="fa fa-times"></i></a>
-              </figcaption>
-            </figure>
-          </div>
-        </div> <!-- end img 9 -->
-      
-      </div> <!-- end portfolio-container -->
-    </section>
-
-
-    <!---------------- testimonials -------------->
-    <section id="testimonials">
-      <h1>Testimonials</h1>
-      <div class="cajatestimonials">
-        
-          <img src="img/testimonial-5.jpg" class="imgtestimonials" alt="">
-          <div class="textotestimonials">
-            <h3>John Larson</h3>
-            <h4>Entrepreneur</h4>
-            <p>
-              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-            </p>
-          </div>
-        
-      </div>
-    </section>
-  
-
-    <!---------------- team -------------->
-    <section id="team"> 
-      <span>
-        <div class="textoteam">
-          <h1 class="tituloteam">Team</h1>
-          <h4 class="parrafoteam">Sed ut perspiciatis unde omnis iste natus error 
-            sit voluptatem accusantium doloremque</h4>
+        <div class="portfolio-overlay">
+          <h4><a href="#hero">App 1</a></h4>
+          <p>App</p>
+          <a href="#app1"><i class="fas fa-eye"></i></a>
+          <a href="#hero"><i class="fas fa-external-link-alt"></i></a>
         </div>
-          
-        <div class="cuadroimagen">
-          <figure class="imagen">
-            <img src="img/team-01.jpg"/>
-            <div class="overlay">
-              <h4>Ben Affleck</h4>
-              <p>Chief Executive Officer</p>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-google-plus-g"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-          </figure>
-  
-          <figure class="imagen">
-            <img src="img/team-02.jpg"/>
-            <div class="overlay">
-              <h4>Christian Bale</h4>
-              <p>Product Managerr</p>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-google-plus-g"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-          </figure>
-  
-          <figure class="imagen">
-            <img src="img/team-03.jpg"/>
-            <div class="overlay">
-              <h4>Michael Keaton</h4>
-              <p>CTO</p>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-google-plus-g"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-          </figure>
-  
-          <figure class="imagen">
-            <img src="img/team-04.jpg"/>
-            <div class="overlay">
-              <h4>Adam West</h4>
-              <p>Accountant</p>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-google-plus-g"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
+
+        <div id="app1" class="portfolio-modal">
+          <figure>
+            <img src="./img/portfolio/app1.jpg" alt="App-1" />
+            <figcaption>
+              <p>App 1
+                <br><small>Image 1 of 9</small>
+              </p>
+              <a href="#img1"><i class="fa fa-times"></i></a>
+            </figcaption>
           </figure>
         </div>
-      </span>
-    </section> 
+      </div> <!-- end img 1 -->
 
+      <!-- img 2 -->
+      <div id="img2" class="portfolio-content">
+        <img class="portfolio-img" src="./img/portfolio/web3.jpg" alt="Web-3">
 
-    <!---------------- our clients -------------->
-    <section id="clients">
-      <h1>Our CLients</h1>
-      <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque dere santome nida.</h4>
-
-      <div class="clients-container">
-        <div class="clients-img">
-          <img src="./img/clients/client-1.png" alt="Client-1" />
+        <div class="portfolio-overlay">
+          <h4><a href="#hero">Web 3</a></h4>
+          <p>Web</p>
+          <a href="#web3"><i class="fas fa-eye"></i></a>
+          <a href="#hero"><i class="fas fa-external-link-alt"></i></a>
         </div>
 
-        <div class="clients-img">
-          <img src="./img/clients/client-2.png" alt="Client-2" />
+        <div id="web3" class="portfolio-modal">
+          <figure class="img-rectangular">
+            <img src="./img/portfolio/web3.jpg" alt="Web-3" />
+            <figcaption>
+              <p>Web 3
+                <br><small>Image 2 of 9</small>
+              </p>
+              <a href="#img2"><i class="fa fa-times"></i></a>
+            </figcaption>
+          </figure>
+        </div>
+      </div> <!-- end img 2 -->
+
+      <!-- img 3 -->
+      <div id="img3" class="portfolio-content">
+        <img class="portfolio-img" src="./img/portfolio/app2.jpg" alt="App-2">
+
+        <div class="portfolio-overlay">
+          <h4><a href="#hero">App 2</a></h4>
+          <p>App</p>
+          <a href="#app2"><i class="fas fa-eye"></i></a>
+          <a href="#hero"><i class="fas fa-external-link-alt"></i></a>
         </div>
 
-        <div class="clients-img">
-          <img src="./img/clients/client-3.png" alt="Client-3" />
+        <div id="app2" class="portfolio-modal">
+          <figure class="img-large">
+            <img src="./img/portfolio/app2.jpg" alt="App-2" />
+            <figcaption>
+              <p>App 2
+                <br><small>Image 3 of 9</small>
+              </p>
+              <a href="#img3"><i class="fa fa-times"></i></a>
+            </figcaption>
+          </figure>
+        </div>
+      </div> <!-- end img 3 -->
+
+      <!-- img 4 -->
+      <div id="img4" class="portfolio-content">
+        <img class="portfolio-img" src="./img/portfolio/card2.jpg" alt="Card-2">
+
+        <div class="portfolio-overlay">
+          <h4><a href="#hero">Card 2</a></h4>
+          <p>Card</p>
+          <a href="#card2"><i class="fas fa-eye"></i></a>
+          <a href="#hero"><i class="fas fa-external-link-alt"></i></a>
         </div>
 
-        <div class="clients-img">
-          <img src="./img/clients/client-4.png" alt="Client-4" />
+        <div id="card2" class="portfolio-modal">
+          <figure class="img-large">
+            <img src="./img/portfolio/card2.jpg" alt="Card-2" />
+            <figcaption>
+              <p>Card 2
+                <br><small>Image 4 of 9</small>
+              </p>
+              <a href="#img4"><i class="fa fa-times"></i></a>
+            </figcaption>
+          </figure>
+        </div>
+      </div> <!-- end img 4 -->
+
+      <!-- img 5 -->
+      <div id="img5" class="portfolio-content">
+        <img class="portfolio-img" src="./img/portfolio/web2.jpg" alt="Web-2">
+
+        <div class="portfolio-overlay">
+          <h4><a href="#hero">Web 2</a></h4>
+          <p>Web</p>
+          <a href="#web2"><i class="fas fa-eye"></i></a>
+          <a href="#hero"><i class="fas fa-external-link-alt"></i></a>
         </div>
 
-        <div class="clients-img">
-          <img src="./img/clients/client-5.png" alt="Client-5" />
+        <div id="web2" class="portfolio-modal">
+          <figure class="img-large">
+            <img src="./img/portfolio/web2.jpg" alt="Web-2" />
+            <figcaption>
+              <p>Web 2
+                <br><small>Image 5 of 9</small>
+              </p>
+              <a href="#img5"><i class="fa fa-times"></i></a>
+            </figcaption>
+          </figure>
+        </div>
+      </div> <!-- end img 5 -->
+
+      <!-- img 6 -->
+      <div id="img6" class="portfolio-content">
+        <img class="portfolio-img" src="./img/portfolio/app3.jpg" alt="App-3">
+
+        <div class="portfolio-overlay">
+          <h4><a href="#hero">App 3</a></h4>
+          <p>App</p>
+          <a href="#app3"><i class="fas fa-eye"></i></a>
+          <a href="#hero"><i class="fas fa-external-link-alt"></i></a>
         </div>
 
-        <div class="clients-img">
-          <img src="./img/clients/client-6.png" alt="Client-6" />
+        <div id="app3" class="portfolio-modal">
+          <figure class="img-rectangular">
+            <img src="./img/portfolio/app3.jpg" alt="App-3" />
+            <figcaption>
+              <p>App 3
+                <br><small>Image 6 of 9</small>
+              </p>
+              <a href="#img6"><i class="fa fa-times"></i></a>
+            </figcaption>
+          </figure>
+        </div>
+      </div> <!-- end img 6 -->
+
+      <!-- img 7 -->
+      <div id="img7" class="portfolio-content">
+        <img class="portfolio-img" src="./img/portfolio/card1.jpg" alt="Card-1">
+
+        <div class="portfolio-overlay">
+          <h4><a href="#hero">Card 1</a></h4>
+          <p>Card</p>
+          <a href="#card1"><i class="fas fa-eye"></i></a>
+          <a href="#hero"><i class="fas fa-external-link-alt"></i></a>
         </div>
 
-        <div class="clients-img">
-          <img src="./img/clients/client-7.png" alt="Client-7" />
+        <div id="card1" class="portfolio-modal">
+          <figure class="img-rectangular">
+            <img src="./img/portfolio/card1.jpg" alt="Card-1" />
+            <figcaption>
+              <p>Card 1
+                <br><small>Image 7 of 9</small>
+              </p>
+              <a href="#img7"><i class="fa fa-times"></i></a>
+            </figcaption>
+          </figure>
+        </div>
+      </div> <!-- end img 7 -->
+
+      <!-- img 8 -->
+      <div id="img8" class="portfolio-content">
+        <img class="portfolio-img" src="./img/portfolio/card3.jpg" alt="Card-3">
+
+        <div class="portfolio-overlay">
+          <h4><a href="#hero">Card 3</a></h4>
+          <p>Card</p>
+          <a href="#card3"><i class="fas fa-eye"></i></a>
+          <a href="#hero"><i class="fas fa-external-link-alt"></i></a>
         </div>
 
-        <div class="clients-img">
-          <img src="./img/clients/client-8.png" alt="Client-8" />
+        <div id="card3" class="portfolio-modal">
+          <figure class="img-rectangular">
+            <img src="./img/portfolio/card3.jpg" alt="Card-3" />
+            <figcaption>
+              <p>Card 3
+                <br><small>Image 8 of 9</small>
+              </p>
+              <a href="#img8"><i class="fa fa-times"></i></a>
+            </figcaption>
+          </figure>
         </div>
+      </div> <!-- end img 8 -->
+
+      <!-- img 9 -->
+      <div id="img9" class="portfolio-content">
+        <img class="portfolio-img" src="./img/portfolio/web1.jpg" alt="Web-1">
+
+        <div class="portfolio-overlay">
+          <h4><a href="#hero">Web 1</a></h4>
+          <p>Web</p>
+          <a href="#web1"><i class="fas fa-eye"></i></a>
+          <a href="#hero"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+
+        <div id="web1" class="portfolio-modal">
+          <figure class="img-rectangular">
+            <img class="modal-img" src="./img/portfolio/web1.jpg" alt="Web-1" />
+            <figcaption>
+              <p>Web 1
+                <br><small>Image 9 of 9</small>
+              </p>
+              <a href="#img9"><i class="fa fa-times"></i></a>
+            </figcaption>
+          </figure>
+        </div>
+      </div> <!-- end img 9 -->
+
+    </div> <!-- end portfolio-container -->
+  </section>
+
+
+  <!---------------- testimonials -------------->
+  <section id="testimonials">
+    <h1>Testimonials</h1>
+    <div class="cajatestimonials">
+
+      <img src="img/testimonial-5.jpg" class="imgtestimonials" alt="">
+      <div class="textotestimonials">
+        <h3>John Larson</h3>
+        <h4>Entrepreneur</h4>
+        <p>
+          Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore
+          duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+        </p>
       </div>
-    </section>
 
-    
-    <!---------------- contact -------------->
-    <section id="contact-container">
-      <h1>Contact Us</h1>
-      <div class="contact-us-body">
-        <div class="contact-us-map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24194.866499591502!2d-74.006227!3d40.710128!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1ses-419!2sbg!4v1590007709059!5m2!1ses-419!2sbg" width="100%" height="312" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </div>
-        
-        <div class="contact-us-information"> 
-          <div class="contact-us-address">  
-            <div class="address-icon-info">
-              <i class="fas fa-map-marker-alt address-icon"></i>
-              <p>A108 Adam Street, NY 535022</p>
-            </div>
-            
-            <div class="address-icon-info">
-              <i class="far fa-envelope address-icon"></i>
-              <p>info@example.com</p>
-            </div>
-            
-            <div class="address-icon-info">
-              <i class="fas fa-phone-alt address-icon"></i>
-              <p>+1 5589 55488 55</p>
-            </div>
-          </div> <!-- end contact-us-address -->
-          
-          <form class="contact-us-form">
-            <div class="contact-us-form-row">
-              <input type="text" placeholder="Your Name" class="contact-us-input contact-us-input-wrap" />
-              <input type="text" placeholder="Your Email" class="contact-us-input contact-us-input-wrap" />
-            </div>
-            <input type="text" placeholder="Subject" class="contact-us-input"/>
-            <textarea type="text" placeholder="Message" class="contact-us-textarea"></textarea>
-            <button class="contact-us-send-button">Send Message</button>
-          </form>
-        </div>
+    </div>
+  </section>
+
+
+  <!---------------- team -------------->
+  <section id="team">
+    <span>
+      <div class="textoteam">
+        <h1 class="tituloteam">Team</h1>
+        <h4 class="parrafoteam">Sed ut perspiciatis unde omnis iste natus error
+          sit voluptatem accusantium doloremque</h4>
       </div>
-    </section>
 
-    
-    <!---------------- footer -------------->
-    <footer class="container-footer">
-      <div class="top-footer">
-        <div class="footer-info footer-row">
-          <h3 class="footer-title">WAYNE</h3>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies 
-            darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. 
-            Amet volutpat consequat mauris nunc congue.</p>
-        </div>
-        <div class="useful-links footer-row">
-          <h4>USEFUL LINKS</h4>
-          <a href="#">Home</a><br />
-          <a href="#">About us</a><br />
-          <a href="#">Services</a><br />
-          <a href="#">Terms of service</a><br />
-          <a href="#">Privacy policy</a>
-        </div>
-        
-        <div class="contact-us footer-row">
-          <h4>CONTACT US</h4>
-          <p>A108 Adam Street<br />
+      <div class="cuadroimagen">
+        <figure class="imagen">
+          <img src="img/team-01.jpg" />
+          <div class="overlay">
+            <h4>Ben Affleck</h4>
+            <p>Chief Executive Officer</p>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </figure>
+
+        <figure class="imagen">
+          <img src="img/team-02.jpg" />
+          <div class="overlay">
+            <h4>Christian Bale</h4>
+            <p>Product Managerr</p>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </figure>
+
+        <figure class="imagen">
+          <img src="img/team-03.jpg" />
+          <div class="overlay">
+            <h4>Michael Keaton</h4>
+            <p>CTO</p>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </figure>
+
+        <figure class="imagen">
+          <img src="img/team-04.jpg" />
+          <div class="overlay">
+            <h4>Adam West</h4>
+            <p>Accountant</p>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </figure>
+      </div>
+    </span>
+  </section>
+
+
+  <!---------------- our clients -------------->
+  <section id="clients">
+    <h1>Our CLients</h1>
+    <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+      accusantium doloremque dere santome nida.</h4>
+
+    <div class="clients-container">
+      <div class="clients-img">
+        <img src="./img/clients/client-1.png" alt="Client-1" />
+      </div>
+
+      <div class="clients-img">
+        <img src="./img/clients/client-2.png" alt="Client-2" />
+      </div>
+
+      <div class="clients-img">
+        <img src="./img/clients/client-3.png" alt="Client-3" />
+      </div>
+
+      <div class="clients-img">
+        <img src="./img/clients/client-4.png" alt="Client-4" />
+      </div>
+
+      <div class="clients-img">
+        <img src="./img/clients/client-5.png" alt="Client-5" />
+      </div>
+
+      <div class="clients-img">
+        <img src="./img/clients/client-6.png" alt="Client-6" />
+      </div>
+
+      <div class="clients-img">
+        <img src="./img/clients/client-7.png" alt="Client-7" />
+      </div>
+
+      <div class="clients-img">
+        <img src="./img/clients/client-8.png" alt="Client-8" />
+      </div>
+    </div>
+  </section>
+
+
+  <!---------------- contact -------------->
+  <section id="contact-container">
+    <h1>Contact Us</h1>
+    <div class="contact-us-body">
+      <div class="contact-us-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24194.866499591502!2d-74.006227!3d40.710128!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1ses-419!2sbg!4v1590007709059!5m2!1ses-419!2sbg"
+          width="100%" height="312" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0"></iframe>
+      </div>
+
+      <div class="contact-us-information">
+        <div class="contact-us-address">
+          <div class="address-icon-info">
+            <i class="fas fa-map-marker-alt address-icon"></i>
+            <p>A108 Adam Street, NY 535022</p>
+          </div>
+
+          <div class="address-icon-info">
+            <i class="far fa-envelope address-icon"></i>
+            <p>info@example.com</p>
+          </div>
+
+          <div class="address-icon-info">
+            <i class="fas fa-phone-alt address-icon"></i>
+            <p>+1 5589 55488 55</p>
+          </div>
+        </div> <!-- end contact-us-address -->
+
+        <form class="contact-us-form">
+          <div class="contact-us-form-row">
+            <input type="text" placeholder="Your Name" class="contact-us-input contact-us-input-wrap" />
+            <input type="text" placeholder="Your Email" class="contact-us-input contact-us-input-wrap" />
+          </div>
+          <input type="text" placeholder="Subject" class="contact-us-input" />
+          <textarea type="text" placeholder="Message" class="contact-us-textarea"></textarea>
+          <button class="contact-us-send-button">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <!---------------- footer -------------->
+  <footer class="container-footer">
+    <div class="top-footer">
+      <div class="footer-info footer-row">
+        <h3 class="footer-title">WAYNE</h3>
+        <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies
+          darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo.
+          Amet volutpat consequat mauris nunc congue.</p>
+      </div>
+      <div class="useful-links footer-row">
+        <h4>USEFUL LINKS</h4>
+        <a href="#">Home</a><br />
+        <a href="#">About us</a><br />
+        <a href="#">Services</a><br />
+        <a href="#">Terms of service</a><br />
+        <a href="#">Privacy policy</a>
+      </div>
+
+      <div class="contact-us footer-row">
+        <h4>CONTACT US</h4>
+        <p>A108 Adam Street<br />
           New York, NY 535022<br />
           United States<br />
           <strong>Phone</strong> +1 5589 55488 55<br />
           <strong>Email:</strong> info@example.com</p>
-          
-          <div class="media-icon-container">
-            <a href="#" class="media-icons-share">
-              <i class="fab fa-twitter media-icon"></i>
-            </a>
-            
-            <a href="#" class="media-icons-share">
-              <i class="fab fa-facebook-f media-icon"></i>
-            </a>
-            
-            <a href="#" class="media-icons-share">
-              <i class="fab fa-instagram media-icon"></i>
-            </a>
-            
-            <a href="#" class="media-icons-share">
-              <i class="fab fa-google-plus-g media-icon"></i>
-            </a>
-            
-            <a href="#" class="media-icons-share">
-              <i class="fab fa-linkedin-in media-icon"></i>
-            </a>
-          </div> <!-- end media-icon-container --> 
-        </div> <!-- end contact-us footer-row --> 
-        
-        <div class="our-newsletter footer-row">
-          <h4>OUR NEWSLETTER</h4>
-          <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore 
-            legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
-          <form class="footer-form">
-            <input class="footer-input" />
-            <button class="footer-button">Subscribe</button>
-          </form>
-        </div>
-      </div> <!-- end top-footer --> 
-      
-      <div class="bottom-footer">
-        <p class="text-footer">&copy; Copyright <strong>Wayne Enterprises</strong>. All Rights Reserved </p>
-        <p class="designed-by">Designed by ...</p>
-      </div>
-    </footer>
 
-  </body>
+        <div class="media-icon-container">
+          <a href="#" class="media-icons-share">
+            <i class="fab fa-twitter media-icon"></i>
+          </a>
+
+          <a href="#" class="media-icons-share">
+            <i class="fab fa-facebook-f media-icon"></i>
+          </a>
+
+          <a href="#" class="media-icons-share">
+            <i class="fab fa-instagram media-icon"></i>
+          </a>
+
+          <a href="#" class="media-icons-share">
+            <i class="fab fa-google-plus-g media-icon"></i>
+          </a>
+
+          <a href="#" class="media-icons-share">
+            <i class="fab fa-linkedin-in media-icon"></i>
+          </a>
+        </div> <!-- end media-icon-container -->
+      </div> <!-- end contact-us footer-row -->
+
+      <div class="our-newsletter footer-row">
+        <h4>OUR NEWSLETTER</h4>
+        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore
+          legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
+        <form class="footer-form">
+          <input class="footer-input" />
+          <button class="footer-button">Subscribe</button>
+        </form>
+      </div>
+    </div> <!-- end top-footer -->
+
+    <div class="bottom-footer">
+      <p class="text-footer">&copy; Copyright <strong>Wayne Enterprises</strong>. All Rights Reserved </p>
+      <p class="designed-by">Designed by ...</p>
+    </div>
+  </footer>
+
+</body>
+
 </html>

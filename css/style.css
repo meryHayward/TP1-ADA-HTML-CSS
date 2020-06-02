@@ -1185,22 +1185,21 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
       justify-content: space-between;
       margin-left: auto;
       margin-right: auto;
-      max-width: 90%;
-      height: 90%;
-      width: 100%;
+      max-width: 70%;
       color: #bbbbbb;
       font-size: 16px;
       box-shadow: none !important;
-      -webkit-transform: translateZ(0);
       transform: translateZ(0); }
       @media (min-width: 768px) {
         #team .cuadroimagen .imagen {
-          width: 45%;
+          max-width: 38%;
           align-items: center; } }
+      @media (min-width: 955px) {
+        #team .cuadroimagen .imagen {
+          width: 45%; } }
       @media (min-width: 1024px) {
         #team .cuadroimagen .imagen {
-          width: 20%;
-          align-items: center; } }
+          width: 20%; } }
       #team .cuadroimagen .imagen * {
         box-sizing: border-box;
         transition: all 0.3s linear; }
