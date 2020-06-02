@@ -627,12 +627,13 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
 
 .whyChoose {
   box-sizing: border-box;
-  padding: 60px 20px;
+  padding: 35px 15px 60px;
   background-color: #1445b3;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  /*----Empieza la sección counter---*/ }
   .whyChoose h1 {
     color: #283d50;
     font-family: "Montserrat", sans-serif;
@@ -654,11 +655,14 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
     width: 100%;
     font-family: "Montserrat", sans-serif;
     padding-bottom: 50px; }
+    @media (min-width: 768px) {
+      .whyChoose h4 {
+        width: 50%; } }
   .whyChoose .why_card_container {
     display: flex;
     flex-wrap: wrap; }
     .whyChoose .why_card_container .why_card {
-      padding: 45px 20px;
+      padding: 20px 20px 45px 20px;
       background-color: rgba(0, 64, 138, 0.5);
       box-sizing: border-box;
       border-radius: 10px;
@@ -670,11 +674,11 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
       transition: background-color 0.2s ease-in-out; }
       @media (min-width: 768px) {
         .whyChoose .why_card_container .why_card {
-          padding: 45px 30px; } }
+          padding: 20px 30px 45px 30px; } }
       @media (min-width: 1024px) {
         .whyChoose .why_card_container .why_card {
-          margin-left: 10px;
-          margin-right: 10px; } }
+          margin-left: 20px;
+          margin-right: 20px; } }
       @media (min-width: 1200px) {
         .whyChoose .why_card_container .why_card {
           margin-left: 25px;
@@ -687,8 +691,13 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
         font-size: 18px;
         font-weight: bold;
         text-align: center; }
+        .whyChoose .why_card_container .why_card .why_card_header h3 {
+          margin-top: 20px;
+          margin-bottom: 12px; }
         .whyChoose .why_card_container .why_card .why_card_header .why_card_icon {
-          width: 60px; }
+          font-size: 48px;
+          padding-top: 15px;
+          opacity: 70%; }
       .whyChoose .why_card_container .why_card .why_card_main {
         padding-bottom: 30px;
         font-family: "Montserrat", sans-serif;
@@ -696,17 +705,30 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
         font-size: 15px;
         color: #ecf5ff;
         text-align: center; }
-      .whyChoose .why_card_container .why_card .why_card_footer h4 {
-        margin: 0;
-        padding-bottom: 5px;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 700;
-        font-size: 15px;
-        color: #fff;
-        border-bottom: solid 2px #283d50;
-        transition: border-bottom 0.2s linear; }
-        .whyChoose .why_card_container .why_card .why_card_footer h4:hover {
-          border-bottom: solid 2px #fff; }
+        .whyChoose .why_card_container .why_card .why_card_main p {
+          margin: 0; }
+      .whyChoose .why_card_container .why_card .why_card_footer {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .whyChoose .why_card_container .why_card .why_card_footer h4 {
+          width: 90px;
+          margin: 0;
+          padding-top: 0;
+          padding-bottom: 5px;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 700;
+          font-size: 15px;
+          color: #fff;
+          text-align: center;
+          border-bottom: solid 2px #283d50;
+          transition: border-bottom 0.3s ease-in-out; }
+          .whyChoose .why_card_container .why_card .why_card_footer h4:hover {
+            border-bottom: solid 2px #fff; }
+        .whyChoose .why_card_container .why_card .why_card_footer a {
+          margin: 0;
+          padding: 0;
+          width: 90px; }
     @media (min-width: 414px) {
       .whyChoose .why_card_container {
         width: 85%; } }
@@ -716,34 +738,39 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
         flex-wrap: nowrap;
         flex-direction: row;
         justify-content: space-around; } }
-
-/*----Empieza la sección counter---*/
-.work_counter {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding-top: 30px; }
-  .work_counter .counter1 {
-    width: 120px;
-    padding: 0 15px;
+  .whyChoose .work_counter {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .work_counter .counter1 .number {
-      font-family: "Open Sans", sans-serif;
-      font-weight: 700;
-      color: #fff;
-      font-size: 48px; }
-    .work_counter .counter1 .counter_about {
-      font-family: "Montserrat", sans-serif;
-      font-size: 20px;
-      color: #fff;
-      margin-bottom: 20px; }
-  @media (min-width: 768px) {
-    .work_counter {
-      width: 85%; } }
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px; }
+    .whyChoose .work_counter .counter1 {
+      width: 121px;
+      padding: 0 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      @media (min-width: 768px) {
+        .whyChoose .work_counter .counter1 {
+          padding: 0px 75px; } }
+      @media (min-width: 1024px) {
+        .whyChoose .work_counter .counter1 {
+          padding: 0 15px; } }
+      .whyChoose .work_counter .counter1 .number {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+        color: #fff;
+        font-size: 48px; }
+      .whyChoose .work_counter .counter1 .counter_about {
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 20px; }
+    @media (min-width: 768px) {
+      .whyChoose .work_counter {
+        width: 85%; } }
 
 .buttons {
   text-align: center; }
