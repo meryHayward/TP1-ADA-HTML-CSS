@@ -534,9 +534,10 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
           width: 95%; } }
 
 .services {
+  width: 100%;
   background-color: #ecf5ff;
   box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-  padding: 30px 10px;
+  padding: 30px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -568,8 +569,12 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    box-sizing: border-box; }
     @media (min-width: 768px) {
+      .services .service_card_container {
+        width: 955px; } }
+    @media (min-width: 1200px) {
       .services .service_card_container {
         width: 1000px; } }
     .services .service_card_container .service_card {
@@ -620,6 +625,16 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
       .services .service_card_container .service_card:hover {
         transform: translateY(-7px); }
       @media (min-width: 768px) {
+        .services .service_card_container .service_card {
+          width: 310px;
+          margin-right: 25px;
+          margin-left: 10px; } }
+      @media (min-width: 1024px) {
+        .services .service_card_container .service_card {
+          width: 350px;
+          margin-right: 25px;
+          margin-left: 25px; } }
+      @media (min-width: 1200px) {
         .services .service_card_container .service_card {
           width: 425px;
           margin-right: 25px;
@@ -991,70 +1006,207 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
       #portfolio .portfolio-container .portfolio-content:hover .portfolio-img {
         opacity: 0.3; }
 
-#team {
-  display: block;
-  padding: 0px 0px 40px 0px;
-  max-width: 100%;
-  height: 400px;
-  box-shadow: 12px 0px 12px 0px rgba(0, 0, 0, 0.1);
-  background-color: white; }
-  #team .textoteam {
-    margin: 20px auto 0px auto;
-    padding: 15px 15px 0px 15px;
-    width: 980px;
-    height: 166px; }
-    #team .textoteam .tituloteam {
-      color: #283d50;
-      font-family: "Montserrat", sans-serif;
-      font-size: 36px;
-      font-weight: 500;
-      margin-bottom: 0;
-      padding-top: 10px;
-      text-align: center;
-      width: 980px;
-      height: 42px;
-      margin-right: auto;
-      margin-left: auto; }
-    #team .textoteam .parrafoteam {
-      color: #556877;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 15px;
-      font-weight: 400;
-      line-height: 22px;
-      margin: auto;
-      padding-top: 20px;
-      text-align: center;
+#testimonials {
+  background-color: #ecf5ff;
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: auto;
+  padding: 20px 0 45px 0; }
+  @media (min-width: 768px) {
+    #testimonials {
+      padding: 20px 0px 35px 0px; } }
+  @media (min-width: 955px) {
+    #testimonials {
+      padding: 25px 0px 35px 0px; } }
+  @media (min-width: 1024px) {
+    #testimonials {
+      padding: 40px 0px 60px 0px; } }
+  @media (min-width: 1200px) {
+    #testimonials {
+      padding: 40px 0px 60px 0px; } }
+  #testimonials h1 {
+    color: #283d50;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding-top: 10px;
+    text-align: center; }
+  #testimonials .cajatestimonials {
+    padding: 40px 16px; }
+    @media (min-width: 768px) {
+      #testimonials .cajatestimonials {
+        display: flex;
+        align-items: flex-start;
+        padding: 40px; } }
+    @media (min-width: 955px) {
+      #testimonials .cajatestimonials {
+        padding: 40px 134px 40px 134px; } }
+    @media (min-width: 1024px) {
+      #testimonials .cajatestimonials {
+        padding: 40px 210px 20px 210px; } }
+    @media (min-width: 1200px) {
+      #testimonials .cajatestimonials {
+        padding: 40px 310px 20px 310px; } }
+    #testimonials .cajatestimonials .imgtestimonials {
+      max-width: 112px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto;
+      border: 4px solid #fff; }
+      @media (min-width: 768px) {
+        #testimonials .cajatestimonials .imgtestimonials {
+          margin-top: 10px; } }
+    #testimonials .cajatestimonials .textotestimonials {
       width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-      width: 480px;
-      height: 43px;
-      padding-bottom: 60px;
-      justify-content: center; }
+      text-align: center; }
+      @media (min-width: 768px) {
+        #testimonials .cajatestimonials .textotestimonials {
+          padding: 10px; } }
+      #testimonials .cajatestimonials .textotestimonials h3 {
+        color: #000;
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        font-size: 20px;
+        margin: 10px 0 5px 0; }
+        @media (min-width: 768px) {
+          #testimonials .cajatestimonials .textotestimonials h3 {
+            padding-left: 10px;
+            text-align: left;
+            margin: 0; } }
+      #testimonials .cajatestimonials .textotestimonials h4 {
+        font-size: 14px;
+        color: #999999;
+        font-family: "Montserrat", sans-serif;
+        margin: 0px auto 0 auto;
+        font-weight: 200; }
+        @media (min-width: 768px) {
+          #testimonials .cajatestimonials .textotestimonials h4 {
+            padding: 4px 0 0 10px;
+            text-align: left; } }
+      #testimonials .cajatestimonials .textotestimonials p {
+        color: #383838;
+        font-family: "Open Sans", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.5rem;
+        color: #383838;
+        font-size: 16px;
+        font-style: italic; }
+        @media (min-width: 768px) {
+          #testimonials .cajatestimonials .textotestimonials p {
+            padding: 0 0 0 10px;
+            text-align: left; } }
+        @media (min-width: 1024px) {
+          #testimonials .cajatestimonials .textotestimonials p {
+            width: 100%; } }
+
+#team {
+  height: auto;
+  background-color: #fff;
+  padding: 20px 0 18% 0; }
+  @media (min-width: 414px) {
+    #team {
+      padding: 20px 0 15% 0; } }
+  @media (min-width: 768px) {
+    #team {
+      padding: 20px 0 8% 0; } }
+  @media (min-width: 955px) {
+    #team {
+      padding: 25px 0 8% 0; } }
+  @media (min-width: 1024px) {
+    #team {
+      padding: 40px 0 6% 0; } }
+  @media (min-width: 1300px) {
+    #team {
+      padding: 40px 0 4% 0; } }
+  #team .textoteam .tituloteam {
+    color: #283d50;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding-top: 10px;
+    text-align: center; }
+  #team .textoteam .parrafoteam {
+    color: #556877;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: auto;
+    padding-top: 20px;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 40px; }
+    @media (min-width: 768px) {
+      #team .textoteam .parrafoteam {
+        width: 45%; } }
+    @media (min-width: 955px) {
+      #team .textoteam .parrafoteam {
+        width: 35%; } }
+    @media (min-width: 1024px) {
+      #team .textoteam .parrafoteam {
+        width: 50%; } }
+    @media (min-width: 1300px) {
+      #team .textoteam .parrafoteam {
+        width: 40%; } }
   #team .cuadroimagen {
-    width: 1100px;
-    height: 700px;
-    margin: 0px auto 20px auto;
-    padding-left: 100px; }
+    width: auto;
+    height: auto; }
+    @media (min-width: 768px) {
+      #team .cuadroimagen {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px 30px 0px 30px; } }
+    @media (min-width: 955px) {
+      #team .cuadroimagen {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto; } }
+    @media (min-width: 1024px) {
+      #team .cuadroimagen {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center; } }
+    @media (min-width: 1200px) {
+      #team .cuadroimagen {
+        width: 100%;
+        padding: 0px 20px 0px 20px; } }
+    @media (min-width: 1300px) {
+      #team .cuadroimagen {
+        width: 85%; } }
     #team .cuadroimagen .imagen {
       position: relative;
-      display: inline-block;
-      margin: 20px;
-      max-width: 210px;
-      height: 210px;
+      display: flex;
+      justify-content: space-between;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 90%;
+      height: 90%;
       width: 100%;
       color: #bbbbbb;
       font-size: 16px;
       box-shadow: none !important;
       -webkit-transform: translateZ(0);
       transform: translateZ(0); }
+      @media (min-width: 768px) {
+        #team .cuadroimagen .imagen {
+          width: 45%;
+          align-items: center; } }
+      @media (min-width: 1024px) {
+        #team .cuadroimagen .imagen {
+          width: 20%;
+          align-items: center; } }
       #team .cuadroimagen .imagen * {
         box-sizing: border-box;
         transition: all 0.3s linear; }
       #team .cuadroimagen .imagen:before {
         box-sizing: border-box;
         transition: all 0.3s linear;
-        box-sizing: border-box;
         border-radius: 50%;
         content: '';
         position: absolute;
@@ -1068,7 +1220,6 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
       #team .cuadroimagen .imagen:after {
         box-sizing: border-box;
         transition: all 0.3s linear;
-        box-sizing: border-box;
         border-radius: 50%;
         content: '';
         position: absolute;
@@ -1084,8 +1235,8 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
         backface-visibility: hidden;
         vertical-align: top;
         border-radius: 50%;
-        padding: 10px; }
-      #team .cuadroimagen .imagen div {
+        padding: 5px; }
+      #team .cuadroimagen .imagen .overlay {
         position: absolute;
         top: 5px;
         bottom: 5px;
@@ -1096,17 +1247,17 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
         border-radius: 50%;
         text-align: center;
         justify-content: center; }
-        #team .cuadroimagen .imagen div h4 {
+        #team .cuadroimagen .imagen .overlay h4 {
           color: #fff;
           font-family: "Montserrat", sans-serif;
           font-size: 18px;
           padding-top: 30px; }
-        #team .cuadroimagen .imagen div p {
+        #team .cuadroimagen .imagen .overlay p {
           color: #fff;
           font-family: "Open Sans", sans-serif;
           font-style: italic;
           font-size: 12px; }
-      #team .cuadroimagen .imagen:hover div {
+      #team .cuadroimagen .imagen:hover .overlay {
         opacity: 85%;
         transform: translateX(0); }
       #team .cuadroimagen .imagen:hover:before {
@@ -1126,13 +1277,16 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
       padding: 20px 40px 12% 40px; } }
   @media (min-width: 955px) {
     #clients {
-      padding: 25px 134px 12% 134px; } }
+      padding: 25px 134px 10% 134px; } }
   @media (min-width: 1024px) {
     #clients {
       padding: 40px 50px 9% 50px; } }
   @media (min-width: 1200px) {
     #clients {
       padding: 40px 46px 8% 46px; } }
+  @media (min-width: 1200px) {
+    #clients {
+      padding: 40px 46px 7% 46px; } }
   #clients h1 {
     color: #283d50;
     font-family: "Montserrat", sans-serif;
@@ -1240,25 +1394,34 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
           #contact-container .contact-us-body .contact-us-information .contact-us-address {
             flex-direction: row;
             justify-content: space-between;
-            margin: 30px 0px 20px 0px; } }
+            margin: 30px 0px 0px 0px; } }
         #contact-container .contact-us-body .contact-us-information .contact-us-address .address-icon-info {
           flex-direction: row;
           font-family: "Open Sans", sans-serif;
           color: #444;
           justify-content: center;
-          margin-bottom: 35px;
+          margin-bottom: 20px;
           font-size: 14px; }
           @media (min-width: 768px) and (max-width: 1024px) {
             #contact-container .contact-us-body .contact-us-information .contact-us-address .address-icon-info {
-              width: 32%; } }
+              width: 32%; }
+              #contact-container .contact-us-body .contact-us-information .contact-us-address .address-icon-info:nth-of-type(1) {
+                width: 32%; }
+              #contact-container .contact-us-body .contact-us-information .contact-us-address .address-icon-info:nth-of-type(2) {
+                width: 24%; }
+              #contact-container .contact-us-body .contact-us-information .contact-us-address .address-icon-info:nth-of-type(3) {
+                width: 22%; } }
           @media (min-width: 1024px) {
-            #contact-container .contact-us-body .contact-us-information .contact-us-address .address-icon-info:nth-of-type(1) {
-              width: 40%; }
-            #contact-container .contact-us-body .contact-us-information .contact-us-address .address-icon-info:nth-of-type(2) {
-              width: 34%; }
-            #contact-container .contact-us-body .contact-us-information .contact-us-address .address-icon-info:nth-of-type(3) {
-              width: 25%; } }
+            #contact-container .contact-us-body .contact-us-information .contact-us-address .address-icon-info {
+              line-height: 1.8; }
+              #contact-container .contact-us-body .contact-us-information .contact-us-address .address-icon-info:nth-of-type(1) {
+                width: 40%; }
+              #contact-container .contact-us-body .contact-us-information .contact-us-address .address-icon-info:nth-of-type(2) {
+                width: 34%; }
+              #contact-container .contact-us-body .contact-us-information .contact-us-address .address-icon-info:nth-of-type(3) {
+                width: 25%; } }
           #contact-container .contact-us-body .contact-us-information .contact-us-address .address-icon-info .address-icon {
+            height: 100%;
             font-size: 22px;
             float: left;
             color: #007bff;
@@ -1268,34 +1431,26 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
         display: flex;
         flex-direction: column; }
         #contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-input {
+          font-family: "Open Sans", sans-serif;
+          border: 1px solid #ced4da;
           height: 30px;
-          border-style: solid;
-          border-width: 0.5px;
-          padding: 4px 0px 4px 6px;
+          padding: 6px 0px 4px 12px;
           margin-top: 15px;
-          border-color: #afafaf;
-          font-size: 14px;
+          font-size: 15px;
           box-shadow: none; }
-          @media (min-width: 1024px) {
-            #contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-input {
-              width: 99%; } }
           #contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-input:focus {
             color: #495057;
             background-color: #fff;
             border-color: #80bdff;
             outline: 0; }
         #contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-textarea {
+          font-family: "Open Sans", sans-serif;
+          border: 1px solid #ced4da;
           height: 100px;
-          border-style: solid;
-          border-width: 0.5px;
-          padding: 4px 0px 4px 6px;
+          padding: 4px 0px 4px 12px;
           margin: 15px 0px 20px 0px;
-          border-color: #afafaf;
           font-size: 14px;
           box-shadow: none; }
-          @media (min-width: 1024px) {
-            #contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-textarea {
-              width: 99%; } }
           #contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-textarea:focus {
             color: #495057;
             background-color: #fff;
@@ -1306,10 +1461,11 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
           flex-direction: column; }
           @media (min-width: 1024px) {
             #contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-form-row {
-              flex-direction: row; } }
+              flex-direction: row;
+              justify-content: space-between; } }
           @media (min-width: 1024px) {
-            #contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-form-row .contact-us-input-right {
-              margin-left: 10px; } }
+            #contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-form-row .contact-us-input-wrap {
+              width: 46%; } }
         #contact-container .contact-us-body .contact-us-information .contact-us-form .contact-us-send-button {
           width: 165px;
           color: #fff;
@@ -1332,11 +1488,14 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
   flex-direction: column;
   align-items: center;
   font-family: "Open Sans", sans-serif; }
+  .container-footer h3 {
+    margin-bottom: 26px;
+    margin-top: 22px; }
   .container-footer h4 {
     font-weight: bold;
     color: #fff;
     font-size: 14px;
-    margin-bottom: 20px;
+    margin-bottom: 26px;
     margin-top: 22px; }
   .container-footer .top-footer {
     margin: 38px 12px 55px 16px;
@@ -1348,14 +1507,25 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
     line-height: 22px;
     color: #fff;
     font-weight: 400; }
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 576px) {
+      .container-footer .top-footer {
+        max-width: 540px;
+        margin-left: 60px;
+        margin-right: 60px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
       .container-footer .top-footer {
         flex-direction: row;
-        flex-wrap: wrap; } }
-    @media (min-width: 1024px) {
+        flex-wrap: wrap;
+        max-width: 720px;
+        margin-left: 22px;
+        margin-right: 22px; } }
+    @media (min-width: 992px) {
       .container-footer .top-footer {
+        max-width: 100%;
         flex-direction: row;
-        margin: 40px 40px 50px 40px; } }
+        margin-bottom: 60px;
+        margin-left: 30px;
+        margin-right: 30px; } }
     @media (min-width: 1300px) {
       .container-footer .top-footer {
         flex-direction: row;
@@ -1365,15 +1535,19 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
     @media (min-width: 768px) and (max-width: 1024px) {
       .container-footer .top-footer .footer-row {
         width: 45%;
-        margin-left: 18px; } }
+        margin-left: 18px;
+        margin-right: 18px; } }
     @media (min-width: 1024px) {
       .container-footer .top-footer .footer-row {
         width: 45%;
-        margin-left: 18px; } }
+        margin-left: 18px;
+        margin-right: 18px; } }
     .container-footer .top-footer .footer-info {
       font-size: 13px;
       line-height: 24px;
       font-family: "Montserrat", sans-serif; }
+      .container-footer .top-footer .footer-info p {
+        line-height: 24px; }
       @media (min-width: 1024px) {
         .container-footer .top-footer .footer-info {
           width: 30%; } }
@@ -1385,7 +1559,8 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
       line-height: 35px; }
     @media (min-width: 1024px) {
       .container-footer .top-footer .useful-links {
-        width: 15%; } }
+        width: 14%;
+        margin-left: 21px; } }
     .container-footer .top-footer .contact-us p {
       line-height: 26px; }
     @media (min-width: 1024px) {
@@ -1401,7 +1576,7 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
         height: 35px;
         border-radius: 50%;
         background-color: #007bff;
-        margin-left: 5px; }
+        margin-right: 7px; }
         .container-footer .top-footer .contact-us .media-icon-container .media-icons-share:hover {
           cursor: pointer;
           background-color: #0062cc;
@@ -1414,18 +1589,20 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
         width: 50%; }
     @media (min-width: 1024px) {
       .container-footer .top-footer .our-newsletter {
-        width: 24%; } }
+        width: 22%; } }
     .container-footer .top-footer .our-newsletter .footer-form {
+      width: 100%;
       position: relative;
-      display: inline-flex; }
+      display: inline-flex;
+      margin-top: 16px; }
     .container-footer .top-footer .our-newsletter .footer-input {
-      width: 250px;
+      width: 100%;
       height: 28px; }
     .container-footer .top-footer .our-newsletter .footer-button {
       position: absolute;
       right: 0px;
       height: 34px;
-      width: 35%;
+      width: 40%;
       background-color: #007bff;
       color: #fff;
       font-size: 14px;
@@ -1441,8 +1618,8 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
     font-size: 14px;
     text-align: center; }
     .container-footer .bottom-footer .text-footer {
-      margin-top: 32px;
-      font-size: 14px;
+      margin: 32px 20px 14px 20px;
+      font-size: 13px;
       line-height: 22px;
       color: #eee;
       font-weight: 400; }
