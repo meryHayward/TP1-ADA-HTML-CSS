@@ -116,7 +116,7 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
 }
 
 @mixin breakpoint-desktop-4 {
-    @media (min-width: 1400px) {
+    @media (min-width: 1441px) {
         @content;
     }
 }
