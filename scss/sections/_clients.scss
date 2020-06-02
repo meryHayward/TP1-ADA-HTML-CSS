@@ -7,13 +7,16 @@
         padding: 20px 40px 12% 40px;
     }
     @include breakpoint-tablet-desktop {
-        padding: 25px 134px 12% 134px;
+        padding: 25px 134px 10% 134px;
     }
     @include breakpoint-desktop-1 {
         padding: 40px 50px 9% 50px;
     }
     @include breakpoint-desktop-2 {
         padding: 40px 46px 8% 46px;
+    }
+    @include breakpoint-desktop-2 {
+        padding: 40px 46px 7% 46px;
     }
     h1 {
         @include title-h1;

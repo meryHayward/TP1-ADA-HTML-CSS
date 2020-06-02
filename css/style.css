@@ -1062,68 +1062,109 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
             width: 100%; } }
 
 #team {
-  display: block;
-  padding: 0px 0px 40px 0px;
-  max-width: 100%;
-  height: 400px;
-  background-color: white; }
-  #team .textoteam {
-    margin: 20px auto 0px auto;
-    padding: 15px 15px 0px 15px;
-    width: 980px;
-    height: 166px; }
-    #team .textoteam .tituloteam {
-      color: #283d50;
-      font-family: "Montserrat", sans-serif;
-      font-size: 36px;
-      font-weight: 500;
-      margin-bottom: 0;
-      padding-top: 10px;
-      text-align: center;
-      width: 980px;
-      height: 42px;
-      margin-right: auto;
-      margin-left: auto; }
-    #team .textoteam .parrafoteam {
-      color: #556877;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 15px;
-      font-weight: 400;
-      line-height: 22px;
-      margin: auto;
-      padding-top: 20px;
-      text-align: center;
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-      width: 480px;
-      height: 43px;
-      padding-bottom: 60px;
-      justify-content: center; }
+  height: auto;
+  background-color: #fff;
+  padding: 20px 0 18% 0; }
+  @media (min-width: 414px) {
+    #team {
+      padding: 20px 0 15% 0; } }
+  @media (min-width: 768px) {
+    #team {
+      padding: 20px 0 8% 0; } }
+  @media (min-width: 955px) {
+    #team {
+      padding: 25px 0 8% 0; } }
+  @media (min-width: 1024px) {
+    #team {
+      padding: 40px 0 6% 0; } }
+  @media (min-width: 1300px) {
+    #team {
+      padding: 40px 0 4% 0; } }
+  #team .textoteam .tituloteam {
+    color: #283d50;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding-top: 10px;
+    text-align: center; }
+  #team .textoteam .parrafoteam {
+    color: #556877;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: auto;
+    padding-top: 20px;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 40px; }
+    @media (min-width: 768px) {
+      #team .textoteam .parrafoteam {
+        width: 45%; } }
+    @media (min-width: 955px) {
+      #team .textoteam .parrafoteam {
+        width: 35%; } }
+    @media (min-width: 1024px) {
+      #team .textoteam .parrafoteam {
+        width: 50%; } }
+    @media (min-width: 1300px) {
+      #team .textoteam .parrafoteam {
+        width: 40%; } }
   #team .cuadroimagen {
-    width: 1100px;
-    height: 700px;
-    margin: 0px auto 20px auto;
-    padding-left: 100px; }
+    width: auto;
+    height: auto; }
+    @media (min-width: 768px) {
+      #team .cuadroimagen {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px 30px 0px 30px; } }
+    @media (min-width: 955px) {
+      #team .cuadroimagen {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto; } }
+    @media (min-width: 1024px) {
+      #team .cuadroimagen {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center; } }
+    @media (min-width: 1200px) {
+      #team .cuadroimagen {
+        width: 100%;
+        padding: 0px 20px 0px 20px; } }
+    @media (min-width: 1300px) {
+      #team .cuadroimagen {
+        width: 85%; } }
     #team .cuadroimagen .imagen {
       position: relative;
-      display: inline-block;
-      margin: 20px;
-      max-width: 210px;
-      height: 210px;
+      display: flex;
+      justify-content: space-between;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 90%;
+      height: 90%;
       width: 100%;
       color: #bbbbbb;
       font-size: 16px;
       box-shadow: none !important;
       -webkit-transform: translateZ(0);
       transform: translateZ(0); }
+      @media (min-width: 768px) {
+        #team .cuadroimagen .imagen {
+          width: 45%;
+          align-items: center; } }
+      @media (min-width: 1024px) {
+        #team .cuadroimagen .imagen {
+          width: 20%;
+          align-items: center; } }
       #team .cuadroimagen .imagen * {
         box-sizing: border-box;
         transition: all 0.3s linear; }
       #team .cuadroimagen .imagen:before {
         box-sizing: border-box;
         transition: all 0.3s linear;
-        box-sizing: border-box;
         border-radius: 50%;
         content: '';
         position: absolute;
@@ -1137,7 +1178,6 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
       #team .cuadroimagen .imagen:after {
         box-sizing: border-box;
         transition: all 0.3s linear;
-        box-sizing: border-box;
         border-radius: 50%;
         content: '';
         position: absolute;
@@ -1153,8 +1193,8 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
         backface-visibility: hidden;
         vertical-align: top;
         border-radius: 50%;
-        padding: 10px; }
-      #team .cuadroimagen .imagen div {
+        padding: 5px; }
+      #team .cuadroimagen .imagen .overlay {
         position: absolute;
         top: 5px;
         bottom: 5px;
@@ -1165,12 +1205,12 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
         border-radius: 50%;
         text-align: center;
         justify-content: center; }
-        #team .cuadroimagen .imagen div h4 {
+        #team .cuadroimagen .imagen .overlay h4 {
           color: #fff;
           font-family: "Montserrat", sans-serif;
           font-size: 18px;
           padding-top: 30px; }
-        #team .cuadroimagen .imagen div p {
+        #team .cuadroimagen .imagen .overlay p {
           color: #fff;
           font-family: "Open Sans", sans-serif;
           font-style: italic;
@@ -1195,13 +1235,16 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
       padding: 20px 40px 12% 40px; } }
   @media (min-width: 955px) {
     #clients {
-      padding: 25px 134px 12% 134px; } }
+      padding: 25px 134px 10% 134px; } }
   @media (min-width: 1024px) {
     #clients {
       padding: 40px 50px 9% 50px; } }
   @media (min-width: 1200px) {
     #clients {
       padding: 40px 46px 8% 46px; } }
+  @media (min-width: 1200px) {
+    #clients {
+      padding: 40px 46px 7% 46px; } }
   #clients h1 {
     color: #283d50;
     font-family: "Montserrat", sans-serif;
