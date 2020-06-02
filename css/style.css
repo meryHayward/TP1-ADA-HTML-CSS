@@ -534,9 +534,10 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
           width: 95%; } }
 
 .services {
+  width: 100%;
   background-color: #ecf5ff;
   box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-  padding: 30px 10px;
+  padding: 30px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -568,8 +569,12 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    box-sizing: border-box; }
     @media (min-width: 768px) {
+      .services .service_card_container {
+        width: 955px; } }
+    @media (min-width: 1200px) {
       .services .service_card_container {
         width: 1000px; } }
     .services .service_card_container .service_card {
@@ -620,6 +625,16 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
       .services .service_card_container .service_card:hover {
         transform: translateY(-7px); }
       @media (min-width: 768px) {
+        .services .service_card_container .service_card {
+          width: 310px;
+          margin-right: 25px;
+          margin-left: 10px; } }
+      @media (min-width: 1024px) {
+        .services .service_card_container .service_card {
+          width: 350px;
+          margin-right: 25px;
+          margin-left: 25px; } }
+      @media (min-width: 1200px) {
         .services .service_card_container .service_card {
           width: 425px;
           margin-right: 25px;
