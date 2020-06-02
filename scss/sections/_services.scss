@@ -1,7 +1,8 @@
 .services{
+    width: 100%;
     background-color: $light;
     box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);    
-    padding: 30px 10px;
+    padding: 30px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,19 +21,24 @@
     // --Card Container
 
     .service_card_container{
-        padding: 20px;
+        padding: 20px; 
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        box-sizing: border-box;
         @include breakpoint-tablet { 
-            width: 1000px;
+            width: 955px;
+        }
+        @include breakpoint-desktop-2{
+            width: 1000px
         }
     
     //--Card 
         .service_card{
             width: 100%;
             margin-bottom: 30px; 
+            //margin-left: -20px;
             padding: 30px;
             background-color: $white;
             overflow: hidden;
@@ -57,12 +63,12 @@
                 }
 
             }
-            & article{
+            article{
                 @include paragraph;
                 font-size: 14px;
                 margin-left: 55px;
             }
-            & .service_aside{ 
+            .service_aside{ 
                 width: 80px;
                 height: 100%; 
                 position: absolute;
@@ -79,10 +85,25 @@
                 transform: translateY(-7px);
             }  
             @include breakpoint-tablet{
-                width: 425px;  
+                width: 310px;  
+                margin-right: 25px;
+                margin-left: 10px
+            }
+            @include breakpoint-desktop-1{
+                width: 350px;
                 margin-right: 25px;
                 margin-left: 25px
             }
+            @include breakpoint-desktop-2{
+                width: 425px;
+                margin-right: 25px;
+                margin-left: 25px
+            }
+            // @include breakpoint-tablet-desktop{
+            //     width: 420px;
+            //     margin-right: 25px;
+            //     margin-left: 10px
+            // }
         }
     }    
 }
