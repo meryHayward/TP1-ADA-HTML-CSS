@@ -964,12 +964,108 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
       #portfolio .portfolio-container .portfolio-content:hover .portfolio-img {
         opacity: 0.3; }
 
+#testimonials {
+  background-color: #ecf5ff;
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: auto;
+  padding: 20px 0 45px 0; }
+  @media (min-width: 768px) {
+    #testimonials {
+      padding: 20px 0px 35px 0px; } }
+  @media (min-width: 955px) {
+    #testimonials {
+      padding: 25px 0px 35px 0px; } }
+  @media (min-width: 1024px) {
+    #testimonials {
+      padding: 40px 0px 60px 0px; } }
+  @media (min-width: 1200px) {
+    #testimonials {
+      padding: 40px 0px 60px 0px; } }
+  #testimonials h1 {
+    color: #283d50;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding-top: 10px;
+    text-align: center; }
+  #testimonials .cajatestimonials {
+    padding: 40px 16px; }
+    @media (min-width: 768px) {
+      #testimonials .cajatestimonials {
+        display: flex;
+        align-items: flex-start;
+        padding: 40px; } }
+    @media (min-width: 955px) {
+      #testimonials .cajatestimonials {
+        padding: 40px 134px 40px 134px; } }
+    @media (min-width: 1024px) {
+      #testimonials .cajatestimonials {
+        padding: 40px 210px 20px 210px; } }
+    @media (min-width: 1200px) {
+      #testimonials .cajatestimonials {
+        padding: 40px 310px 20px 310px; } }
+    #testimonials .cajatestimonials .imgtestimonials {
+      max-width: 112px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto;
+      border: 4px solid #fff; }
+      @media (min-width: 768px) {
+        #testimonials .cajatestimonials .imgtestimonials {
+          margin-top: 10px; } }
+    #testimonials .cajatestimonials .textotestimonials {
+      width: 100%;
+      text-align: center; }
+      @media (min-width: 768px) {
+        #testimonials .cajatestimonials .textotestimonials {
+          padding: 10px; } }
+      #testimonials .cajatestimonials .textotestimonials h3 {
+        color: #000;
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        font-size: 20px;
+        margin: 10px 0 5px 0; }
+        @media (min-width: 768px) {
+          #testimonials .cajatestimonials .textotestimonials h3 {
+            padding-left: 10px;
+            text-align: left;
+            margin: 0; } }
+      #testimonials .cajatestimonials .textotestimonials h4 {
+        font-size: 14px;
+        color: #999999;
+        font-family: "Montserrat", sans-serif;
+        margin: 0px auto 0 auto;
+        font-weight: 200; }
+        @media (min-width: 768px) {
+          #testimonials .cajatestimonials .textotestimonials h4 {
+            padding: 4px 0 0 10px;
+            text-align: left; } }
+      #testimonials .cajatestimonials .textotestimonials p {
+        color: #383838;
+        font-family: "Open Sans", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.5rem;
+        color: #383838;
+        font-size: 16px;
+        font-style: italic; }
+        @media (min-width: 768px) {
+          #testimonials .cajatestimonials .textotestimonials p {
+            padding: 0 0 0 10px;
+            text-align: left; } }
+        @media (min-width: 1024px) {
+          #testimonials .cajatestimonials .textotestimonials p {
+            width: 100%; } }
+
 #team {
   display: block;
   padding: 0px 0px 40px 0px;
   max-width: 100%;
   height: 400px;
-  box-shadow: 12px 0px 12px 0px rgba(0, 0, 0, 0.1);
   background-color: white; }
   #team .textoteam {
     margin: 20px auto 0px auto;
