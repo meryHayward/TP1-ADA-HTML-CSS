@@ -545,8 +545,7 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
 .services {
   background-color: #ecf5ff;
   box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-  padding: 30px 5px;
-  height: au; }
+  padding: 30px 5px; }
   .services h1 {
     color: #283d50;
     font-family: "Montserrat", sans-serif;
@@ -554,7 +553,8 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
     font-weight: 500;
     margin-bottom: 0;
     padding-top: 10px;
-    text-align: center; }
+    text-align: center;
+    margin: 0; }
   .services h4 {
     color: #556877;
     font-family: 'Open Sans', sans-serif;
@@ -578,6 +578,9 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
     @media (min-width: 1300px) {
       .services h4 {
         width: 35%; } }
+  @media (min-width: 955px) {
+    .services {
+      padding-bottom: 80px; } }
   .services .service_card_container {
     padding: 20px;
     display: flex;

@@ -2,9 +2,9 @@
     background-color: $light;
     box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);    
     padding: 30px 5px;
-    height: au;
     h1{
         @include title-h1;
+        margin: 0; 
     }
     h4{ 
         @include title-h4 ($gray);
@@ -21,6 +21,9 @@
         @include breakpoint-desktop-3{
             width: 35%;
         }
+    }
+    @include breakpoint-tablet-desktop{
+        padding-bottom: 80px;
     }
 
     // --Card Container
