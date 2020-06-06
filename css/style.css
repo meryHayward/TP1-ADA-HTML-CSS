@@ -592,7 +592,7 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
       .services .service_card_container {
         padding: 0 50px;
         margin: 0 auto; } }
-    @media (min-width: 1300px) {
+    @media (min-width: 1441px) {
       .services .service_card_container {
         padding: 0 180px; } }
     .services .service_card_container .service_card {
@@ -605,12 +605,7 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
       box-sizing: border-box;
       box-shadow: 0 10px 29px rgba(44, 60, 0, 0.1);
       position: relative;
-      transition: transform 0.3s ease-in;
-      /*  @include breakpoint-desktop-1{
-                width: 350px; 
-                margin-right: 25px;
-                margin-left: 25px
-            } */ }
+      transition: transform 0.3s ease-in; }
       .services .service_card_container .service_card header {
         margin-left: 55px; }
         .services .service_card_container .service_card header h3 {
@@ -654,9 +649,7 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
           margin-left: 20px; } }
       @media (min-width: 1200px) {
         .services .service_card_container .service_card {
-          width: 430px;
-          /*  margin-right: 25px;
-                margin-left: 25px */ } }
+          width: 430px; } }
 
 .whyChoose {
   box-sizing: border-box;

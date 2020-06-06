@@ -39,7 +39,7 @@
             padding: 0 50px;
             margin: 0 auto;
         }
-       @include breakpoint-desktop-3{
+       @include breakpoint-desktop-4{
             padding: 0 180px;
         }
     
@@ -47,7 +47,6 @@
         .service_card{
             width: 100%;
             margin-bottom: 30px; 
-            //margin-left: -20px;
             padding: 30px;
             background-color: $white;
             overflow: hidden;
@@ -98,21 +97,12 @@
                 margin-right: 20px;
                 margin-left: 20px
             }
-           /*  @include breakpoint-desktop-1{
-                width: 350px; 
-                margin-right: 25px;
-                margin-left: 25px
-            } */
+          
              @include breakpoint-desktop-2{
                 width: 430px;
-               /*  margin-right: 25px;
-                margin-left: 25px */
+               
             } 
-            // @include breakpoint-tablet-desktop{
-            //     width: 420px;
-            //     margin-right: 25px;
-            //     margin-left: 10px
-            // }
+            
         }
     }    
 }
