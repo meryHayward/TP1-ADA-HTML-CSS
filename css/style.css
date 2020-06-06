@@ -774,7 +774,7 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
   .whyChoose .work_counter {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     padding-top: 30px; }
     .whyChoose .work_counter .counter1 {
