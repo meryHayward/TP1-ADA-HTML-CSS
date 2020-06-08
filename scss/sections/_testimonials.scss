@@ -1,94 +1,130 @@
+@import "../components/testimonials-slider";
+
 #testimonials {
     background-color: $light;
     box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);    
-    width: 100%;
     height: auto;
-    padding: 20px 0 45px 0;
+    padding: 20px 0 50px 0;
+    width: 100%;
+    @include breakpoint-desktop-2 {
+        padding: 20px 0 100px 0;
+    }
     @include breakpoint-tablet {
-        padding: 20px 0px 35px 0px;
+        padding: 20px 0px 46px 0px;
     }
     @include breakpoint-tablet-desktop {
-        padding: 25px 0px 35px 0px;
+        padding: 25px 0px 40px 0px;
     }
     @include breakpoint-desktop-1 {
-        padding: 40px 0px 60px 0px;
+        padding: 40px 0px 48px 0px;
     }
-    @include breakpoint-desktop-2 {
-        padding: 40px 0px 60px 0px;
-    }
-    
     h1 {
-        @include title-h1; 
+        @include title-h1;
+        padding-bottom: 40px; 
     }
     .cajatestimonials {
-        padding: 40px 16px;    
-        @include breakpoint-tablet {
-            display: flex;
-            align-items: flex-start;
-            padding: 40px;
-        }
-        @include breakpoint-tablet-desktop {
-            padding: 40px 134px 40px 134px;
-        }   
-        @include breakpoint-desktop-1 {
-            padding: 40px 210px 20px 210px;
-        }
-        @include breakpoint-desktop-2 {
-            padding: 40px 310px 20px 310px;
-        }
+        overflow: hidden;
+        position: relative;
+        width: 100%;      
         @include breakpoint-desktop-4 {
-            padding: 40px 450px 20px 450px;
-        }
-        .imgtestimonials {
-            max-width: 112px;
-            border-radius: 50%;   
-            display: block;
             margin: 0 auto;
-            border: 4px solid $white;
-            @include breakpoint-tablet {
-              margin-top: 10px;
-          }
+            width: 80%;
         }
-        .textotestimonials {
-            width: 100%;
+        .testimonials-open:checked + .testimonial-container {
+            opacity: 1;
+            position: static;
+        }
+        .testimonial-container {
+            opacity: 0;   
+            position: absolute;
+            transition: opacity 0.6s linear;
             text-align: center; 
             @include breakpoint-tablet {
                 padding: 10px;    
-            }                    
-            h3 {
-                @include title-h3 ($black); 
-                    font-size: 20px;
-                    margin: 10px 0 5px 0;
+            }  
+            .imgtestimonials {
+                border: 4px solid $white;
+                border-radius: 50%;   
+                margin: 0 auto;
+                max-width: 112px;
                 @include breakpoint-tablet {
-                    padding-left: 10px;
-                    text-align: left;
-                    margin: 0;
-                }      
-            }
-            h4 {
-                font-size: 14px;
-                color: #999999;
-                font-family: $title;
-                margin: 0px auto 0 auto;
-                font-weight: 200;
-                @include breakpoint-tablet {
-                    padding: 4px 0 0 10px;
-                    text-align: left;
+                    left: 39px;
+                    position: absolute;
+                    top: 10px;
+                }
+                @include breakpoint-tablet-desktop {
+                    left: 14%;
                 } 
-            }
-            p {
-                @include paragraph; 
-                color: $blackgray;
-                font-size: 16px;
-                font-style: italic;
+                @include breakpoint-desktop-1 {
+                    left: 19%;
+                } 
+                @include breakpoint-desktop-2 {
+                    left: 230px;
+                } 
+                @include breakpoint-desktop-3 {
+                    left: 310px;
+                } 
+                @include breakpoint-desktop-4 {
+                    left: 220px;
+                } 
+            } 
+            .testimonials-info {  
                 @include breakpoint-tablet {
-                    padding: 0 0 0 10px;
-                    text-align: left;
+                    padding: 0 10rem;
+                    width: 75%;
+                }  
+                @include breakpoint-tablet-desktop {
+                    padding: 0 16rem;
+                    width: 60%;
                 }  
                 @include breakpoint-desktop-1 {
-                    width: 100%;
+                    padding: 0 20rem;
+                    width: 50%;
+                }
+                @include breakpoint-desktop-2 {
+                    padding: 0 22rem;
                 } 
-            }
+                @include breakpoint-desktop-3 {
+                    padding: 0 27rem;
+                    width: 45%;
+                } 
+                @include breakpoint-desktop-4 {
+                    padding: 0 22rem;
+                    width: 53%;
+                } 
+                h3 {
+                    @include title-h3 ($black); 
+                        font-size: 20px;
+                        margin: 10px 0 5px 0;
+                    @include breakpoint-tablet {
+                        padding-left: 10px;
+                        text-align: left;
+                        margin: 0;
+                    }      
+                }
+                h4 {
+                    color: #999999;
+                    font-family: $title;
+                    font-size: 14px;
+                    font-weight: 200;
+                    margin: 0px auto 0 auto;
+                    @include breakpoint-tablet {
+                        padding: 4px 0 0 10px;
+                        text-align: left;
+                    } 
+                }
+                p {
+                    @include paragraph; 
+                    color: $blackgray;
+                    font-size: 16px;
+                    font-style: italic;
+                    padding: 0 16px 40px;
+                    @include breakpoint-tablet {
+                        padding: 0 0 30px 10px;
+                        text-align: left;
+                    }  
+                }
+            } 
         }         
     }
-}
+}    
