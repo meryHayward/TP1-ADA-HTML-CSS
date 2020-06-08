@@ -1,0 +1,38 @@
+.cajatestimonials {
+    .testimonials-slider {
+        left: 51%;
+        position: absolute;
+        top: 90%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        @include breakpoint-mobile-2 {
+            left: 57%; 
+        }
+        @include breakpoint-tablet {
+            left: 66%;
+            top: 80%;
+        }
+        @include breakpoint-tablet-desktop {
+            left: 68%; 
+        }
+        @include breakpoint-tablet-desktop {
+            left: 69%; 
+        }
+        li {
+            display: inline-block;
+            margin: 0 4px;
+            .slide {
+                box-sizing: border-box;
+                background-color: rgb(224, 224, 224);
+                cursor: pointer;
+                display: inline-block;
+                height: 12px;
+                width: 12px;
+                border-radius: 50%;
+                &:hover {
+                    background-color: $lightblue;
+                }            
+            }
+        }
+    }
+}

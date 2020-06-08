@@ -1027,24 +1027,57 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
       #portfolio .portfolio-container .portfolio-content:hover .portfolio-img {
         opacity: 0.3; }
 
+.cajatestimonials .testimonials-slider {
+  left: 51%;
+  position: absolute;
+  top: 90%;
+  transform: translate(-50%, -50%);
+  width: 50%; }
+  @media (min-width: 414px) {
+    .cajatestimonials .testimonials-slider {
+      left: 57%; } }
+  @media (min-width: 768px) {
+    .cajatestimonials .testimonials-slider {
+      left: 66%;
+      top: 80%; } }
+  @media (min-width: 955px) {
+    .cajatestimonials .testimonials-slider {
+      left: 68%; } }
+  @media (min-width: 955px) {
+    .cajatestimonials .testimonials-slider {
+      left: 69%; } }
+  .cajatestimonials .testimonials-slider li {
+    display: inline-block;
+    margin: 0 4px; }
+    .cajatestimonials .testimonials-slider li .slide {
+      box-sizing: border-box;
+      background-color: #e0e0e0;
+      cursor: pointer;
+      display: inline-block;
+      height: 12px;
+      width: 12px;
+      border-radius: 50%; }
+      .cajatestimonials .testimonials-slider li .slide:hover {
+        background-color: #007bff; }
+
 #testimonials {
   background-color: #ecf5ff;
   box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-  width: 100%;
   height: auto;
-  padding: 20px 0 45px 0; }
-  @media (min-width: 768px) {
-    #testimonials {
-      padding: 20px 0px 35px 0px; } }
-  @media (min-width: 955px) {
-    #testimonials {
-      padding: 25px 0px 35px 0px; } }
-  @media (min-width: 1024px) {
-    #testimonials {
-      padding: 40px 0px 60px 0px; } }
+  padding: 20px 0 50px 0;
+  width: 100%; }
   @media (min-width: 1200px) {
     #testimonials {
-      padding: 40px 0px 60px 0px; } }
+      padding: 20px 0 100px 0; } }
+  @media (min-width: 768px) {
+    #testimonials {
+      padding: 20px 0px 46px 0px; } }
+  @media (min-width: 955px) {
+    #testimonials {
+      padding: 25px 0px 40px 0px; } }
+  @media (min-width: 1024px) {
+    #testimonials {
+      padding: 40px 0px 48px 0px; } }
   #testimonials h1 {
     color: #283d50;
     font-family: "Montserrat", sans-serif;
@@ -1052,42 +1085,76 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
     font-weight: 500;
     margin-bottom: 0;
     padding-top: 10px;
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 40px; }
   #testimonials .cajatestimonials {
-    padding: 40px 16px; }
-    @media (min-width: 768px) {
-      #testimonials .cajatestimonials {
-        display: flex;
-        align-items: flex-start;
-        padding: 40px; } }
-    @media (min-width: 955px) {
-      #testimonials .cajatestimonials {
-        padding: 40px 134px 40px 134px; } }
-    @media (min-width: 1024px) {
-      #testimonials .cajatestimonials {
-        padding: 40px 210px 20px 210px; } }
-    @media (min-width: 1200px) {
-      #testimonials .cajatestimonials {
-        padding: 40px 310px 20px 310px; } }
+    overflow: hidden;
+    position: relative;
+    width: 100%; }
     @media (min-width: 1441px) {
       #testimonials .cajatestimonials {
-        padding: 40px 450px 20px 450px; } }
-    #testimonials .cajatestimonials .imgtestimonials {
-      max-width: 112px;
-      border-radius: 50%;
-      display: block;
-      margin: 0 auto;
-      border: 4px solid #fff; }
-      @media (min-width: 768px) {
-        #testimonials .cajatestimonials .imgtestimonials {
-          margin-top: 10px; } }
-    #testimonials .cajatestimonials .textotestimonials {
-      width: 100%;
+        margin: 0 auto;
+        width: 80%; } }
+    #testimonials .cajatestimonials .testimonials-open:checked + .testimonial-container {
+      opacity: 1;
+      position: static; }
+    #testimonials .cajatestimonials .testimonial-container {
+      opacity: 0;
+      position: absolute;
+      transition: opacity 0.6s linear;
       text-align: center; }
       @media (min-width: 768px) {
-        #testimonials .cajatestimonials .textotestimonials {
+        #testimonials .cajatestimonials .testimonial-container {
           padding: 10px; } }
-      #testimonials .cajatestimonials .textotestimonials h3 {
+      #testimonials .cajatestimonials .testimonial-container .imgtestimonials {
+        border: 4px solid #fff;
+        border-radius: 50%;
+        margin: 0 auto;
+        max-width: 112px; }
+        @media (min-width: 768px) {
+          #testimonials .cajatestimonials .testimonial-container .imgtestimonials {
+            left: 39px;
+            position: absolute;
+            top: 10px; } }
+        @media (min-width: 955px) {
+          #testimonials .cajatestimonials .testimonial-container .imgtestimonials {
+            left: 14%; } }
+        @media (min-width: 1024px) {
+          #testimonials .cajatestimonials .testimonial-container .imgtestimonials {
+            left: 19%; } }
+        @media (min-width: 1200px) {
+          #testimonials .cajatestimonials .testimonial-container .imgtestimonials {
+            left: 230px; } }
+        @media (min-width: 1300px) {
+          #testimonials .cajatestimonials .testimonial-container .imgtestimonials {
+            left: 310px; } }
+        @media (min-width: 1441px) {
+          #testimonials .cajatestimonials .testimonial-container .imgtestimonials {
+            left: 220px; } }
+      @media (min-width: 768px) {
+        #testimonials .cajatestimonials .testimonial-container .testimonials-info {
+          padding: 0 10rem;
+          width: 75%; } }
+      @media (min-width: 955px) {
+        #testimonials .cajatestimonials .testimonial-container .testimonials-info {
+          padding: 0 16rem;
+          width: 60%; } }
+      @media (min-width: 1024px) {
+        #testimonials .cajatestimonials .testimonial-container .testimonials-info {
+          padding: 0 20rem;
+          width: 50%; } }
+      @media (min-width: 1200px) {
+        #testimonials .cajatestimonials .testimonial-container .testimonials-info {
+          padding: 0 22rem; } }
+      @media (min-width: 1300px) {
+        #testimonials .cajatestimonials .testimonial-container .testimonials-info {
+          padding: 0 27rem;
+          width: 45%; } }
+      @media (min-width: 1441px) {
+        #testimonials .cajatestimonials .testimonial-container .testimonials-info {
+          padding: 0 22rem;
+          width: 53%; } }
+      #testimonials .cajatestimonials .testimonial-container .testimonials-info h3 {
         color: #000;
         font-family: "Montserrat", sans-serif;
         font-size: 18px;
@@ -1096,21 +1163,21 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
         font-size: 20px;
         margin: 10px 0 5px 0; }
         @media (min-width: 768px) {
-          #testimonials .cajatestimonials .textotestimonials h3 {
+          #testimonials .cajatestimonials .testimonial-container .testimonials-info h3 {
             padding-left: 10px;
             text-align: left;
             margin: 0; } }
-      #testimonials .cajatestimonials .textotestimonials h4 {
-        font-size: 14px;
+      #testimonials .cajatestimonials .testimonial-container .testimonials-info h4 {
         color: #999999;
         font-family: "Montserrat", sans-serif;
-        margin: 0px auto 0 auto;
-        font-weight: 200; }
+        font-size: 14px;
+        font-weight: 200;
+        margin: 0px auto 0 auto; }
         @media (min-width: 768px) {
-          #testimonials .cajatestimonials .textotestimonials h4 {
+          #testimonials .cajatestimonials .testimonial-container .testimonials-info h4 {
             padding: 4px 0 0 10px;
             text-align: left; } }
-      #testimonials .cajatestimonials .textotestimonials p {
+      #testimonials .cajatestimonials .testimonial-container .testimonials-info p {
         color: #383838;
         font-family: "Open Sans", sans-serif;
         font-size: 12px;
@@ -1118,14 +1185,12 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
         line-height: 1.5rem;
         color: #383838;
         font-size: 16px;
-        font-style: italic; }
+        font-style: italic;
+        padding: 0 16px 40px; }
         @media (min-width: 768px) {
-          #testimonials .cajatestimonials .textotestimonials p {
-            padding: 0 0 0 10px;
+          #testimonials .cajatestimonials .testimonial-container .testimonials-info p {
+            padding: 0 0 30px 10px;
             text-align: left; } }
-        @media (min-width: 1024px) {
-          #testimonials .cajatestimonials .textotestimonials p {
-            width: 100%; } }
 
 #team {
   height: auto;
