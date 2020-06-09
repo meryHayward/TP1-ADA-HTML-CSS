@@ -52,14 +52,10 @@
             margin-right: auto;
         }
         @include breakpoint-desktop-1 {
-            width: 90%;
+            width: 93%;
             display: flex;
             flex-wrap: wrap;
             align-content: center;
-        }
-        @include breakpoint-desktop-2 {
-            width: 100%;
-            padding: 0px 20px 0px 20px;
         }
         @include breakpoint-desktop-3 {
             width: 85%;

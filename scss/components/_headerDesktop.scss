@@ -1,12 +1,15 @@
 .menu-desktop {
     margin-right: 4%;
     width: 100%;
-    @include breakpoint-desktop-2 {
-        margin-right: 8%;
-        width: 50%;
-    }
     @include breakpoint-desktop-1-special {
         display: none;
+    }
+    @include breakpoint-desktop-2 {
+        margin-right: 8%;
+        width: 70%;
+    }
+    @include breakpoint-desktop-3 {
+        width: 51%;
     }
     @include breakpoint-desktop-4{
         width: 48%;
