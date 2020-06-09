@@ -1,0 +1,51 @@
+.whyChoose {
+    .work_counter {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 30px;
+        @include breakpoint-mobile-2 {
+            width: 90%;
+        }
+        @include breakpoint-tablet {
+            width: 85%;
+        }
+        @include breakpoint-tablet-desktop {
+            width: 70%;
+        }
+        @include breakpoint-desktop-1 {
+            width: 85%;
+        }
+        @include breakpoint-desktop-3 {
+            width: 75%;
+        }
+        .counter {
+            width: 115px;
+            padding: 0 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            @include breakpoint-tablet{
+                padding: 0px 75px;
+            }
+            @include breakpoint-desktop-1{
+                padding: 0 15px;
+            }
+            .number {
+                font-family: $title;
+                font-weight: $bold;
+                color: $white;
+                font-size: 48px;
+            }
+            .counter_about {
+                font-family: $title;
+                font-size: 14px;
+                color: $white;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

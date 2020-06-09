@@ -1,50 +1,49 @@
-.services{
+.services {
     background-color: $light;
     box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);    
-    padding: 30px 5px;
-    h1{
-        @include title-h1;
-        margin: 0; 
+    padding: 20px 5px 37px 5px;
+    @include breakpoint-tablet-desktop {
+        padding: 25px 5px 50px 5px;
     }
-    h4{ 
+    @include breakpoint-desktop-1 {
+        padding: 40px 5px 50px 5px;
+    }
+    h1 {
+        @include title-h1;
+    }
+    h4 { 
         @include title-h4 ($gray);
         padding-bottom: 60px;
-        @include breakpoint-tablet{
+        @include breakpoint-tablet {
             width: 45%;
         }
-        @include breakpoint-tablet-desktop{
+        @include breakpoint-tablet-desktop {
             width: 35%;
         }
-        @include breakpoint-desktop-1{
+        @include breakpoint-desktop-1 {
             width: 50%;
         }
-        @include breakpoint-desktop-3{
+        @include breakpoint-desktop-3 {
             width: 35%;
         }
     }
-    @include breakpoint-tablet-desktop{
-        padding-bottom: 80px;
-    }
-
     // --Card Container
-
-    .service_card_container{
-        padding: 20px; 
+    .service_card_container {
+        padding: 10px 20px; 
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         box-sizing: border-box;
-         @include breakpoint-tablet-desktop { 
+        @include breakpoint-tablet-desktop { 
             padding: 0 50px;
             margin: 0 auto;
         }
-       @include breakpoint-desktop-4{
+        @include breakpoint-desktop-4 {
             padding: 0 180px;
         }
-    
-    //--Card 
-        .service_card{
+        //--Card 
+        .service_card {
             width: 100%;
             margin-bottom: 30px; 
             padding: 30px;
@@ -55,28 +54,28 @@
             box-shadow: 0 10px 29px rgba(44, 60 , 0, .1);
             position: relative;
             transition: transform 0.3s ease-in;
-            header{
+            header {
                 margin-left: 55px;
-                h3{
+                h3 {
                     @include title-h3($black); 
                     margin-top: 0;
                     margin-bottom: 10px;
                     text-align: left;
                 }
-                a{
+                a {
                     transition: color 0.2s ease-in; 
-                    &:hover{
+                    &:hover {
                         color: $lightblue; 
                     }
                 }
 
             }
-            article{
+            article {
                 @include paragraph;
                 font-size: 14px;
                 margin-left: 55px;
             }
-            .service_aside{ 
+            .service_aside { 
                 width: 80px;
                 height: 100%; 
                 position: absolute;
@@ -85,26 +84,22 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                & .card-icons{
+                & .card-icons {
                     width: 60px; 
                 } 
             }
-            &:hover{ 
+            &:hover { 
                 transform: translateY(-7px);
             }  
-            @include breakpoint-tablet{
+            @include breakpoint-tablet {
                 width: 310px;  
                 margin-right: 20px;
                 margin-left: 20px
-            }
-          
-             @include breakpoint-desktop-2{
+            }          
+            @include breakpoint-desktop-2 {
                 width: 430px;
                
-            } 
-            
+            }             
         }
     }    
 }
-
- 

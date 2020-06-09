@@ -1,30 +1,17 @@
 @charset "UTF-8";
-/* PUEDEN CAMBIAR LOS VALORES SI ES NECESARIO, 
-VERIFICANDO QUE NO AFECTE EL DISEÑO DE LAS DEMÁS */
-/* Utilizar este mixin para los títulos de cada sección.
-En el html, en cada sección colocar el tag "h1" para el título.
-*/
-/* Utilizar este mixin para el texto que esta debajo de los títulos y en 
-la profesión (lo que esta debajo del nombre de la persona en testimonials). 
-En el html, debajo de los títulos de la sección y debajo del nombre de la
-persona en testimonials colocarlo con el tag "h4".
-*/
-/* Utilizar este mixin para los títulos de las cards, en los nombres de las 
-personas en testimonials y en el about us en los títulos que están a un lado
-de los íconos.
-En el html, los títulos de las card, en los nombres de las personas 
-en testimonials y títulos del about us al lado de iconos colocarlo con el tag "h3".
-*/
 .menu-desktop {
   margin-right: 4%;
   width: 100%; }
-  @media (min-width: 1200px) {
-    .menu-desktop {
-      margin-right: 8%;
-      width: 50%; } }
   @media (max-width: 1023px) {
     .menu-desktop {
       display: none; } }
+  @media (min-width: 1200px) {
+    .menu-desktop {
+      margin-right: 8%;
+      width: 70%; } }
+  @media (min-width: 1300px) {
+    .menu-desktop {
+      width: 51%; } }
   @media (min-width: 1441px) {
     .menu-desktop {
       width: 48%; } }
@@ -191,10 +178,27 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
               transition-timing-function: ease-in-out; }
             .navbar #sidebar .sidebar-content nav ul li .dropdown-input:checked ~ .dropdown-label:after {
               content: "▲"; }
+            .navbar #sidebar .sidebar-content nav ul li .dropdown-input:checked ~ .dropdown-label1:after {
+              content: "▲"; }
             .navbar #sidebar .sidebar-content nav ul li .dropdown-label {
               margin-left: -11px; }
               .navbar #sidebar .sidebar-content nav ul li .dropdown-label:after {
-                content: "▼"; }
+                content: "▼";
+                margin-left: 99px; }
+                @media (min-width: 414px) {
+                  .navbar #sidebar .sidebar-content nav ul li .dropdown-label:after {
+                    margin-left: 95px; } }
+                @media (min-width: 768px) {
+                  .navbar #sidebar .sidebar-content nav ul li .dropdown-label:after {
+                    margin-left: 100px; } }
+                @media (min-width: 955px) {
+                  .navbar #sidebar .sidebar-content nav ul li .dropdown-label:after {
+                    margin-left: 97px; } }
+            .navbar #sidebar .sidebar-content nav ul li .dropdown-label1 {
+              margin-left: -11px; }
+              .navbar #sidebar .sidebar-content nav ul li .dropdown-label1:after {
+                content: "▼";
+                float: right; }
             .navbar #sidebar .sidebar-content nav ul li .dropdown-content {
               max-height: 0;
               overflow: hidden;
@@ -277,7 +281,7 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
 #hero {
   display: flex;
   flex-wrap: wrap;
-  background-color: #1445b3;
+  background-color: #004a99;
   padding: 100px 1rem 28px 1rem;
   height: auto; }
   @media (min-width: 768px) {
@@ -545,7 +549,13 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
 .services {
   background-color: #ecf5ff;
   box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-  padding: 30px 5px; }
+  padding: 20px 5px 37px 5px; }
+  @media (min-width: 955px) {
+    .services {
+      padding: 25px 5px 50px 5px; } }
+  @media (min-width: 1024px) {
+    .services {
+      padding: 40px 5px 50px 5px; } }
   .services h1 {
     color: #283d50;
     font-family: "Montserrat", sans-serif;
@@ -553,8 +563,7 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
     font-weight: 500;
     margin-bottom: 0;
     padding-top: 10px;
-    text-align: center;
-    margin: 0; }
+    text-align: center; }
   .services h4 {
     color: #556877;
     font-family: 'Open Sans', sans-serif;
@@ -578,11 +587,8 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
     @media (min-width: 1300px) {
       .services h4 {
         width: 35%; } }
-  @media (min-width: 955px) {
-    .services {
-      padding-bottom: 80px; } }
   .services .service_card_container {
-    padding: 20px;
+    padding: 10px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -651,18 +657,69 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
         .services .service_card_container .service_card {
           width: 430px; } }
 
+.whyChoose .work_counter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px; }
+  @media (min-width: 414px) {
+    .whyChoose .work_counter {
+      width: 90%; } }
+  @media (min-width: 768px) {
+    .whyChoose .work_counter {
+      width: 85%; } }
+  @media (min-width: 955px) {
+    .whyChoose .work_counter {
+      width: 70%; } }
+  @media (min-width: 1024px) {
+    .whyChoose .work_counter {
+      width: 85%; } }
+  @media (min-width: 1300px) {
+    .whyChoose .work_counter {
+      width: 75%; } }
+  .whyChoose .work_counter .counter {
+    width: 115px;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    @media (min-width: 768px) {
+      .whyChoose .work_counter .counter {
+        padding: 0px 75px; } }
+    @media (min-width: 1024px) {
+      .whyChoose .work_counter .counter {
+        padding: 0 15px; } }
+    .whyChoose .work_counter .counter .number {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      color: #fff;
+      font-size: 48px; }
+    .whyChoose .work_counter .counter .counter_about {
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 20px; }
+
 .whyChoose {
   box-sizing: border-box;
-  padding: 35px 15px 60px;
-  background-color: #1445b3;
+  padding: 20px 15px 60px;
+  background-color: #004a99;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  /*----Empieza la sección counter---*/ }
+  align-items: center; }
+  @media (min-width: 955px) {
+    .whyChoose {
+      padding: 25px 15px 60px; } }
+  @media (min-width: 1024px) {
+    .whyChoose {
+      padding: 40px 15px 60px; } }
   @media (min-width: 1441px) {
     .whyChoose {
-      padding: 35px 280px 60px 280px; } }
+      padding: 40px 280px 60px 280px; } }
   .whyChoose h1 {
     color: #283d50;
     font-family: "Montserrat", sans-serif;
@@ -682,14 +739,43 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
     padding-top: 20px;
     text-align: center;
     width: 100%;
-    font-family: "Montserrat", sans-serif;
-    padding-bottom: 50px; }
+    padding-bottom: 60px; }
     @media (min-width: 768px) {
       .whyChoose h4 {
         width: 50%; } }
+    @media (min-width: 955px) {
+      .whyChoose h4 {
+        width: 40%; } }
+    @media (min-width: 1024px) {
+      .whyChoose h4 {
+        width: 50%; } }
+    @media (min-width: 1300px) {
+      .whyChoose h4 {
+        width: 45%; } }
+    @media (min-width: 1441px) {
+      .whyChoose h4 {
+        width: 65%; } }
   .whyChoose .why_card_container {
     display: flex;
     flex-wrap: wrap; }
+    @media (min-width: 768px) {
+      .whyChoose .why_card_container {
+        width: 94%; } }
+    @media (min-width: 955px) {
+      .whyChoose .why_card_container {
+        width: 75%; } }
+    @media (min-width: 1024px) {
+      .whyChoose .why_card_container {
+        width: 94%;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-around; } }
+    @media (min-width: 1200px) {
+      .whyChoose .why_card_container {
+        width: 97%; } }
+    @media (min-width: 1300px) {
+      .whyChoose .why_card_container {
+        width: 85%; } }
     .whyChoose .why_card_container .why_card {
       padding: 20px 20px 45px 20px;
       background-color: rgba(0, 64, 138, 0.5);
@@ -758,48 +844,6 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
           margin: 0;
           padding: 0;
           width: 90px; }
-    @media (min-width: 414px) {
-      .whyChoose .why_card_container {
-        width: 85%; } }
-    @media (min-width: 1024px) {
-      .whyChoose .why_card_container {
-        width: 100%;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        justify-content: space-around; } }
-  .whyChoose .work_counter {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-top: 30px; }
-    .whyChoose .work_counter .counter1 {
-      width: 121px;
-      padding: 0 15px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      @media (min-width: 768px) {
-        .whyChoose .work_counter .counter1 {
-          padding: 0px 75px; } }
-      @media (min-width: 1024px) {
-        .whyChoose .work_counter .counter1 {
-          padding: 0 15px; } }
-      .whyChoose .work_counter .counter1 .number {
-        font-family: "Open Sans", sans-serif;
-        font-weight: 700;
-        color: #fff;
-        font-size: 48px; }
-      .whyChoose .work_counter .counter1 .counter_about {
-        font-family: "Montserrat", sans-serif;
-        font-size: 14px;
-        color: #fff;
-        text-align: center;
-        margin-bottom: 20px; }
-    @media (min-width: 768px) {
-      .whyChoose .work_counter {
-        width: 85%; } }
 
 .buttons {
   text-align: center; }
@@ -1253,14 +1297,10 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
         margin-right: auto; } }
     @media (min-width: 1024px) {
       #team .cuadroimagen {
-        width: 90%;
+        width: 93%;
         display: flex;
         flex-wrap: wrap;
         align-content: center; } }
-    @media (min-width: 1200px) {
-      #team .cuadroimagen {
-        width: 100%;
-        padding: 0px 20px 0px 20px; } }
     @media (min-width: 1300px) {
       #team .cuadroimagen {
         width: 85%; } }
@@ -1582,7 +1622,7 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
     margin-bottom: 26px;
     margin-top: 22px; }
   .container-footer h4 {
-    font-weight: bold;
+    font-weight: 700;
     color: #fff;
     font-size: 14px;
     margin-bottom: 26px;

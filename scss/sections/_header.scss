@@ -113,11 +113,33 @@
                                     content: "▲";     
                                 }                                
                             }
+                            &:checked {
+                                &  ~ .dropdown-label1:after {
+                                    content: "▲";     
+                                }                                
+                            }
                         }
                         .dropdown-label {
                             margin-left: -11px;
                             &:after {
                                 content: "▼";
+                                margin-left: 99px;
+                                @include breakpoint-mobile-2 {
+                                    margin-left: 95px;
+                                }
+                                @include breakpoint-tablet {
+                                    margin-left: 100px;
+                                }
+                                @include breakpoint-tablet-desktop {
+                                    margin-left: 97px;
+                                }
+                            }
+                        }
+                        .dropdown-label1 {
+                            margin-left: -11px;
+                            &:after {
+                                content: "▼";
+                                float: right;
                             }
                         }
                         .dropdown-content {

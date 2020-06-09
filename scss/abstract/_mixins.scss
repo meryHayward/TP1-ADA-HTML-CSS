@@ -1,9 +1,3 @@
-/* PUEDEN CAMBIAR LOS VALORES SI ES NECESARIO, 
-VERIFICANDO QUE NO AFECTE EL DISEÑO DE LAS DEMÁS */
-
-/* Utilizar este mixin para los títulos de cada sección.
-En el html, en cada sección colocar el tag "h1" para el título.
-*/
 @mixin title-h1 {
     color: $bluegray;
     font-family: $title;
@@ -14,11 +8,6 @@ En el html, en cada sección colocar el tag "h1" para el título.
     text-align: center;  
 }
 
-/* Utilizar este mixin para el texto que esta debajo de los títulos y en 
-la profesión (lo que esta debajo del nombre de la persona en testimonials). 
-En el html, debajo de los títulos de la sección y debajo del nombre de la
-persona en testimonials colocarlo con el tag "h4".
-*/
 @mixin title-h4 ($font-color) { 
     color: $font-color; // $gray o $lightgray
     font-family: 'Open Sans', sans-serif;
@@ -31,12 +20,6 @@ persona en testimonials colocarlo con el tag "h4".
     width: 100%;
 }
 
-/* Utilizar este mixin para los títulos de las cards, en los nombres de las 
-personas en testimonials y en el about us en los títulos que están a un lado
-de los íconos.
-En el html, los títulos de las card, en los nombres de las personas 
-en testimonials y títulos del about us al lado de iconos colocarlo con el tag "h3".
-*/
 @mixin title-h3 ($font-color) {
     color: $font-color; // $white, $black o $bluegray
     font-family: $title;
@@ -45,7 +28,6 @@ en testimonials y títulos del about us al lado de iconos colocarlo con el tag "
     text-align: center;  
 }
 
-// Utilizar este mixin para los párrafos en general.
 @mixin paragraph {
     color: $blackgray;
     font-family: $text;
