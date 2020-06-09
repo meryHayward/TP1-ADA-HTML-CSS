@@ -139,7 +139,19 @@
                     color: $white;
                     font-family: $title;
                     font-size: $font-l;
-                    padding-top: 30px;
+                    padding-top: 30px; 
+                    @include breakpoint-mobile-2 {
+                        padding-top: 70px;
+                    }
+                    @include breakpoint-desktop-1 {
+                        padding-top: 20px;
+                    }
+                    @include breakpoint-desktop-2 {
+                        padding-top: 30px;
+                    }
+                    @include breakpoint-desktop-4 {
+                        padding-top: 35px;
+                    }
                 }
                 p {
                     color: $white;
