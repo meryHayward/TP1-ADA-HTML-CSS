@@ -5,8 +5,8 @@ Realizado por:
   - María Alarcón
   - María Hayward
   - Daniela Brito
-  - Víctoria Almiron
+  - María Víctoria Almiron
 
 página modelo: https://newbiz-master-uqgespkghu.now.sh/
 
-página trabajo práctico: https://mariagaa993.github.io/tp1-ada/index.html
+página trabajo práctico: https://mariagaa993.github.io/tp1-ada/
