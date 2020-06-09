@@ -39,6 +39,9 @@
             margin-left: 9%;
             width: 13%;
         }
+        @include breakpoint-desktop-3 {
+            margin-left: 14%;
+        }
     }
     .open-sidebar {
         color: $darkblue;
