@@ -2,44 +2,41 @@
     @include breakpoint-desktop-1 {
         position: absolute;
         left: 0;
+    }
+    button {
+        background-color: transparent;
+        border: 2px solid $white;
+        border-radius: 25px;      
+        height: 43px;
+        margin: 10px 0;
+        transition: all 0.3s ease-in-out;
+        width: 165px; 
+        @include breakpoint-mobile-2 {
+            margin: 10px;
         }
-        button {
-            background-color: transparent;
-            border: none;
-            font-family: $title;
-            padding: 0;
-            margin: 22px 0;
-            @include breakpoint-tablet {
-                margin: 30px 0;
-            }
-            a {   
+        @include breakpoint-tablet {
+            margin: 18px 10px;
+        }
+        @include breakpoint-desktop-1 {
+            margin: 18px 20px 0 0;
+        }
+        &.btn__azul{
+            background-color: $lightblue;
+            border: 2px solid $lightblue;   
+            &:hover{
                 border: 2px solid $white;
-                border-radius: 25px;
-                font-weight: bold;
-                color: $white;
-                font-size: $font-m;
-                padding: 10px 35px;
-                transition: all 0.3s ease-in-out;
-                @include breakpoint-mobile-2 {
-                    margin: 10px;
-                }
-                @include breakpoint-desktop-1{
-                    margin: 0 20px 0 0;  
-                }
-               
-                &.btn__azul{
-                    background-color: $lightblue;
-                    border: 2px solid $lightblue;   
-                    &:hover{
-                        border: 2px solid $white;
-                        background-color: transparent;
-                    }
-                }
-                &:hover {
-                    background-color: $lightblue;
-                    border: 2px solid $lightblue;
-                    margin-top: 1rem; 
-                }
+                background-color: transparent;
             }
+        }
+        &:hover {
+            background-color: $lightblue;
+            border: 2px solid $lightblue;
+        }
+        a {   
+            color: $white;
+            font-family: $title;
+            font-size: $font-m;
+            font-weight: bold;
         }
     }
+}
